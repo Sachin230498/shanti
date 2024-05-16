@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main>div{
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cart</h1>
+    <a href="./index.html">Home</a>
+    <div id="main"></div>
+</body>
+<script>
+    let cart = JSON.parse(localStorage.getItem("fev"));
+
+    let main = document.getElementById("main");
+
+    display(cart)
+
+    
+function display(data) {
+ 
+    data.forEach(function (el,index) {
+
+
+        let div = document.createElement("div");
+
+        let name = document.createElement("h1");
+        name.innerText = el.name;
+        let pre = document.createElement("h1");
+        pre.innerText = el.pre;
+
+        div.append(name,pre)
+
+        main.appendChild(div);
+
+
+       
+       
+      
+
+    })
+}
+
+</script>
+</html>

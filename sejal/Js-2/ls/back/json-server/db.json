@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "fruits",
+      "price": 100,
+      "description": "abcd",
+      "image": "https://cdn.pixabay.com/photo/2023/09/21/14/15/background-8266762_640.jpg"
+    },
+    {
+      "id": "2",
+      "title": "sword",
+      "price": 0,
+      "description": "sd",
+      "image": "https://cdn.pixabay.com/photo/2024/04/15/15/02/ai-generated-8698024_640.jpg"
+    },
+    {
+      "id": "3",
+      "title": "leaf",
+      "price": 500,
+      "description": "abcd",
+      "image": "https://cdn.pixabay.com/photo/2016/08/01/13/50/blood-maple-1561055_640.jpg"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": null
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": null
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

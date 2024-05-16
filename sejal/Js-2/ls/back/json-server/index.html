@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+           #main {
+            
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+          
+            gap: 20px;
+            text-align: justify;
+        }
+        #main>#container {
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px 5px;
+
+        }
+
+        #main>#container>img{
+            width: 60%;
+            height: 50%;
+        }
+        #add-data,#updata-data{
+           
+           width: 1100px;
+            height: 100px;
+            padding: 1px 20px 12px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        #updata-data{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data</h1>
+    <div id="add-data">
+        <h1>Add Data</h1>
+          <input id="id" placeholder="enter id" type="text">
+        <input id="img" placeholder="put img url" type="text">
+        <input id="title" placeholder="enter title" type="text">
+        <input id="price" placeholder="enter price" type="text">
+        <input id="description" placeholder="enter description" type="text">
+        <button onclick="adddata()">Add Data</button>
+    </div>
+
+    <div id="updata-data">
+        <h1>Updata Data</h1> 
+    <input id="updateId" type="number" placeholder="Resource ID">
+    <input id="updateImg" type="text" placeholder="Updated Image URL">
+    <input id="updateTitle" type="text" placeholder="Updated Title">
+    <input id="updatePrice" type="text" placeholder="Updated Price">
+    <input id="updateDescription" type="text" placeholder="Updated Description">
+    <button onclick=" updateData()">Update Resource</button>
+</div>
+
+   
+
+
+    <div id="main">
+        
+    </div>
+</body>
+
+<script src="./index.js"></script>
+</html>

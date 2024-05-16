@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div>div{
+            border: 5px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Json</h1>
+    
+    <form >
+        <input type="text" id="name">
+        <input type="text" id="pass">
+        <input type="submit">
+    </form>
+
+    
+    <form >
+        <input type="text" id="name">
+        <input type="text" id="pass">
+        <input type="submit">
+    </form>
+    <div id="div"></div>
+</body>
+<script>
+
+let api = "http://localhost:3000/data"
+let div = document.getElementById("div");
+
+let form = document.querySelector("form")
+form.addEventListener("submit",postdata)
+
+async function postdata(){
+    event.preventDefault()
+
+    let name = form.name.value;
+    let pass = form.pass.value;
+    // console.log(name, pass);
+
+    let obj = {
+        name,
+        pass
+    }
+
+      
+    let res = await fetch(api,{
+        
+        method : "POST",
+        body: JSON.stringify(obj),
+       headers: {
+        "Content-type": "application/json;"
+    }
+    })
+
+    alert("data post successful")
+
+
+
+}
+
+
+
+async function getData(){
+    let res = await fetch(api)
+ 
+    let data = await res.json()
+    console.log(data);
+    display(data);
+}
+
+getData()
+
+
+function display(arr){
+  arr.forEach((el)=>{
+    let d = document.createElement("div")
+    let name = document.createElement("h1")
+       name.innerText = el.name
+    let pass = document.createElement("h1")
+    pass.innerText = el.pass
+
+    d.append(name,pass)
+    div.appendChild(d)
+  })
+
+
+}
+
+
+</script>
+</html>

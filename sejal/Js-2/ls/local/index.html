@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://cdn.pixabay.com/photo/2017/11/02/00/34/parrot-2909828_640.jpg" alt="perrot">
+   <h1 id="like"></h1>
+    <button onclick="like()">Like👍</button>
+
+</body>
+
+<script>
+    let val ;
+    if(JSON.parse(localStorage.getItem("data"))==null){
+        val = 0;
+    }
+    else{
+        val =JSON.parse(localStorage.getItem("data"))
+    }
+
+    let h1 = document.getElementById("like");
+    h1.innerText = val
+
+    function like() {
+        val = val+1;
+        console.log(val);
+        localStorage.setItem("data",JSON.stringify(val));
+      h1.innerText = val
+
+    }
+
+
+    // let arr = [1,"a", true, [], {}]   // "[1, a, true, [] , {}]"
+    // console.log(arr);
+    // localStorage.setItem("arr",JSON.stringify(arr))
+
+
+    // let b = JSON.parse( localStorage.getItem("arr"))
+    // console.log(b);
+
+    // let obj = {
+    //     name:"Ravi",
+    //     age: "23"
+    // }
+    // let json_obj = {
+    //     "n":"ravi",
+    //     "p":12
+    // }
+
+    // //localStorage
+    // localStorage.setItem(key , value)
+    // localStorage.getItem(key)
+    // clear()
+    // localStorage.removeItem(key)
+
+    // let a = localStorage.getItem("abcd")
+    // console.log(a);
+
+
+
+
+</script>
+</html>

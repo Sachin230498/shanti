@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="head">Dom-1</h1>
+
+    <h2 id="n"></h2>
+    <h2 id="p"></h2>
+
+
+    <input type="text" placeholder="Enter your Name" id="name">
+    <input type="password" placeholder="Enter your password" id="password">
+    <button onclick="add()">click</button>
+  </body>
+
+  <script>
+    // console.log("hello");
+
+    let head = document.getElementById("head");
+    // console.log(head.innerHTML);
+    // console.log(document.images);
+
+    let n = document.getElementById("n");
+    let p = document.getElementById("p");
+
+    //Event is action that is trigger by user
+
+    function add() {
+    //   head.innerText = "Hello, world!";
+      // console.log("hello");
+      // alert("Welcome")
+
+      let name = document.getElementById("name").value
+      let password = document.getElementById("password").value
+      //console.log(name, password);
+
+      n.innerText = name;
+      p.innerText = password;
+
+  
+    }
+  </script>
+</html>

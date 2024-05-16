@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form >
+        <input type="email" id="email" placeholder="Enter your email">
+        <input type="password" id="password" placeholder="Enter your password">
+        <input type="submit" >
+    </form>
+
+    
+</body>
+<script>
+    let signup = JSON.parse(localStorage.getItem('signup'));
+
+    let form = document.querySelector("form")
+    form.addEventListener('submit',loginfun)
+
+
+    function loginfun(){
+        event.preventDefault();
+        let email = form.email.value;
+        let password = form.password.value;
+
+        console.log(email,password);
+
+        let flag = false;
+ 
+        for(let i = 0; i<signup.length;i++){
+            if(signup[i].email == email && signup[i].password == password){
+              flag = true;
+            localStorage.setItem("login", JSON.stringify(signup[i]))
+        }
+
+    }
+
+
+    
+    if(flag == true){
+        alert("Login successful")
+      
+        window.location.href = "../home/index.html";
+    }else{
+        alert("Login failed")
+    }
+    }
+
+
+</script>
+</html>

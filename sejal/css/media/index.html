@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #media{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,100px);
+            gap: 20px;
+            border: 5px solid green;
+
+        }
+
+        #media>div{
+            background-color: orange;
+        }
+
+     body{
+        background-color: aquamarine;
+     }
+
+     /* medium screen tablet */
+     @media all and (min-width:480px) and (max-width:768px){
+
+         body{
+        background-color: red;
+     }
+      #media{
+            grid-template-columns: repeat(2,1fr);
+          }
+
+     }
+
+          /* large screen tablet */
+     @media all and (min-width:769px) and (max-width:900px){
+
+         body{
+        background-color: blue;
+     }
+        #menu{
+        display: none;
+     }
+          #media{
+            grid-template-columns: repeat(3,1fr);
+          }
+
+     }
+
+
+          /* small screen mobile */
+     @media all and (min-width:320px) and (max-width:479px){
+
+         body{
+        background-color: indianred;
+     }
+
+      #media{
+            grid-template-columns: repeat(1,1fr);
+            gap: 40px;
+          }
+          #nvit{
+            display: none;
+          }
+   
+         
+        #menu{
+        display: block;
+        }
+
+     }
+
+
+  
+     #nav{
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+     }
+
+   
+
+     
+
+    </style>
+</head>
+<body>
+
+    <div id="nav">
+        <div>
+         fsf
+        </div>
+
+        <div id="nvit">
+              <a href="">Home</a>
+              <a href="">Home</a>
+              <a href="">Home</a>
+              <a href="">Home</a>
+        </div>
+
+        <div id="menu">
+            menu
+        </div>
+    </div>
+
+    <div id="media">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

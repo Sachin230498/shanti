@@ -1,0 +1,192 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #nav {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #item {
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;
+      }
+      #container > div {
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      }
+      #container > div > img {
+        width: 100%;
+      }
+      #cart {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <div>Logo</div>
+      <div id="item">
+        <a href="../auth/login.html">Login</a>
+        <a href="../auth/signup.html">Signup</a>
+      </div>
+    </div>
+
+    <br />
+
+    <select id="sort">
+      <option value="Choose">Choose</option>
+      <option value="lth">LOw-TO-High</option>
+      <option value="htl">High-to-low</option>
+    </select>
+    <br />
+
+    <input
+      type="text"
+      id="search"
+      oninput="fil()"
+      placeholder="Search by name"
+    />
+
+    <div id="container"></div>
+  </body>
+  <script src="../data/data.js"></script>
+  <script>
+    let sortbyprice = document.getElementById("sort");
+
+    let container = document.getElementById("container");
+    let nav = document.getElementById("item");
+    let data = JSON.parse(localStorage.getItem("data")) || [];
+    display(data);
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let login = JSON.parse(localStorage.getItem("login"));
+
+    if (login != null) {
+      nav.innerHTML = null;
+
+      let cartbtn = document.createElement("a");
+      cartbtn.innerText = "CART";
+      cartbtn.href = "./cart.html";
+
+      let logout = document.createElement("a");
+      logout.innerText = "logout";
+      logout.addEventListener("click", function () {
+        logout.href = "../auth/login.html";
+        localStorage.removeItem("login");
+      });
+
+      let name = document.createElement("h4");
+      name.innerText = login.name;
+
+      nav.append(name, logout, cartbtn);
+    }
+
+    // localStorage.removeItem("login")
+
+    function display(product) {
+      container.innerHTML = "";
+      product.forEach((el, index) => {
+        //  console.log(el);
+        let div = document.createElement("div");
+
+        let title = document.createElement("h2");
+        title.innerText = el.title;
+        let img = document.createElement("img");
+        img.src =
+          "https://cdn.pixabay.com/photo/2023/08/25/10/33/apples-8212695_640.jpg";
+
+        let price = document.createElement("h3");
+        price.innerText = `Price is  $ ${el.price}`;
+
+        let des = document.createElement("p");
+        des.innerText = el.description;
+
+        let cart = document.createElement("button");
+        cart.innerText = "Add to cart";
+        cart.addEventListener("click", function () {
+          cartfun(el);
+        });
+
+        div.append(img, title, price, des, cart);
+
+        container.appendChild(div);
+      });
+    }
+
+    // function cartfun(data) {
+    //   cart.push(data);
+    //   localStorage.setItem("cart", JSON.stringify(cart));
+    // }
+
+    function cartfun(data) {
+      console.log(cart);
+      let iscartadded = false;
+      for (let i = 0; i < cart.length; i++) {
+        // console.log(data.id);
+
+        if (cart[i].id == data.id) {
+          alert("Product already added");
+          iscartadded = true;
+          break;
+        }
+      }
+      if (iscartadded === false) {
+        cart.push(data);
+        localStorage.setItem("cart", JSON.stringify(cartarr));
+        alert("Cart added");
+      }
+    }
+
+    //   console.log(window.location.href = "./index.html");
+
+    //Sort by price method
+    sortbyprice.addEventListener("change", sortfun);
+
+    function sortfun() {
+      if (sortbyprice.value == "lth") {
+        data.sort(function (a, b) {
+          return a.price - b.price;
+        });
+      } else if (sortbyprice.value == "htl") {
+        data.sort(function (a, b) {
+          return b.price - a.price;
+        });
+      }
+      display(data);
+    }
+
+    // //Search field
+    function fil() {
+      //  console.log("hello");
+      let input = document.getElementById("search").value;
+      // console.log(input);
+      let copy_data = data;
+      copy_data = copy_data.filter(function (el) {
+        return el.title.toLowerCase().includes(input);
+      });
+      display(copy_data);
+    }
+  </script>
+</html>

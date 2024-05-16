@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Hello-1</h1>
+    <h2 class="h1">Hello-2-1</h2>
+    <h2 class="h1">Hello-2</h2>
+    <h2 class="h1">Hello-2</h2>
+    <h2 class="h1">Hello-2</h2>
+    <p id="p" class="h1">I am para</p>
+
+    <div>
+          <button >click</button>
+    </div>
+ 
+</body>
+<script>
+
+    //addeventlistner("name of event" , function)
+
+    let btn = document.querySelector("button")
+
+    btn.addEventListener("click", data)
+    //console.log(btn);
+
+function data( event) {
+    console.log(event);
+    alert("hello")
+}
+
+
+
+
+
+
+
+    let head = document.querySelector("#head")
+    // console.log(head);
+
+
+    let h1class = document.querySelector("h2")
+    // console.log(h1class);
+
+
+    let qh1 = document.querySelectorAll(".h1")
+    // console.log(qh1[0]);
+    for(let i=0; i<qh1.length;i++){
+    //    console.log(qh1[i]);
+    }
+
+
+    
+</script>
+</html>

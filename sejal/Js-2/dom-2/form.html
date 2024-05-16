@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1></h1>
+    <h2></h2>
+    
+
+  <form>
+    <label >Enter Name</label>
+      <input id="name" type="text" placeholder="Enter your name">
+      <br>
+      <label for="">Enter Password</label>
+      <input id="pass" type="password" placeholder="Enter your password">
+      <br>
+      <input type="submit">
+
+  </form>
+     
+</body>
+
+<script>
+    let h1 = document.querySelector('h1');
+    let h2 = document.querySelector('h2');
+        let form  = document.querySelector('form');
+        let btn = document.querySelector('button');
+       form.addEventListener("submit",getData)
+
+
+      let n = "abc"
+       let p = "1234"
+     
+
+
+        function getData() {
+        
+          
+            event.preventDefault()
+            console.log("hello");
+            let name = document.getElementById("name").value;
+            let password = document.getElementById("pass").value;
+
+            // console.log(name, password);
+
+            // // h1.innerText = "Hello name is" + " " + name 
+
+
+            // //template literals method
+            // h1.innerText = `Hello name is ${name}` 
+
+
+            // // h2.innerText = "Hello password is" + " " + password
+            // h2.innerText = `Password is ${password}`
+
+
+            if(n == name && p == password){
+                h1.innerText ="Login successful"
+            }
+            else{
+                  h1.innerText ="Wrong credentials"
+            }
+
+        }
+
+
+
+</script>
+
+
+</html>

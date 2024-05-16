@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #main{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            text-align: center;
+        }
+       #main>div{
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+       #main>div>img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cart-Page</h1>
+    <h1 id="total"></h1>
+    <div id="main"></div>
+</body>
+<script>
+    let main = document.getElementById("main");
+    let total = document.getElementById("total")
+
+    let cart = JSON.parse(localStorage.getItem("cart"));
+  display(cart);
+
+  
+//   total.innerText = value
+
+
+      function display(product){
+            let val = 0
+        product.forEach((el,index)=>{
+        
+          //  console.log(el);
+
+
+            val = val + el.price;
+            console.log(val);
+            total.innerText = val;
+            let div = document.createElement("div")
+
+            let title = document.createElement("h2")
+            title.innerText = el.title;
+            let img = document.createElement("img")
+             img.src ="https://cdn.pixabay.com/photo/2023/08/25/10/33/apples-8212695_640.jpg" 
+
+            let price = document.createElement("h3")
+            price.innerText = `Price is  $ ${el.price}`
+
+            let des = document.createElement("p")
+            des.innerText = el.description
+
+            let cart = document.createElement("button")
+            cart.innerText = "Delete"
+            cart.addEventListener("click",function(){
+                cartfun(el)
+            })
+
+            div.append(img,title,price,des,cart)
+
+            main.appendChild(div)
+
+        })
+    }
+</script>
+</html>

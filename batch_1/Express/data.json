@@ -1,0 +1,13 @@
+{
+  "students": [
+    { "name": "Ashish", "city": "UP" },
+    { "name": "Pooja", "city": "Vidisha" },
+    { "name": "Abhinay", "city": "Rewa" },
+    { "name": "Pnjal", "city": "asign" },
+    { "name": "RRR", "city": "CWA" }
+  ],
+  "teachers": [
+    { "name": "Rahul", "city": "Bhopal" },
+    { "name": "Raju", "city": "Indore" }
+  ]
+}

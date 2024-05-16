@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 id="head" >Hello</h1>
+    <h1  class="h1">Hello-1</h1>
+    <h1  class="h1">Hello-2</h1>
+
+    <p>I am para</p>
+    <p>I am para-2</p>
+</body>
+<script>
+    let h1 = document.getElementById("head");
+    h1.style.color = "red"
+   
+
+    console.log(head);
+
+
+    let headcl = document.getElementsByClassName("h1");
+    //  headcl[1].style.color = "blue"
+    // console.log(headcl.length);
+    for(let i = 0;i<headcl.length;i++){
+        headcl[i].style.color = "blue"
+    }
+
+
+    let p = document.getElementsByTagName("p")
+    console.log(p);
+    
+
+
+</script>
+</html>
