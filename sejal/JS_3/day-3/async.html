@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async Programming</h1>
+    <h1 id="count">10</h1>
+
+    <input type="text" id="input" placeholder="enter text">
+
+</body>
+
+
+<script>
+    // setInterval(function, interval in ms);
+
+    // let count = document.getElementById("count");
+    // let val = 0;
+
+    // setInterval(function(){
+    //   val++;
+    //   console.log(val);
+    //   count.innerText = val;
+    // },3000)
+
+
+
+
+    // console.log("three");
+//     let value =0;
+//     function  count(){
+//         for(var i=0;i<10000;i++) {
+//         let h1 = document.getElementById("count");
+//         value = value + 1
+//         h1.innerText = value
+//         console.log(h1);
+//         }
+//     }
+//   count();
+
+// setTimeout(welcome, 5000);
+
+// let val = 1;
+
+//  function welcome() {
+//     val = val + 1
+//     alert("value after 3 sec ",val);
+// }
+
+
+let value =10;
+let id = setInterval(counter,1000)
+
+
+
+function counter(){
+
+    let input = document.getElementById("input").value;
+    // console.log("text",input);
+
+        let h1 = document.getElementById("count");
+        value--;
+        h1.innerText = value
+ 
+        if(value ==0){
+            clearInterval(id)
+        }
+
+
+        
+        if(input === "21 din me paisa double"){
+            clearInterval(id)
+              alert("paisa double")
+        }
+
+        // if(value ==0){
+        //     clearInterval(id)
+        // }
+}
+
+</script>
+ 
+
+</html>

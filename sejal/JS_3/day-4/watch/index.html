@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #clock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #b58022;
+        /* direction,color1,color2...link--- */
+      }
+
+      #clock > div {
+        padding: 30px;
+        margin: 30px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        box-shadow: 5px 5px 23px #7b5717, -5px -5px 23px #ffc535;
+      }
+
+      span {
+        font-size: 40px;
+      }
+    </style>
+</head>
+<body>
+    <div id="clock">
+      <div id="hours">13</div>
+      <span>:</span>
+      <div id="minutes">13</div>
+      <span>:</span>
+      <div id="seconds">13</div>
+      <div id="half">PM</div>
+    </div>
+</body>
+<script>
+
+   function clock() {
+      let date = new Date();
+    //  console.log(date.getMinutes());
+   let hours = date.getHours();
+   let minutes = date.getMinutes();
+   let seconds = date.getSeconds();
+ 
+   let half = ""
+   if(hours >= 12) {
+    half = "PM"
+   }else{
+    half = "AM"
+   }
+ 
+   document.getElementById("hours").innerText = hours;
+   document.getElementById("minutes").innerText = minutes;
+   document.getElementById("seconds").innerText = seconds;
+   
+   document.getElementById("half").innerText = half;
+
+     setTimeout(clock,1000)
+
+   }
+   clock();
+ 
+</script>
+</html>

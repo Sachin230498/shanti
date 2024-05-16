@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Add Student Data
+    </h1>
+       <div id="navbar">
+       <a href="./dashboard.html">Deshboard</a>
+    </div>
+
+    <form >
+        <input type="text"  placeholder="name" id="name">
+        <select id="course">
+            <option value="Choose"></option>
+            <option value="JS-1">JS-1</option>
+            <option value="JS-2">JS-2</option>
+            <option value="JS-3">JS-3</option>
+        </select>
+        <input type="text"  placeholder="time" id="time">
+        <input type="submit">
+    </form>
+</body>
+<script >
+    //create a Student Database using Object.create()
+
+    function Student(n,c,time){
+        this.name = n;
+        this.course = c;
+        this.time = time;
+    }
+
+  //  let pp = new Student("dd","gg","ff","ff0","rr","rr","rr")
+// console.log(pp);
+
+
+let form = document.querySelector("form")
+form.addEventListener("submit",dbfunction)
+
+function dbfunction(event) {
+    event.preventDefault()
+    // console.log("hello")
+
+    let nam =form.name.value;
+    let course = form.course.value;
+    let time = form.time.value;
+
+    let s1 = new Student(nam,course,time)
+    console.log("s1",s1);
+
+    let data = JSON.parse(localStorage.getItem("student")) || []
+    data.push(s1)
+
+    localStorage.setItem("student", JSON.stringify(data))
+   // console.log(data);
+
+}
+
+function cal(){
+      let data = JSON.parse(localStorage.getItem("student")) || []
+
+      let obj ={}
+
+      for(let i =0;i<data.length;i++){
+        if(!obj[data[i].course]){
+            obj[data[i].course] = 1
+        }
+      }
+      console.log(obj);
+}
+cal()
+
+</script>
+</html>

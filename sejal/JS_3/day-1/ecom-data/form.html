@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <input id="name" type="text" placeholder="Enter your name" />
+      <input id="password" type="text" placeholder="Enter your password" />
+      <input type="submit" />
+    </form>
+  </body>
+  <script>
+    //Constructor function
+
+    function data(n, p) {
+      this.name = n;
+      this.password = p;
+    }
+
+    // let dataa = new data("name", "password")
+    // console.log(dataa);
+
+    let form = document.querySelector("form");
+
+    form.addEventListener("submit", addata);
+
+    let arr = [];
+
+    function addata() {
+      event.preventDefault();
+      // console.log("hello");
+      let name = form.name.value;
+      let password = form.password.value;
+
+      let dataA = new data(name, password);
+      //console.log(dataA);
+
+      arr.push(dataA);
+      console.log(arr);
+    }
+
+    //Call Apply Bind  - Function
+
+    const kitchen = {
+      name: "kitchen",
+      purpose: "Cooking",
+      cookfood(order) {
+        console.log(`Serving ${order} in ${this.name}`);
+      },
+    };
+
+   // kitchen.cookfood("Samosa");
+
+    const badroom = {
+      name: "badroom",
+      purpose: "rest",
+    };
+
+   // kitchen.cookfood("meggie");
+
+    kitchen.cookfood.call(badroom, "data")
+
+     
+
+    //Template literals (Template strings)
+    //         let m1 = "Hello"
+    //         let m2 = "Mamu"
+
+    //         let msg = "Babu says" + " " + m1 + " " + m2
+    //       // console.log(msg);
+    //       let msg_pro_level = `Babu says ${m1} ${m2}`
+    //    // console.log(msg_pro_level);
+  </script>
+</html>

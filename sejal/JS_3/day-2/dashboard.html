@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #desh{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+        }
+      #desh > .main {
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="./form.html">Form</a>
+    </div>
+
+    <p> JS-1 ==><span id="js1">0</span></p>
+    <p> JS-2 ==><span id="js2">0</span></p>
+    <p> JS-3 ==><span id="js3">0</span></p>
+
+    <div id="desh"></div>
+  </body>
+
+  <script>
+    let desh = document.getElementById("desh");
+
+    let arr = JSON.parse(localStorage.getItem("student")) || [];
+    display(arr);
+
+    function display(arr) {
+      desh.innerHTML = "";
+      arr.forEach(function (el, index) {
+        let div = document.createElement("div");
+        div.setAttribute("class", "main");
+
+        let name = document.createElement("h3");
+        name.innerText = el.name;
+
+        let course = document.createElement("p");
+        course.innerText = el.course;
+
+        let time = document.createElement("p");
+        time.innerText = el.time;
+
+        div.append(name, course, time);
+        desh.append(div);
+      });
+    }
+
+    let cor_1 = document.getElementById("js1")
+    let cor_2 = document.getElementById("js2")
+    let cor_3 = document.getElementById("js3")
+
+
+    function coursecount(){
+        let js1 =0
+        let js2 =0
+        let js3 =0
+       arr.forEach(function (el, index) {
+           if(el.course === "JS-1" ){
+               js1++
+              // console.log(js1);
+              cor_1.innerText = js1 
+           }
+           
+         else  if(el.course === "JS-2" ){
+               js2++
+              // console.log(js);
+              cor_2.innerText = js2 
+           }
+        else   if(el.course === "JS-3" ){
+               js3++
+              // console.log(js1);
+              cor_3.innerText = js3
+           }
+     
+       
+           
+       })
+   // console.log("hrr");
+    }
+    coursecount()
+  </script>
+</html>

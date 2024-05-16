@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>SildeShow</h2>
+
+    <a href="./slide.html">slide</a>
+
+    <input id="url" type="url" placeholder="enter url">
+
+   <input onclick="storeimg()" type="submit">
+</body>
+<script>
+
+    function storeimg() {
+        let url = document.getElementById("url").value;
+      let images = JSON.parse(localStorage.getItem("imges")) || []
+        images.push(url)
+        localStorage.setItem("imges",JSON.stringify(images))        
+    }
+</script>
+</html>

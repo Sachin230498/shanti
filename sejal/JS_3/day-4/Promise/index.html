@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Synchronous and Asynchronous JavaScript</h1>
+    <h1>Promise <span id="promise"></span></h1>
+  </body>
+  <!-- <script src="./index.js"></script> -->
+  <script>
+    let a = false;
+
+    let promise = new Promise(function (resolve, reject) {
+      setTimeout(function () {
+        let b = a;
+        if (b) {
+          resolve("success"); // success value
+        } else {
+          reject("faild"); // error value
+        }
+      }, 3000);
+    });
+
+    let span = document.getElementById("promise");
+
+    promise
+      .then(function (resolve) {
+        console.log("resolve", resolve);
+        span.innerText = "successful";
+      })
+      .catch(function (err) {
+        console.log("err", err);
+        span.innerText = "unsuccessful";
+      });
+
+    //console.log("promise", promise);
+  </script>
+</html>

@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+      }
+
+      #conatiner img{
+        width: 400px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+
+    <div id="conatiner"></div>
+  </body>
+  <script>
+
+let img = JSON.parse(localStorage.getItem("imges"))
+console.log(img);
+
+let main = document.getElementById("conatiner")
+let id;
+
+
+    function start() {
+
+// console.log("hello");
+
+
+let images = document.createElement("img")
+let index = 0;
+
+
+ id = setInterval(function(){
+
+  if(index == img.length ){
+    index =0
+  }
+  images.src = img[index]  
+index++
+
+},1000)
+
+
+main.append(images)
+
+    
+    }
+
+
+//settiemout
+//setTimeout(function, time)
+
+
+// function hello(){
+//   alert("hello!");
+// }
+// hello()
+
+// setTimeout(hello,2000)
+// setInterval(hello,3000)
+
+
+
+
+
+
+
+
+
+
+  
+
+   
+       function stop() {
+      
+           clearInterval(id)
+        }
+  </script>
+</html>

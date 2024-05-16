@@ -1,0 +1,138 @@
+dom
+ls 
+map
+foreach 
+sort
+splice
+filter 
+reduce
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Goals for the session
+
+Understanding of ‘this’ keyword
+
+functions can help us construct objects
+
+constructor functions serve as a blueprint for creating objects
+
+controlling where ‘this’ belongs
+
+Why and when to use call, apply and bind
+
+
+
+How are we creating Objects in Js?
+1. Object Literal
+
+
+var a = { name : 'Batman' }
+But, to create multiple objects of the same type, the object literal method is inefficient but we have a solution.
+ Constructor functions
+We can create objects in Js using functions as well.
+This is one example of creating an object using a function.
+function Player(name, team) {
+this.name=name
+this.team=team
+}
+var myObj = new Player ( “Cristiano ronaldo” , “Portugal”)
+
+//Above code is similar to this
+
+
+Let myObj = {}
+
+function Player(name, team) {
+myObj.name=name
+myObj.team=team
+
+Return myObj
+}
+
+myObj= Player ( “Cristiano ronaldo” , “Portugal”)
+
+
+//Notice, how ‘this’ is replaced by myObj
+
+Remember
+Here, 'this' refers to the new object we are creating.
+‘new’ keyword points ‘this’ to the object we are creating i.e ‘myobj’
+ 'this' in Javascript
+The value of this is determined by how/where the function was executed:
+
+In a method (function is written inside an object), this refers to the owner object.
+
+Alone, this refers to the global object.
+
+-In a function, this refers to the global object.
+
+Now we have seen the basics of 'this' and the significance of 'new' keyword in Js. But 'this' can do more for us.
+See, 'this' represents the owner object and all the properties it owns at any time.
+
+It helps in finding the owner object. It helps in changing the owner obejct.
+
+
+//Constructor function helps you add properties on other objects as well
+//All you have to do is invoke with proper context
+
+
+//lets create a system to give aadhar id to our users
+
+
+
+
+var person1 = {
+    name:'jonny kumar'
+}
+var person2={name:'happy singh'}
+
+- how to give person1 and person2 id
+
+- we want something like this
+
+var person1 = {
+    name:'jonny kumar',
+ createAadharId(){
+    this.id= Math.round(Math.random()*100000000000000)
+
+}
+}
+
+//but that will be redudant and expensive.
+
+function createAadharId(){
+    person1.id= Math.round(Math.random()*100000000000000)
+
+}
+
+//this is redundant as well
+
+function createAadharId(){
+    this.id= Math.round(Math.random()*100000000000000)
+
+}
+//basically we want to invite a constructor function
+
+//call
+
+createAadharId.call(person1)
+
+createAadharId.call(person2)
+
+
+// call allows us to execute a constructor with an object of our choice
+
+whichever object calls for the constructor function gets it properties.
+Js allows us to change the value of this using Call, Apply, Bind methods. We will be learning those methods in detail.
