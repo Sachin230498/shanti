@@ -17,7 +17,7 @@
 
     function storeimg() {
         let url = document.getElementById("url").value;
-      let images = JSON.parse(localStorage.getItem("imges")) || []
+      let images =JSON.parse(localStorage.getItem("imges")) || []
         images.push(url)
         localStorage.setItem("imges",JSON.stringify(images))        
     }

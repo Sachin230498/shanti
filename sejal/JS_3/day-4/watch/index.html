@@ -48,7 +48,7 @@
 
    function clock() {
       let date = new Date();
-    //  console.log(date.getMinutes());
+    
    let hours = date.getHours();
    let minutes = date.getMinutes();
    let seconds = date.getSeconds();
@@ -66,10 +66,10 @@
    
    document.getElementById("half").innerText = half;
 
-     setTimeout(clock,1000)
+   
 
    }
-   clock();
+ setInterval(clock, 1000)
  
 </script>
 </html>

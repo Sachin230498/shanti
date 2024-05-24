@@ -35,47 +35,38 @@
 // Array.forEach(function (el,inder) {
 
 // })
-
-// Promise(function (resolve,reject) { })
-
-// let promise = new Promise(function (resolve, reject) { })
-// console.log("promise", promise);
-
-// let img = document.getElementById("gif");
-
-//mimicking getting the data
-
-// function getData() {
-//   return false;
-// }
+let data = false;
 
 
-//  let mypromise =  new Promise(function (resolve, reject) {
+let promise = new Promise(function (resolve, reject) {
+  if (data) {
+    resolve("Data get")
+  }
+  else (
+    reject("Error getting data")
+  )
+})
 
-//    let data = false; // initial we dont have any data;
 
-//     //   we are dating for data
-//   setTimeout(() => {
-//     data = getData();
-//     if (data) {
-//       resolve("Sweets");
-//     } else {
-//       reject("Chappal");
-//     }
-//   }, 3000);
+promise.then(function (res) {
+  console.log(res, "success");
+})
 
-//  });
+promise.catch(function (err) { 
+  console.log(err, "error");
+})
 
-// mypromise.then(function (res) {
-//   console.log("res", res);
-//   img.src =
-//     "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTJ3cmQ4NDdieHNjOWFrZnBndnRubTBpOGNpczBubmcwaGpxb2xwZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q81NcsY6YxK7jxnr4v/giphy.gif";
-// })
-// .catch(function (err) {
-//   console.log("err", err);
-//   img.src =
-//     "https://i.pinimg.com/originals/06/6b/8f/066b8ff685cb747506a1fa56780ead07.gif";
-// });
+
+console.log(promise);
+
+
+
+
+
+
+
+
+
 
 
 
@@ -155,27 +146,5 @@
 
 
 
-let prp = new Promise(function (resolve, reject) { 
-
-  setTimeout(function () {
-    if ("RR" =="R") {
-      resolve("Successfully fetched");
-    } else {
-      reject("Failed");
-    }
-
-
-  } ,2000);
-
-})
-
-prp.then(function (res) {
-  console.log("res",res);
-})
-.catch(function (err) { 
-  console.log("err",err);
-})
-
-//console.log(prp);
 
 

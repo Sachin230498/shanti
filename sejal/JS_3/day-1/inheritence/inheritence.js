@@ -49,6 +49,9 @@
 
 // console.log('lion:', lion);
 
+
+ // inheritance using  Object.create() method
+
 let cat = {
   type: 'cat',
   legs: 4,
@@ -60,11 +63,6 @@ let tiger = Object.create(cat);
 //console.log("tiger", tiger);
 
 tiger.speed = 80
-
-
-
-
-
 //console.log("tiger",tiger);
 
 
@@ -110,7 +108,7 @@ let s1 = Object.create(student);
 //console.log(s1);
 
 s1.name = "Rahul"
-console.log(s1);
+//console.log(s1);
 
 //form on a webpage
 
@@ -142,27 +140,28 @@ console.log(s1);
 //we implement inheritance in js using object
 
 
-//Inheritance using Constructor Function
 
+//Inheritance using Constructor Function
 //CF returns what? objects
 
-function nikeProduct() {
-  this.name = "dfsdf";
-  this.price = 131;
+function nikeProduct(n,p) {
+  this.name = n;
+  this.price = p;
 }
 
-// let nike = new nikeProduct("run", 2000)
-// console.log(nike);
+let nike = new nikeProduct("run",2500)
+//console.log(nike);
 
+  nikeProduct.prototype.brand = 'adidas';
+  nikeProduct.prototype.logo = "nike"
+  nikeProduct.prototype.abc = "nikeabc"
 
-
-nikeProduct.prototype.brand = 'adidas';
- nikeProduct.prototype.logo = "nike"
-
-let n1 = new nikeProduct();
-//console.log(n1);
+ let n1 = new nikeProduct("zoom", 3000);
+ console.log(n1);
  
-let n2 = new nikeProduct('zoom', 999);
+// let n2 = new nikeProduct('zoom', 999);
+// console.log(n2);
+
 // console.log(nikeProduct.prototype.logo = "ddd");
 // console.log(n2);
 // let n3 = new nikeProduct('jordans', 9999);
@@ -232,3 +231,50 @@ Array.prototype.भेजो = function (value) {
 //console.log("arr2:", arr2);
 
 //console.log('arr2:', arr2);
+
+
+
+let arr = [2, 3, 4]
+let b =arr.map(function (el) {
+   return el*2
+})
+
+//console.log(arr);
+
+
+// Higher-order functions example
+// const double = x => x * 2;
+// const triple = x => x * 3;
+// const applyOperation = (value, operation) => operation(value);
+// console.log(applyOperation(5, double)); // 10
+// // console.log(applyOperation(5, triple)); // 15
+
+
+function createCounter() {
+    let count = 0; // Private variable
+
+    function increment() {
+        count++; // Private method
+    }
+
+    function getCount() {
+        return count; // Private method
+    }
+
+    return {
+        increment: increment, // Public method
+        getCount: getCount // Public method
+    };
+}
+
+let counter = createCounter();
+console.log(counter.getCount()); // Output: 0
+counter.increment();
+console.log(counter.getCount()); // Output: 1
+
+
+// myModule.js
+export const sayHello = () => {
+    console.log('Hello');
+};
+
