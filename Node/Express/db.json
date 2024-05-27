@@ -1,0 +1,13 @@
+{
+  "students": [
+    { "name": "John", "city": "indore" },
+    { "name": "Rahul", "city": "Reewa" },
+    { "name": "Harish", "city": "Satna" },
+    { "name": "Pooja", "city": "Vidisha" }
+  ],
+  "teachers": [
+    { "name": "Vipin", "city": "Bhopal" },
+    { "name": "Rajul", "city": "CWA" },
+    { "name": "Venu", "city": "Karnatak" }
+  ]
+}
