@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>single page</h1>
+    <div id="tube"></div>
+</body>
+<script>
+    let data = JSON.parse(localStorage.getItem('data'));
+    console.log(data);
+
+   let tube = document.getElementById('tube');
+
+   let iframe = document.createElement('iframe');
+   iframe.src = `https://www.youtube.com/embed/${data.id}`
+
+   let title = document.createElement('h1');
+   title.innerText = data.title
+
+   tube.append(iframe,title)
+</script>
+</html>

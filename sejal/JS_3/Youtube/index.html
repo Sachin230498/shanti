@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #main{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Youtube</h1>
+    <input type="text" placeholder="Search for content" id="Search" />
+    <button onclick="getData()">Search</button>
+    <div id="main"></div>
+  </body>
+  <script src="./index.js"></script>
+</html>
