@@ -81,6 +81,61 @@ app.post("/addTeacher", (req, res) => {
 });
 
 
+//Put/Patch Method to update the student
+
+app.put("/updateStudent/:id", (req, res) => { 
+  const data = fs.readFileSync("./db.json", "utf-8");
+ 
+    const Parse_data = JSON.parse(data);
+     
+  const updateStudent = Parse_data.students.findIndex(students => students.id === req.params.id);
+  if (updateStudent === -1) {
+    res.status(404).send("Student not found");
+    return;
+  }
+
+  Parse_data.students[updateStudent]= {...Parse_data.students[updateStudent], ...req.body }
+  fs.writeFileSync("./db.json", JSON.stringify(Parse_data));
+  
+  res.send("student updated successfully");
+
+})
+
+
+//Delete method to delete students
+
+app.delete("/deleteStudent/:id", (req, res) => {
+  const data = fs.readFileSync("./db.json", "utf-8");
+
+  const Parse_data = JSON.parse(data);
+
+  const delStudent = Parse_data.students.filter(
+    (students) => students.id === req.params.id
+  );
+  if (delStudent === Parse_data.students.length) {
+    res.status(404).send("Student not found");
+    return;
+  }
+
+  Parse_data.students = delStudent
+  fs.writeFileSync("./db.json", JSON.stringify(Parse_data));
+
+  res.send("student deleted successfully");
+});
+
+
+
+
+
+// let arr = [{name: "Student"}]
+// let arr1 = [{ city: "bhopal"}]
+
+
+// let abc = [...arr , ...arr1]
+// console.log(abc);
+
+
+
 
 
 //server start
