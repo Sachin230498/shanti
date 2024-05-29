@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="n"></div>
+    <h1>Electornics</h1>
+    <div id="main"></div>
+
+</body>
+<script type="module">
+     import nav from "./navbar.js";
+    import {getdata,display} from "./fetch.js";
+
+     let navbar = document.getElementById("n")
+    navbar.innerHTML = nav
+
+    let res = await getdata("https://fakestoreapi.com/products/category/electronics")
+     display(res)
+
+</script>
+</html>

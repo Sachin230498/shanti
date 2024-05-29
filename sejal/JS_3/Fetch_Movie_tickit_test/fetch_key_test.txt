@@ -1,0 +1,49 @@
+Instructions
+Use the template provided below (MANDATORY).
+Problem Statement :-
+Create a mini movie booking app where users would be able to search for movies and book their ticket using their wallet balance.
+
+The cost of one ticket is Rs. 100 (fixed)
+Description :-
+Create an “index.html” where you will add money to your wallet.
+It will have an input box to accept the amount and a button “add to wallet” on clicking, the amount will be added to the wallet.
+Use localstorage as your wallet. The wallet amount should be reflected on each page on the top right corner.
+On “index.html” provide a link to the “movies.html”.
+On “movies.html”, create a search bar where users can search for movies.
+Apply debouncing on search functionality. Use OMDB API to get the movie data. Also show the wallet amount on the top right corner.
+While typing, users should see relevant movies on the dom itself. There should not be any search button.
+Show the image, title and a “book now” button for every movie on the dom.
+On clicking on the “book now” button, store that movie in the localstorage and redirect the user to the “checkout.html” page.
+Where he will see the movie info which he is going to book. He will enter his name and number of tickets.
+On clicking on “Confirm Booking”, if the wallet doesn't have sufficient balance show alert “Insufficient Balance !” else deduct the relevant amount from the wallet and update the wallet and the localstorage as well.
+At the end give an alert to the user “Booking Successful!”.
+Things to follow :-
+1. Wallet amount should be in the H1 tag with id as “wallet”.
+2. Input box for accepting amount with id as “amount”.
+3. Add to wallet button with id as “add_to_wallet”.
+4. Add the wallet amount to local storage as key “amount”.
+5. Link or button to go to “movies.html” should have id as “book_movies”.
+6. Input box for searching movies will have an id as “search”.
+7. Append all searched movies inside the div with id as “movies”,
+   and all the movie cards will have class as "movie_tab".
+8. Book now buttons will have class as “book_now”.
+9. Add the selected movie for booking to local storage with key as “movie”
+10. Inside checkout.html name input box id will be “user_name”
+11. The number of seats input box will have id as “number_of_seats”.
+12. A submit button to confirm booking with id as “confirm”.
+13. Give alert as : -
+- “Insufficient Balance!”  in case of insufficient wallet balance.
+- “Booking successful!”  in case of successful booking.
+
+
+For API use OMDB API (https://www.omdbapi.com/?apikey=YourApiKey&s=thor)
+Always use https in api url, otherwise it will not work with your deployment
+
+
+Note
+Focus more on the functionality of your app. Avoid spending more time in styling. You can do that once you finish the end to end flow of app. All the best!
+Strictly follow the template. Cross check HTML Id's
+
+
+
+deploy link for refrence = "https://cerulean-dusk-0b22b0.netlify.app/

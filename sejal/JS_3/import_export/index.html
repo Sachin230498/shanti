@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <div id="n"></div>
+ <div id="main"></div>
+</body>
+
+<script type="module">
+
+import navbar from "./navbar.js";
+console.log(navbar);
+ import {getdata,display} from "./fetch.js";
+//console.log("get data,apped", getdata,display);
+// //console.log("navbar loaded",navbar);
+
+
+let nav = document.getElementById("n")
+nav.innerHTML = navbar;
+
+ let main = document.getElementById("main")
+let res = await getdata("https://fakestoreapi.com/products");
+console.log(res);
+
+ display(res)
+
+
+
+</script>
+
+
+</html>

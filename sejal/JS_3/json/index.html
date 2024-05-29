@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #head{
+            width: 100%;
+            height: 50px; 
+            background-color: yellow;
+          }
+          #section{
+            width: 100%;
+            height: 400px;
+            background-color: antiquewhite;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+          }
+          #section>#red{
+            width: 60%; 
+            height: 100%;
+            background-color: red;
+          }
+
+          #grn{
+             width: 35%;
+             height: 100%;
+             background-color: aqua;
+          }
+    </style>
+</head>
+<body>
+    <div id="head"><h1>Navigation</h1></div>
+
+  
+
+    <form action="">
+        <input type="text" placeholder="Enter Title" id="title">
+        <br>
+        <input type="text" placeholder="Enter Price" id="price">
+        <br>
+        <input type="text" placeholder="description" id="des">
+        <br>
+        <input type="submit">
+    </form>
+
+
+    <div id="main">
+
+    </div>
+</body>
+<script>
+  let main = document.querySelector('#main');
+  let form = document.querySelector('form');
+  form.addEventListener('submit', submit);
+
+   function submit() {
+    event.preventDefault();
+
+    let title = document.querySelector("#title").value;
+    let price = document.querySelector("#price").value;
+    let des = document.querySelector("#des").value;
+
+    let obj = {
+      title,
+      price,
+      des
+    }
+   postdata(obj)
+
+    // console.log("hello!");
+  }
+
+
+  async function  postdata(data){
+      let res = await fetch("http://localhost:3000/data", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers:{
+            "Content-type": "application/json"
+        }
+      })
+
+      alert("data posted successfully")
+  }
+
+
+  async function getdata(){
+       let res = await fetch("http://localhost:3000/data")
+       let data = await res.json()
+       console.log(data);
+  }
+
+  getdata()
+</script>
+</html>
