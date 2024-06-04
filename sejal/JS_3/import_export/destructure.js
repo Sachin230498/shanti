@@ -1,4 +1,4 @@
-// let arr = [5, 6, 7, 8, 9 ]
+// let arr = [5, 6, 7, 8, 9 , {}]
 
 
 // // let a,b,c,d,e
@@ -25,10 +25,25 @@
 let obj = {
     name: "rahul",
     Country: "India",
-    age: 34
+    age: 34,
+    hobbies: {
+        playing: "cricket",
+        singing: "classical",
+        eating:["junkfood", "indianfood", "chinese"]
+    }
+
 }
 
-const { name,Country, age} = obj
+// let a = obj.hobbies.eating[2]
+// console.log(a);
 
-console.log(name ,age);
+
+
+
+
+
+
+const { name,Country, age, hobbies:{singing,playing,eating:[a,b,c] }  } = obj
+
+console.log(a);
 

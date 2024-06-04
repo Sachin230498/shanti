@@ -21,7 +21,7 @@ async function getData() {
 
 function display(data) {
     main.innerHTML = "";
-  data.forEach(function (el) {
+  data.forEach(function ({id:{videoId}, snippet:{title}}) {
 
 
     let div = document.createElement("div");
@@ -31,9 +31,9 @@ function display(data) {
       
       
     let iframe = document.createElement("iframe");
-    iframe.src = `https://www.youtube.com/embed/${el.id.videoId}`;
+    iframe.src = `https://www.youtube.com/embed/${videoId}`;
     let h1 = document.createElement("h1");
-    h1.innerText = el.snippet.title;
+    h1.innerText = title;
 
     div.append(iframe, h1);
     main.appendChild(div);

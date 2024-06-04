@@ -16,7 +16,8 @@ let getdata = async (api) => {
 
 function display(arr) {
   main.innerHTML = "";
-  arr.forEach(function ({title,price,image,description}) {
+  arr.forEach(function ({title,price,description,image}) {
+  //  console.log(el);
     let div = document.createElement("div");
 
     let titl = document.createElement("h2");
