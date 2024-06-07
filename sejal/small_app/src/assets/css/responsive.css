@@ -1,0 +1,4114 @@
+/* Normal desktop :1400px. */
+@media (min-width: 1400px) and (max-width: 1600px) {
+
+/*Home 1 Resopnsive*/
+
+
+
+
+/*===============Home two Responsive Css============*/
+.style-two .portfolio-content {
+    width: 98%;
+}
+
+
+/*===============Home Three Responsive Css============*/
+.style-three .portfolio-content {
+    width: 88%;
+}
+
+.style-three .portfolio-content a {
+    font-size: 22px;
+}
+
+.style-three .single-subscribe-box {
+    left: 30px;
+}
+
+
+
+
+}
+
+/* Normal desktop :1300px. */
+@media (min-width: 1300px) and (max-width: 1399px) {
+
+/*Home 1 Resopnsive*/
+.style-one .flip-box {
+    width: 275px;
+    height: 196px;
+}
+
+.style-one .about-thumb {
+    left: -90px;
+}
+
+.style-one .testi-desc p {
+    width: 78%;
+}
+
+.style-one .blog-content a {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.style-one .footer-widget-desc p {
+    width: 80%;
+}
+
+/*===============Home two Responsive Css============*/
+.style-two .hero-shape {
+    top: 30%;
+    left: -60px;
+}
+
+.style-two .about-left {
+    left: -55px;
+}
+
+.style-two .about-thumb img {
+    width: 100%;
+}
+
+.style-two .team-share {
+    right: 106px;
+}
+
+.style-two .portfolio-content {
+    width: 95%;
+}
+
+.style-two.portfolio-area .container-fluid {
+    padding: 0 26px;
+}
+
+.style-two .working-process-box {
+    padding: 0 19px 0;
+}
+
+.style-two .contact-info-box {
+    padding: 29px 17px 27px;
+    gap: 16px;
+}
+
+.style-two.pricing-area .section-title h4 {
+    color: #fff;
+}
+
+.style-two.section-title h1 {
+    font-size: 38px;
+}
+
+.style-two .faq-answer {
+    padding: 27px 7px 25px 0;
+}
+
+/*===============Home Three Responsive Css============*/
+.style-three .hero-content p {
+    width: 62%;
+}
+
+.style-three .about-left {
+    left: -151px;
+}
+
+.style-three .abour-award-box {
+    right: -45px;
+}
+
+.style-three .about-video-box {
+    top: 40%;
+    left: 48%;
+}
+
+.style-three .about-phone {
+    width: 58%;;
+    right: -70px;
+    bottom: 103px;
+}
+
+.style-three .portfolio-content {
+    width: 95%;
+    padding: 30px 29px 30px;
+}
+
+.style-three .portfolio-content a {
+    font-size: 22px;
+}
+
+.style-three .testi-content {
+    padding: 40px 25px 70px;
+}
+
+.style-three .single-subscribe-box {
+    left: 30px;
+}
+
+.style-three .testi-content {
+    padding: 40px 25px 70px;
+}
+
+.style-three .single-subscribe-box input {
+    width: 74%;
+}
+
+.style-three.subscribe-area .section-title.left h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+.style-three .single-contact-info-box {
+    padding: 60px 30px 49px;
+}
+
+
+/*===============Inner Pages All Responsive Css============*/
+.inner-style .header-menu ul li {
+    margin-right: 20px;
+}
+
+.inner-style-one .abour-award-box {
+    width: 58%;;
+    right: -104px;
+}
+
+/*service-details*/
+.service-details-icon-box {
+    padding: 32px 13px 18px;
+}
+
+/*Pricing*/
+.inner-style .pricing-head {
+    padding: 28px 35px 14px;
+}
+
+.inner-style .pricing-body {
+    padding: 27px 36px  34px;
+}
+/*blog-grid*/
+.blog-grid-area .blog-content {
+    padding: 25px 4px 3px;
+}
+
+
+
+
+
+}
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1299px) {
+
+/*Home 1 Resopnsive*/
+.style-one .flip-box {
+    width: 275px;
+    height: 196px;
+}
+
+.style-one .about-thumb {
+    left: -90px;
+}
+
+.style-one .testi-desc p {
+    width: 78%;
+}
+
+.style-one .blog-content a {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.style-one .footer-widget-desc p {
+    width: 80%;
+}
+
+
+/*===============Home two Responsive Css============*/
+.style-two .hero-shape {
+    top: 30%;
+    left: -60px;
+}
+
+.style-two .about-left {
+    left: -55px;
+}
+
+.style-two .about-thumb img {
+    width: 100%;
+}
+
+.style-two .team-socila-icon-box {
+    left: 108px;
+    bottom: -21px;
+}
+
+.style-two .team-social-icon {
+    left: -33px;
+}
+
+.style-two .team-shape {
+    position: absolute;
+    bottom: -58px;
+    left: -33px;
+}
+
+.style-two .portfolio-content {
+    width: 95%;
+}
+
+.style-two.portfolio-area .container-fluid {
+    padding: 0 32px;
+}
+
+.style-two .portfolio-title a {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.style-two .working-process-box {
+    padding: 0 19px 0;
+}
+
+.style-two .contact-info-box {
+    padding: 29px 17px 27px;
+    gap: 16px;
+}
+
+.style-two.pricing-area .section-title h4 {
+    color: #fff;
+}
+
+.style-two.section-title h1 {
+    font-size: 38px;
+}
+
+.style-two .faq-answer {
+    padding: 27px 7px 25px 0;
+}
+
+/*===============Home Three Responsive Css============*/
+.style-three .hero-content p {
+    width: 62%;
+}
+
+.style-three .about-left {
+    left: -151px;
+}
+
+.style-three .abour-award-box {
+    right: -45px;
+}
+
+.style-three .about-video-box {
+    top: 40%;
+    left: 48%;
+}
+
+.style-three .about-phone {
+    width: 46%;
+    right: -7px;
+    bottom: 81px;
+}
+
+.style-three .portfolio-content {
+    width: 95%;
+    padding: 30px 29px 30px;
+}
+
+.style-three .portfolio-content a {
+    font-size: 18px;
+}
+
+.style-three .testi-content {
+    padding: 40px 25px 70px;
+}
+
+.style-three .single-subscribe-box {
+    left: 30px;
+}
+
+.style-three .testi-content {
+    padding: 40px 25px 70px;
+}
+
+.style-three .single-subscribe-box input {
+    width: 74%;
+}
+
+.style-three.subscribe-area .section-title.left h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+.style-three .single-contact-info-box {
+    padding: 60px 30px 49px;
+}
+
+/*===============Inner Pages All Responsive Css============*/
+.inner-style .header-menu ul li {
+    margin-right: 20px;
+}
+
+.inner-style-one .abour-award-box {
+    width: 58%;;
+    right: -104px;
+}
+
+/*service-details*/
+.service-details-icon-box {
+    padding: 32px 17px 18px;
+    gap: 17px;
+}
+
+.widget-sidber-contact-btn  a {
+    padding: 16px 60px 15px;
+    margin-top: 42px;;
+}
+
+/*Pricing*/
+.inner-style .pricing-head {
+    padding: 28px 35px 14px;
+}
+
+.inner-style .pricing-body {
+    padding: 27px 36px  34px;
+}
+
+/*blog-grid*/
+.blog-grid-area .blog-content {
+    padding: 25px 4px 3px;
+}
+/*blog-details*/
+.recent-widget-content a {
+   font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+/*Home 1 Resopnsive*/
+.style-one .header-menu ul li {
+    margin-right: 20px;
+}
+
+.style-one .hero-content h1 {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.style-one.feature-area {
+    padding: 0px 0 90px;
+}
+
+.style-one .flip-box {
+    margin-bottom: 158px;
+}
+
+.style-one.about-area {
+    padding: 0 0 115px;
+}
+
+.about-thumb img {
+    width: 100%;
+}
+
+.style-one .about-shape {
+    display: none;
+}
+
+.style-one.section-title h1 {
+    font-size: 34px;
+}
+
+.style-one.section-title h4 {
+    font-size: 17px;
+    padding: 0 0 0 16px;
+}
+
+.style-one .single-process-box {
+    padding: 0 0 0;
+}
+
+.faq-singular .faq-question {
+    padding: 16px 25px 15px 14px;
+    font-size: 16px;
+}
+
+.style-one .testi-desc p {
+    font-size: 16px;
+    line-height: 29px;
+    width: 72%;
+}
+
+.style-one .blog-content a {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.style-one .footer-widget-desc p {
+    width: 95%;
+}
+
+/*===============Home two Responsive Css============*/
+.top-header-area:before {
+    left: -22px;
+    transform: skew(26deg);
+}
+
+.header-menu ul li {
+    margin-right: 15px;
+}
+
+.style-two .hero-content h1 {
+    font-size: 56px;
+    line-height: 56px;
+}
+
+.style-two .hero-thumb {
+    left: -81px;
+}
+
+.style-two .hero-shape {
+    top: 30%;
+    left: -71px;
+}
+
+.style-two .single-feature-box {
+    padding: 56px 24px 33px;
+}
+
+.style-two .feature-content h4 {
+    font-size: 22px;
+}
+
+.style-two .about-left {
+    left: -31px;
+}
+
+.style-two .about-shape {
+    right: -25px;
+    bottom: 11px;
+}
+
+.style-two .about-conter-box {
+    top: -26px;
+    left: 2px;
+}
+
+.style-two.section-title h1 {
+    font-size: 30px;
+    line-height: 26px;
+}
+
+.style-two.about-area .section-title p {
+    width: 90%;
+}
+
+.style-two .single-about-icon-box {
+    gap: 10px;
+
+}
+
+.style-two .about-icon-box-content h4 {
+    font-size: 18px;
+}
+
+.style-two .single-services-box {
+    padding: 37px 15px 30px 40px;
+}
+
+.style-two .team-socila-icon-box {
+    left: 91px;
+    bottom: -22px;
+}
+
+.style-two .team-shape {
+    bottom: -54px;
+    left: -71px;
+}
+
+.style-two .team-shape {
+    display: none;
+}
+
+.style-two.portfolio-area .container-fluid {
+    padding: 0 60px;
+}
+
+.style-two .portfolio-content {
+    padding: 20px 16px 17px;
+    width: 100%;
+    bottom: -34px;
+}
+
+.style-two .portfolio-title a {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.style-two .portfolio-number h1 {
+    font-size: 50px;
+}
+
+.style-two .portfolio-title a i {
+    display: none;
+}
+
+.style-two.working-proces-area {
+    padding: 214px 0 84px;
+}
+
+.style-two .working-process-box {
+    padding: 0 1px 0;
+}
+
+.style-two .process-thumb:before {
+    left: 25px;
+    top: -14px;
+}
+
+.style-two .working-process-box:before {
+    display: none;
+}
+
+.style-two .working-process-box:after {
+    display: none;
+}
+
+.style-two .contact-info-box {
+    padding: 29px 11px 27px;
+    gap: 14px;
+}
+
+.style-two .contact-info-content h4 {
+    padding: 0 0 1px 0;
+}
+
+.style-two .contact-info-content p {
+    font-size: 18px;
+}
+
+.style-two .single-pricing-box {
+    padding: 1px 12px 40px;
+}
+
+.style-two h4.pricing {
+    font-size: 28px;
+}
+
+.style-two .pricing-title h4 {
+    font-size: 24px;
+}
+
+.style-two.pricing-area .section-title h4 {
+    color: #fff;
+}
+
+.style-one.home-two .blog-content a {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+
+/*===============Home Three Responsive Css============*/
+.style-three .hero-content p {
+    width: 70%;
+}
+.style-three .hero-shape {
+    display: none;
+}
+
+.style-three .about-left {
+    left: -34px;
+}
+
+.style-three .abour-award-box {
+    right: -17px;
+    top: -1px;
+}
+
+.style-three .about-video-box {
+    top: 40%;
+    left: 39%;
+}
+
+.style-three .about-phone {
+    display: none;
+}
+
+.style-three .about-shape-two {
+    bottom: 11px;
+    left: 55%;
+}
+
+.style-three .about-shape {
+    bottom: 16px;
+    left: 76px;
+
+}
+
+.style-three .service-content h4 {
+    font-size: 20px;
+}
+
+.style-three.contact-area-info .contact-thumb {
+    right: -6px;
+}
+
+.inner-style.section-title.left h1 {
+    font-size: 32px;
+    line-height: 34px;
+}
+
+.style-three .single-pricing-box {
+    padding: 41px 10px 42px;
+}
+
+.style-three.portfolio-area .container-fluid {
+    padding: 0 70px 0;
+}
+
+.style-three .portfolio-content {
+    width: 95%;
+    padding: 30px 29px 30px;
+}
+
+.style-three .portfolio-content a {
+    font-size: 18px;
+}
+
+.style-three .testi-content {
+    padding: 40px 25px 70px;
+}
+
+.style-three .single-subscribe-box {
+    left: 10px;
+}
+
+.style-three .testi-content {
+    padding: 40px 25px 70px;
+}
+
+.style-three .testi-desc p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.style-three .single-subscribe-box input {
+    width: 72%;
+}
+
+.style-three.subscribe-area .section-title.left h1 {
+    color: #fff;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.style-three .single-process-box {
+    padding: 0 24px 0;
+}
+
+.style-three .single-contact-info-box {
+    padding: 60px 18px 49px;
+}
+
+.style-three .contact-info-box {
+    gap: 8px;
+}
+
+.style-three .contact-info-content h4 {
+    font-size: 16px;
+}
+
+/*===============Inner Pages All Responsive Css============*/
+.inner-style .header-menu ul li {
+    margin-right: 12px;
+}
+
+.inner-style-one.images-area {
+    padding: 102px 0 120px;
+}
+
+.inner-style-one .images-thumb {
+   display: none;
+}
+
+.inner-style-one.about-area {
+    padding: 284px 0 125px;
+    margin-top: -197px;
+}
+
+.inner-style-one .about-left {
+    left: -13px;
+}
+
+.inner-style-one .abour-award-box {
+    width: 65%;
+    right: -31px;
+    top: 0;
+}
+
+.inner-style-one .about-shape {
+    bottom: -16px;
+    left: 36px;
+}
+
+.inner-style-one .about-list-item ul li {
+    font-size: 15px;
+}
+
+.inner-style-one .about-list-item ul li i {
+    margin-right: 2px;
+}
+
+.inner-style-one .about-text {
+    gap: 6px;
+}
+
+.inner-style-one .about-text-content h4 {
+    font-size: 16px;
+}
+
+.inner-style-one .about-number h4 {
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    top: -5px;
+}
+
+/*Service Inner Pages*/
+.inner-style .service-content h4 {
+    font-size: 19px;
+}
+
+/*service-Details*/
+
+.widget-sidber {
+    padding: 32px 21px 29px;
+}
+
+.widget-sidber-contact-box {
+    padding: 48px 30px 48px;
+}
+
+.widget-sidber-contact-btn  a {
+    padding: 16px 30px 15px;
+    margin-top: 35px;
+}
+
+p.services-details-desc {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.service-details-icon-box {
+    display: block;
+}
+
+.service-details-icon-thumb {
+    margin-bottom: 20px;
+}
+/*Project*/
+.inner-style .project-content {
+    padding: 30px 16px 28px;
+    width: 95%;
+}
+
+
+/*===============Project Details Responsive Css============*/
+
+.project-details-list-item ul li {
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.project-details-list-item ul li i {
+    font-size: 16px;
+    margin-right: 7px;
+}
+
+/*Pricing*/
+.inner-style .pricing-head {
+    padding: 28px 21px 14px;
+}
+
+.inner-style .pricing-body {
+    padding: 27px 14px  34px;
+}
+
+.inner-style .pricing-textar-text p:before {
+    width: 230px;
+}
+
+.inner-style .pricing-textar-text p:after {
+    width: 230px;
+}
+
+/*Faqs*/
+.inner-style .faqs-thumb img {
+    width: 85%;
+}
+
+.inner-style .faqs-thumb {
+    margin: 0 -17px 0;
+}
+/*careers pages*/
+
+.inner-style .careers-content h4 {
+    font-size: 20px;
+}
+
+.inner-style .careers-desc p {
+    width: 88%;
+}
+
+.inner-style .job-item-content h4 {
+    font-size: 19px;
+}
+
+.inner-style .single-feature-box {
+    padding: 56px 31px 33px;
+}
+
+.inner-style .feature-content h4 {
+    font-size: 20px;
+}
+
+/*blog-grid*/
+.blog-grid-area .single-blog-box {
+    padding: 20px 5px 31px;
+}
+
+.blog-grid-area .blog-category a {
+    left: 5px;
+}
+
+.blog-grid-area .blog-button i {
+    top: 141px;
+    right: 15px;
+}
+
+.blog-grid-area .blog-title a {
+    font-size: 20px;
+    line-height: 26px;
+}
+@-webkit-keyframes MOVE-BG {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(205px);
+    transform: translateX(205px);
+  }
+}
+
+
+/*blog-details*/
+h4.blog-details-title {
+    font-size: 28px;
+}
+
+.blog-details-author-title p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.blog-details-category span a {
+    padding: 6px 7px;
+    margin-right: 1px;
+}
+
+.blog-details-comment.style-two {
+    margin-left: 17px;
+}
+
+.recent-widget-content a {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.google-map iframe {
+    height:500px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* Normal desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+/*Home 1 Resopnsive*/
+.top-header-area {
+    display: none;
+}
+
+.header-area {
+    display: none;
+}
+
+.sticky {
+    position: absolute !important;
+}
+
+.style-one.hero-area {
+    height: 800px;
+}
+
+.style-one .hero-content h4 {
+    font-size: 18px;
+    margin: 0 0 14px;
+}
+
+.style-one .hero-content h1 {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.style-one .hero-content p {
+    width: 78%;
+}
+
+.style-one.feature-area {
+    padding: 0px 0 0;
+}
+
+.style-one .flip-box {
+    margin-bottom: 158px;
+    width: 100%;
+}
+
+.style-one.about-area {
+    padding: 92px 0 115px;
+}
+
+.style-one .about-thumb {
+    left: 0;
+}
+
+.style-one .about-thumb img {
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+.style-one .about-shape {
+    display: none;
+}
+
+.style-one.section-title p {
+    width: 88%;
+}
+
+.style-one .about-icon-box-content p {
+    width: 81%;
+}
+
+.style-one.section-title h1 {
+    font-size: 40px;
+}
+
+.style-one .single-process-box {
+    padding: 0 60px 0;
+}
+
+.style-one .single-process-box:before {
+    background: transparent;
+}
+
+.style-one .single-contact-box {
+    margin-bottom: 26px;
+}
+
+.style-one .single-team-box {
+    margin-bottom: 27px;
+}
+
+.style-one .testi-desc p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 80%;
+}
+
+.style-one.testimonial-area .owl-dot {
+    margin: 0 8px;
+}
+
+.style-one .blog-content a {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.style-one .footer-widget-desc p {
+    width: 87%;
+}
+
+.footer-widget-content {
+    margin-bottom: 40px;
+}
+
+.style-one .footer-bottom-area {
+    margin-top: 55px;
+}
+
+.style-one .footer-bottom-content p {
+    font-size: 15px;
+}
+
+/*===============Home two Responsive Css============*/
+.style-two .hero-right {
+    position: relative;
+    display: none;
+}
+
+.style-two .hero-content p {
+    width: 80%;
+}
+
+.style-two.about-area {
+    padding: 786px 0 115px;
+    margin-top: -691px;
+}
+
+.style-two .about-left {
+    margin-bottom: 36px;
+}
+
+.style-two .about-shape {
+    right: 129px;
+    bottom: 28px;
+}
+
+.style-two.about-area  .section-title p {
+    margin: 19px 0 0;
+    width: 85%;
+}
+
+.style-two .about-icon-box-content h4 {
+    width: 90%;
+    line-height: 32px;
+}
+
+.style-two .single-services-box {
+    padding: 37px 40px 30px 40px;
+}
+
+.style-two .team-socila-icon-box {
+    left: 148px;
+    bottom: -26px;
+}
+
+.style-two.team-area .toptech-button {
+    text-align: left;
+    margin-top: -13px;
+    padding-bottom: 38px;
+}
+
+.style-two .team-shape {
+    bottom: -47px;
+    left: -2px;
+}
+
+.style-two .portfolio_menu ul li {
+    margin-right: 9px;
+    padding: 10px 21px;
+}
+
+.style-two.portfolio-area .container-fluid {
+    padding: 0 40px;
+}
+
+.style-two .single-portfolio-box {
+    margin-bottom: 92px;
+}
+
+.style-two .portfolio-content {
+    width: 100%;
+}
+
+.style-two .portfolio-title a {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.style-two .portfolio-title a i {
+    display: none;
+}
+
+.style-two.working-proces-area {
+    padding: 248px 0 85px;
+    margin-top: -256px;
+}
+
+.style-two .working-process-box {
+    padding: 0 10px 0;
+}
+
+.style-two .process-thumb:before {
+    left: 35px;
+    top: -13px;
+}
+
+.style-two .working-process-box:before {
+  display: none;
+}
+
+.style-two .working-process-box:after {
+   display: none;
+}
+
+.style-two.contact-info-area {
+    padding: 123px 0 94px;
+}
+
+.style-two .contact-info-box {
+    padding: 29px 19px 27px;
+    margin-bottom: 28px;
+    gap: 18px;
+}
+
+.style-two .contact-info-content p {
+    font-size: 23px;
+}
+
+.style-two.pricing-area {
+    background-position: center;
+}
+
+.style-two.pricing-area .faqs-container {
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.style-two .pricing-right {
+    padding-left: 0;
+    padding-right: 230px;
+}
+
+.style-two.brand-area {
+    padding: 76px 0 18px;
+}
+
+/*===============Home Three Responsive Css============*/
+.style-three .hero-right {
+    display: none;
+}
+
+.style-three.hero-area {
+    background-position: center left;
+}
+
+.style-three .single-feature-box {
+    padding: 37px 21px 18px;
+}
+
+.style-three .about-left {
+    left: 0;
+    margin-bottom: 35px;
+}
+
+.style-three .abour-award-box {
+    top: 19px;
+    right: 95px;
+}
+
+.style-three .about-video-box {
+    top: 40%;
+    left: 38%;
+}
+
+.style-three.about-area .style-two.section-title p {
+    width: 83%;
+}
+
+.style-three .about-phone {
+    width: 43%;
+    padding: 29px 23px;
+    right: 98px;
+}
+
+.style-three.contact-area-info .contact-thumb {
+    display: none;
+}
+
+.style-three.contact-area-info .contact-shape {
+    display: none;
+}
+
+.style-three.contact-area-info .contact-content p {
+    width: 72%;
+}
+
+.style-three .single-pricing-box {
+    margin-top: 50px;
+}
+
+.style-three.portfolio-area .container-fluid {
+    padding: 0 22px 0;
+}
+
+.style-three .portfolio-content {
+    padding: 30px 22px 30px;
+    width: 90%;
+}
+
+.style-three .portfolio-content a {
+    font-size: 20px;
+}
+
+.style-three .single-subscribe-box {
+    left: 0;
+    padding-top: 35px;
+}
+
+.style-three .single-process-box {
+    padding: 0 20px 30px;
+}
+
+.style-three.process-area .row.add-bg {
+    padding: 96px 0 50px;
+    margin-top: -237px;
+}
+
+.style-three .single-contact-box {
+    margin-right: 0;
+}
+
+.style-three .single-input-box textarea {
+    margin-top: 21px;
+}
+
+.style-three .massage-sent-button button {
+    margin-bottom: 39px;
+}
+
+
+/*===============Inner Pages All Responsive Css============*/
+.breadcumb-area {
+    padding: 150px 0 153px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.inner-style-one.images-area {
+    padding: 100px 0 141px;
+}
+
+.inner-style-one .images-thumb {
+    display: none;
+}
+
+.inner-style-one.about-area {
+    padding: 567px 0 121px;
+    margin-top: -477px;
+}
+
+.inner-style-one .about-left {
+    left: 0;
+    margin-bottom: 25px;
+}
+
+.inner-style-one .abour-right {
+    padding-left: 0;
+}
+
+.inner-style.section-title.left p.section-desc {
+    width: 72%;
+}
+
+.style-two.brand-area {
+    padding: 76px 0 64px;
+}
+
+/*about Two Responsive*/
+.inner-style-two .about-left {
+    left: 0;
+    margin-bottom: 45px;
+}
+
+.inner-style-two.about-area .inner-style.section-title.left p.section-desc {
+    width: 78%;
+}
+
+.inner-style-two .about-single-box {
+    width: 44%;
+}
+
+/*team Inner pages*/
+
+.style-one.inner.team-area .toptech-button.style-one {
+    text-align: left;
+    margin-top: -9px;
+    margin-bottom: 37px;
+}
+/*service-details*/
+p.services-details-desc {
+    font-size: 16px;
+    margin-top: 24px;
+    text-align: justify;
+}
+
+.widget-sidber {
+    margin-top: 38px;
+}
+/*project-details*/
+.project-details-right {
+    margin-bottom: 37px;
+}
+
+/*Pricing*/
+.inner-style .tab-button {
+    float: left;
+    margin-top: -23px;
+    margin-bottom: 26px;
+}
+
+.inner-style .pricing-head {
+    padding: 28px 26px 14px;
+}
+
+.inner-style .pricing-body {
+    padding: 27px 22px  34px;
+}
+
+.inner-style .single-pricing-box {
+    margin-bottom: 20px;
+}
+
+.inner-style .pricing-textar-text p:before {
+    background-image: none;
+}
+
+.inner-style .pricing-textar-text p:after {
+    background-image: none;
+}
+/*faqs*/
+.inner-style.faqs-area .section-title.left p {
+    margin: 25px 124px 0 0;
+}
+
+.inner-style .faqs-icon-box {
+    margin: 33px 0 42px;
+}
+
+/*careers Pages*/
+.inner-style .careers-desc p {
+    width: 75%;
+    float: left;
+    margin: 13px 0 0;
+}
+
+.inner-style.careers-area .row.add-border {
+    padding-top: 43px;
+    padding-bottom: 42px;
+}
+
+.inner-style .job-desc p {
+    margin: 13px 0 0;
+    width: 66%;
+}
+
+.inner-style .job-apply-button {
+    text-align: left;
+}
+
+.inner-style .job-desc p {
+    margin: 13px 0 28px;
+    width: 66%;
+}
+
+.inner-style .single-feature-box {
+    padding: 56px 24px 33px;
+}
+
+/*blog-grid*/
+.blog-grid-area .single-blog-box {
+    padding: 20px 5px 31px;
+}
+
+.blog-grid-area .blog-category a {
+    left: 5px;
+}
+
+.blog-grid-area .blog-button i {
+    top: 165px;
+    right: 15px;
+}
+
+.blog-grid-area .blog-content {
+    padding: 25px 15px 3px;
+}
+
+.blog-grid-area .blog-title a {
+    font-size: 20px;
+    line-height: 26px;
+}
+@-webkit-keyframes MOVE-BG {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+  }
+}
+
+/*Blog Details*/
+
+p.blog-details-desc {
+    font-size: 16px;
+}
+
+.blog-details-author-title p {
+    font-size: 19px;
+}
+
+.blog-details-category span a {
+    padding: 6px 12px;
+}
+
+.blog-details-comment.style-two {
+    margin-left: 56px;
+}
+
+.recent-widget-content a {
+    width: 70%;
+}
+
+.google-map iframe {
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/* Normal desktop :600px. */
+@media (min-width: 600px) and (max-width: 767px) {
+
+
+/*Home 1 Resopnsive*/
+.top-header-area {
+    display: none;
+}
+
+.header-area {
+    display: none;
+}
+
+.sticky {
+    position: absolute !important;
+}
+
+
+.style-one.hero-area {
+    height: 785px;
+}
+
+.style-one .hero-content h4 {
+    font-size: 18px;
+    margin: 0 0 14px;
+}
+
+.style-one .hero-content h1 {
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.style-one .hero-content p {
+    width: 81%;
+}
+
+.style-one.feature-area {
+    padding: 0px 0 0;
+}
+
+.style-one .flip-box {
+    margin-bottom: 158px;
+    width: 100%;
+}
+
+.style-one.about-area {
+    padding: 92px 0 115px;
+}
+
+.style-one .about-thumb {
+    left: 0;
+}
+
+.style-one .about-thumb img {
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+.style-one .about-shape {
+    display: none;
+}
+
+.style-one.section-title p {
+    width: 88%;
+}
+
+.style-one .about-icon-box-content p {
+    width: 81%;
+}
+
+.style-one.section-title h1 {
+    font-size: 30px;
+}
+
+.style-one .single-process-box {
+    padding: 0 113px 0;
+}
+
+.style-one .single-process-box:before {
+    background: transparent;
+}
+
+.style-one .single-process-box:after {
+    background: transparent;
+}
+
+.style-one .row.add-faqs-bg {
+    padding: 40px 10px 39px;
+}
+
+.style-one .single-contact-box {
+    margin-bottom: 26px;
+}
+
+.style-one .single-team-box {
+    margin-bottom: 27px;
+}
+
+.style-one .testi-desc p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 80%;
+}
+
+.style-one.testimonial-area .owl-dot {
+    margin: 0 8px;
+}
+
+.style-one .blog-content a {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.style-one .footer-widget-desc p {
+    width: 67%;
+}
+
+.footer-widget-content {
+    margin-bottom: 40px;
+}
+
+.style-one .footer-bottom-area {
+    margin-top: 55px;
+}
+
+.style-one .footer-bottom-content p {
+    font-size: 15px;
+}
+
+.style-one .inner-style.toptech-button a {
+    margin-bottom: 33px;
+}
+
+.style-one .footer-botton-social-icon {
+    text-align: left;
+    margin-top: 16px;
+}
+
+.style-one .footer-newslatter-box input {
+    width: 74%;
+}
+
+/*===============Home two Responsive Css============*/
+.style-two .hero-right {
+    position: relative;
+    display: none;
+}
+
+.style-two .hero-content h1 {
+    font-size: 50px;
+    line-height: 55px;
+}
+
+.style-two .hero-content p {
+    width: 80%;
+}
+
+.style-two.about-area {
+    padding: 1079px 0 115px;
+    margin-top: -976px;
+}
+
+.style-two .about-left {
+    margin-bottom: 36px;
+}
+
+.style-two .about-shape {
+    right: -16px;
+    bottom: 14px;
+}
+
+.style-two.section-title h1 {
+    font-size: 36px;
+    line-height: 38px;
+}
+
+.style-two.about-area  .section-title p {
+    margin: 19px 0 0;
+    width: 98%;
+}
+
+.style-two .about-icon-box-content h4 {
+    width: 70%;
+    line-height: 32px;
+}
+
+.style-two .about-thumb img {
+    width: 100%;
+}
+
+.style-two .about-conter-box {
+    top: -2px;
+    left: 5px;
+}
+
+.style-two .single-services-box {
+    padding: 37px 40px 30px 40px;
+}
+
+.style-two .team-socila-icon-box {
+    left: 227px;
+    bottom: -26px;
+}
+
+.style-two.team-area .toptech-button {
+    text-align: left;
+    margin-top: -13px;
+    padding-bottom: 38px;
+}
+
+.style-two .team-shape {
+    bottom: -47px;
+    left: 84px;
+}
+
+.style-two .portfolio_menu ul li {
+    margin-right: 9px;
+    padding: 10px 21px;
+}
+
+.style-two.portfolio-area .container-fluid {
+    padding: 0 40px;
+}
+
+.style-two .single-portfolio-box {
+    margin-bottom: 92px;
+}
+
+.style-two .portfolio-content {
+    width: 100%;
+}
+
+.style-two .portfolio-title a {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.style-two .portfolio-title a i {
+    display: none;
+}
+
+.style-two.working-proces-area {
+    padding: 248px 0 85px;
+    margin-top: -256px;
+}
+
+.style-two.working-proces-area .section-title h1 {
+    font-size: 34px;
+}
+
+.style-two .working-process-box {
+    padding: 0 99px 0;
+}
+
+.style-two .process-thumb:before {
+    left: 35px;
+    top: -13px;
+}
+
+.style-two .working-process-box:before {
+  display: none;
+}
+
+.style-two .working-process-box:after {
+   display: none;
+}
+
+.style-two.contact-info-area {
+    padding: 123px 0 94px;
+}
+
+.style-two .contact-info-box {
+    padding: 29px 19px 27px;
+    margin-bottom: 28px;
+    gap: 18px;
+}
+
+.style-two .contact-info-content p {
+    font-size: 23px;
+}
+
+.style-two.pricing-area {
+    background-position: center;
+}
+
+.style-two.pricing-area .faqs-container {
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.style-two .pricing-right {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.style-two.brand-area {
+    padding: 76px 0 61px;
+}
+/*===============Home Three Responsive Css============*/
+.style-three .hero-right {
+    display: none;
+}
+
+.style-three.hero-area {
+    background-position: center left;
+}
+
+.style-three .hero-content h1 {
+    font-size: 50px;
+    line-height: 55px;
+}
+
+.style-three .hero-content p {
+    width: 85%;
+}
+
+.style-three .single-feature-box {
+    padding: 37px 21px 18px;
+}
+
+.style-three .about-left {
+    left: 0;
+    margin-bottom: 35px;
+}
+
+.style-three .about-thumb  img {
+    width: 100%;
+}
+
+.style-three .abour-award-box {
+    top: 6px;
+    right: -3px;
+}
+
+.style-three .about-video-box {
+    top: 40%;
+    left: 38%;
+}
+
+.style-three.about-area .style-two.section-title p {
+    width: 83%;
+}
+
+.style-three .about-phone {
+    width: 57%;
+    padding: 29px 23px;
+    right: -40px;
+    transform: rotate(54deg);
+    bottom: 47px;
+}
+
+.style-three.contact-area-info .contact-thumb {
+    display: none;
+}
+
+.style-three.contact-area-info .contact-shape {
+    display: none;
+}
+
+.style-three.contact-area-info .contact-content p {
+    width: 72%;
+}
+
+.style-three .single-pricing-box {
+    margin-top: 50px;
+    padding: 41px 17px 42px;
+}
+
+.style-three.portfolio-area .container-fluid {
+    padding: 0 22px 0;
+}
+
+.style-three .portfolio-content {
+    padding: 30px 22px 30px;
+    width: 90%;
+}
+
+.style-three .portfolio-content a {
+    font-size: 20px;
+}
+
+.style-three .single-subscribe-box {
+    left: 0;
+    padding-top: 35px;
+}
+
+.style-three.subscribe-area .section-title.left h1 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.style-three .single-subscribe-box input {
+    width: 74%;
+}
+
+.style-three .single-process-box {
+    padding: 0 75px 30px;
+}
+
+.style-three.process-area .row.add-bg {
+    padding: 96px 0 50px;
+    margin-top: -237px;
+}
+
+.style-three .single-contact-box {
+    margin-right: 0;
+}
+
+.style-three .single-input-box textarea {
+    margin-top: 21px;
+}
+
+.style-three .massage-sent-button button {
+    margin-bottom: 39px;
+}
+
+.style-three .single-contact-info-box {
+    padding: 60px 39px 49px;
+}
+
+/*===============Inner Pages All Responsive Css============*/
+.breadcumb-area {
+    padding: 150px 0 153px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.inner-style-one.images-area {
+    padding: 100px 0 141px;
+}
+
+.inner-style-one .images-thumb {
+    display: none;
+}
+
+.inner-style-one.about-area {
+    padding: 567px 0 121px;
+    margin-top: -477px;
+}
+
+.inner-style-one .about-thumb img {
+    width: 100%;
+}
+
+.inner-style-one .about-left {
+    left: 0;
+    margin-bottom: 25px;
+}
+
+.inner-style-one .abour-right {
+    padding-left: 0;
+}
+
+.inner-style.section-title.left p.section-desc {
+    width: 96%;
+}
+
+.inner-style-one .abour-award-box {
+    padding: 25px 18px 22px;
+    width: 51%;
+    right: -30px;
+}
+
+.inner-style-one .about-shape {
+    bottom: 20px;
+    left: 67px;
+}
+
+/*about Two Responsive*/
+.inner-style-two .about-left {
+    left: 0;
+    margin-bottom: 45px;
+}
+
+.inner-style-two .about-thumb img {
+    width: 100%;
+}
+
+.inner-style-two.about-area .inner-style.section-title.left p.section-desc {
+    width: 78%;
+}
+
+.inner-style-two .about-single-box {
+    width: 44%;
+}
+
+/*team Inner Pages*/
+
+.style-one.inner.team-area .toptech-button.style-one {
+    text-align: left;
+    margin-top: -9px;
+    margin-bottom: 37px;
+}
+
+/*service*/
+.inner-style .single-service-box {
+    padding: 0px 81px 32px;
+}
+
+.inner-style.section-title.center h1 {
+    font-size: 38px;
+    line-height: 38px;
+}
+
+/*service-details*/
+h4.services-details-title {
+    font-size: 33px;
+}
+
+p.services-details-desc {
+    font-size: 16px;
+    margin-top: 24px;
+    text-align: justify;
+}
+
+.service-details-text-content p {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.widget-sidber {
+    margin-top: 38px;
+}
+
+/*project-details*/
+.project-details-content h4 {
+    font-size: 32px;
+}
+
+.project-details-right {
+    margin-bottom: 37px;
+}
+
+/*Pricing*/
+.inner-style .tab-button {
+    float: left;
+    margin-top: -23px;
+    margin-bottom: 26px;
+}
+
+.inner-style .pricing-head {
+    padding: 28px 26px 14px;
+}
+
+.inner-style .pricing-body {
+    padding: 27px 22px  34px;
+}
+
+.inner-style .single-pricing-box {
+    margin-bottom: 20px;
+}
+
+.inner-style .pricing-textar-text p:before {
+    background-image: none;
+}
+
+.inner-style .pricing-textar-text p:after {
+    background-image: none;
+}
+
+/*faqs*/
+.inner-style.faqs-area .section-title.left p {
+    margin: 25px 124px 0 0;
+}
+
+.inner-style .faqs-thumb {
+    margin: 0 2px 0;
+}
+
+.inner-style .faqs-icon-content p {
+    width: 100%;
+}
+
+.inner-style .faqs-icon-box {
+    margin: 33px 0 42px;
+}
+
+/*careers Pages*/
+.inner-style.careers-area .row.title {
+    margin-bottom: 44px;
+}
+
+.inner-style .careers-desc p {
+    width: 75%;
+    float: left;
+    margin: 13px 0 0;
+}
+
+.inner-style.careers-area .row.add-border {
+    padding-top: 43px;
+    padding-bottom: 42px;
+}
+
+.inner-style .job-desc p {
+    margin: 13px 0 28px;
+    width: 81%;
+}
+
+.inner-style .job-apply-button {
+    text-align: left;
+}
+
+.inner-style .job-desc p {
+    margin: 13px 0 28px;
+    width: 66%;
+}
+
+.inner-style .job-requirements-content p {
+    text-align: justify;
+}
+
+.inner-style .single-feature-box {
+    padding: 56px 94px 33px;
+}
+
+/*blog-grid*/
+.blog-grid-area .single-blog-box {
+    padding: 20px 5px 31px;
+}
+
+.blog-grid-area .blog-category a {
+    left: 5px;
+}
+
+.blog-grid-area .blog-button i {
+    top: 262px;
+    right: 15px;
+}
+
+.blog-grid-area .blog-content {
+    padding: 25px 47px 3px;
+}
+
+.blog-grid-area .blog-title a {
+    font-size: 20px;
+    line-height: 26px;
+}
+@-webkit-keyframes MOVE-BG {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(350px);
+    transform: translateX(350px);
+  }
+}
+
+/*Blog Details*/
+
+.blog-details-area .meta-blog span {
+    margin-right: 16px;
+}
+
+h4.blog-details-title {
+    font-size: 23px;
+}
+
+p.blog-details-desc {
+    font-size: 16px;
+}
+
+.blog-details-author-title p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.blog-details-thumb.two {
+    margin-bottom: 17px;
+}
+
+.blog-details-social-icon {
+    text-align: left;
+    padding-top: 21px;
+}
+
+.blog-details-category span a {
+    padding: 6px 12px;
+}
+
+.blog-details-comment {
+    padding: 29px 6px 25px;
+}
+
+.blog-details-comment-thumb {
+    margin-right: 3px;
+}
+
+.blog-details-comment-content h2 {
+    margin-right: 7px;
+}
+
+.blog-details-comment.style-two {
+    margin-left: 3px;
+}
+
+.recent-widget-content a {
+    width: 70%;
+}
+
+.google-map iframe {
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Normal desktop :480px. */
+@media (min-width: 480px) and (max-width: 599px) {
+
+/*Home 1 Resopnsive*/
+.top-header-area {
+    display: none;
+}
+
+.header-area {
+    display: none;
+}
+
+.sticky {
+    position: absolute !important;
+}
+
+.style-one.hero-area {
+    height: 800px;
+}
+
+.style-one .hero-content h4 {
+    font-size: 18px;
+    margin: 0 0 14px;
+}
+
+.style-one .hero-content h1 {
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.style-one .hero-content p {
+    width: 94%;
+}
+
+.style-one.feature-area {
+    padding: 0px 0 0;
+}
+
+.style-one .flip-box {
+    margin-bottom: 158px;
+}
+
+.style-one.about-area {
+    padding: 92px 0 115px;
+}
+
+.style-one .about-thumb {
+    left: 0;
+}
+
+.style-one .about-thumb img {
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+.style-one .about-shape {
+    display: none;
+}
+
+.style-one.section-title p {
+    width: 88%;
+}
+
+.style-one .about-icon-box-content p {
+    width: 81%;
+}
+
+.style-one.section-title h1 {
+    font-size: 26px;
+}
+
+.style-one .single-process-box {
+    padding: 0 113px 0;
+}
+
+.style-one .single-process-box:before {
+    background: transparent;
+}
+
+.style-one .single-process-box:after {
+    background: transparent;
+}
+
+.style-one .row.add-faqs-bg {
+    padding: 40px 10px 39px;
+}
+
+.faq-singular .faq-question {
+    padding: 16px 25px 15px 19px;
+    font-size: 16px;
+}
+
+.style-one .single-contact-box {
+    margin-bottom: 26px;
+}
+
+.style-one .single-team-box {
+    margin-bottom: 27px;
+}
+
+.style-one .testi-desc p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+}
+
+.style-one.testimonial-area .owl-nav {
+    display: none;
+}
+
+.style-one.testimonial-area .owl-dot {
+    margin: 0 8px;
+}
+
+.style-one .blog-content a {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.style-one .footer-widget-desc p {
+    width: 90%;
+}
+
+.footer-widget-content {
+    margin-bottom: 40px;
+}
+
+.style-one .footer-bottom-area {
+    margin-top: 55px;
+}
+
+.style-one .footer-bottom-content p {
+    font-size: 15px;
+}
+
+.style-one .inner-style.toptech-button a {
+    margin-bottom: 33px;
+}
+
+.style-one .footer-botton-social-icon {
+    text-align: left;
+    margin-top: 16px;
+}
+
+.style-one .footer-newslatter-box input {
+    width: 74%;
+}
+
+
+/*===============Home two Responsive Css============*/
+.style-two .hero-right {
+    position: relative;
+    display: none;
+}
+
+.style-two .hero-content h1 {
+    font-size: 44px;
+    line-height: 46px;
+}
+
+.style-two .hero-content p {
+    width: 96%;
+    margin: 24px 0 0;
+}
+
+.style-two.about-area {
+    padding: 1079px 0 115px;
+    margin-top: -976px;
+}
+
+.style-two .about-left {
+    margin-bottom: 36px;
+}
+
+.style-two .about-shape {
+    right: -16px;
+    bottom: 14px;
+}
+
+.style-two.section-title h1 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.style-two.about-area  .section-title p {
+    margin: 19px 0 0;
+    width: 91%;
+}
+
+.style-two .about-icon-box-content h4 {
+    width: 64%;
+    line-height: 32px;
+}
+
+.style-two .about-thumb img {
+    width: 100%;
+}
+
+.style-two .about-conter-box {
+    top: -11px;
+    left: -10px;
+}
+
+.style-two .single-services-box {
+    padding: 37px 40px 30px 40px;
+}
+
+.style-two .team-socila-icon-box {
+    left: 212px;
+    bottom: -26px;
+}
+
+.style-two.team-area .toptech-button {
+    text-align: left;
+    margin-top: -13px;
+    padding-bottom: 38px;
+}
+
+.style-two .team-shape {
+    bottom: -47px;
+    left: 84px;
+}
+
+.style-two .portfolio_menu ul li {
+    margin-right: 3px;
+    padding: 10px 10px;
+}
+
+.style-two.portfolio-area .container-fluid {
+    padding: 0 40px;
+}
+
+.style-two .single-portfolio-box {
+    margin-bottom: 92px;
+}
+
+.style-two .portfolio-content {
+    width: 100%;
+}
+
+.style-two .portfolio-title a {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.style-two .portfolio-title a i {
+    display: none;
+}
+
+.style-two.working-proces-area {
+    padding: 248px 0 85px;
+    margin-top: -256px;
+}
+
+.style-two.working-proces-area .section-title h1 {
+    font-size: 34px;
+}
+
+.style-two .working-process-box {
+    padding: 0 70px 0;
+}
+
+.style-two .process-thumb:before {
+    left: 35px;
+    top: -13px;
+}
+
+.style-two .working-process-box:before {
+  display: none;
+}
+
+.style-two .working-process-box:after {
+   display: none;
+}
+
+.style-two.contact-info-area {
+    padding: 123px 0 94px;
+}
+
+.style-two .contact-info-box {
+    padding: 29px 19px 27px;
+    margin-bottom: 28px;
+    gap: 18px;
+}
+
+.style-two .contact-info-content p {
+    font-size: 23px;
+}
+
+.style-two.pricing-area {
+    background-position: center;
+}
+
+.style-two .faq-singular .faq-question {
+    font-size: 20px;
+}
+
+.style-two.pricing-area .faqs-container {
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.style-two .pricing-right {
+    padding-left: 0;
+    padding-right: 0px;
+}
+
+.style-two.brand-area {
+    padding: 76px 0 70px;
+}
+
+/*===============Home Three Responsive Css============*/
+.style-three .hero-right {
+    display: none;
+}
+
+.style-three.hero-area {
+    background-position: center left;
+}
+
+.style-three .hero-content h1 {
+    font-size: 44px;
+    line-height: 46px;
+}
+
+.style-three .hero-content p {
+    width: 85%;
+}
+
+.style-three .single-feature-box {
+    padding: 37px 90px 18px;
+}
+
+.style-three .about-left {
+    left: 0;
+    margin-bottom: 35px;
+}
+
+.style-three .about-thumb  img {
+    width: 100%;
+}
+
+.style-three .abour-award-box {
+    top: 6px;
+    right: -3px;
+}
+
+.style-three .about-shape {
+    bottom: 13px;
+    left: 75px;
+}
+
+.style-three .about-video-box {
+    top: 40%;
+    left: 38%;
+}
+
+.style-three.about-area .style-two.section-title p {
+    width: 92%;
+}
+
+.style-three .about-phone {
+    display: none;
+}
+
+.style-three .about-shape-two {
+    bottom: 11px;
+    left: 57%;
+}
+
+.inner-style.section-title.left h1 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.style-three.choose-us-area .inner-style.section-title.left p.section-desc {
+    width: 99%;
+}
+
+.style-three.contact-area-info .contact-thumb {
+    display: none;
+}
+
+.style-three.contact-area-info .contact-shape {
+    display: none;
+}
+
+.style-three.contact-area-info .contact-content p {
+    width: 72%;
+}
+
+.style-three .single-pricing-box {
+    margin-top: 50px;
+    padding: 41px 17px 42px;
+}
+
+.style-three.portfolio-area .container-fluid {
+    padding: 0 22px 0;
+}
+
+.style-three .portfolio-content {
+    padding: 30px 22px 30px;
+    width: 90%;
+}
+
+.style-three .portfolio-content a {
+    font-size: 20px;
+}
+
+.style-three .single-subscribe-box {
+    left: 0;
+    padding-top: 35px;
+}
+
+.style-three.subscribe-area .section-title.left h1 {
+    color: #fff;
+    font-size: 28px;
+}
+
+.style-three .single-subscribe-box input {
+    width: 72%;
+}
+
+.style-three .single-process-box {
+    padding: 0 75px 30px;
+}
+
+.style-three.process-area .row.add-bg {
+    padding: 96px 0 50px;
+    margin-top: -237px;
+}
+
+.style-three .single-contact-box {
+    margin-right: 0;
+}
+
+.style-three .single-input-box textarea {
+    margin-top: 21px;
+}
+
+.style-three .massage-sent-button button {
+    margin-bottom: 39px;
+}
+
+.style-three .single-contact-info-box {
+    padding: 60px 39px 49px;
+}
+
+/*===============Inner Pages All Responsive Css============*/
+.breadcumb-area {
+    padding: 150px 0 153px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.inner-style-one.images-area {
+    padding: 100px 0 141px;
+}
+
+.inner-style-one .images-thumb {
+    display: none;
+}
+
+.inner-style-one.about-area {
+    padding: 567px 0 121px;
+    margin-top: -477px;
+}
+
+.inner-style-one .about-thumb img {
+    width: 100%;
+}
+
+.inner-style-one .about-left {
+    left: 0;
+    margin-bottom: 25px;
+}
+
+.inner-style-one .abour-right {
+    padding-left: 0;
+}
+
+.inner-style.section-title.left p.section-desc {
+    width: 96%;
+}
+
+.inner-style-one .abour-award-box {
+    padding: 25px 18px 22px;
+    width: 54%;
+    right: -20px;
+    top: 7px;
+}
+
+.inner-style-one .about-shape {
+    bottom: -8px;
+    left: 36px;
+}
+
+/*about Two Responsive*/
+.inner-style-two .about-left {
+    left: 0;
+    margin-bottom: 45px;
+}
+
+.inner-style-two .about-thumb img {
+    width: 100%;
+}
+
+.inner-style-two.about-area .inner-style.section-title.left p.section-desc {
+    width: 95%;
+}
+
+.inner-style-two .about-single-box {
+    width: 48%;
+}
+
+/*team Inner Pages*/
+
+.style-one.inner.team-area .toptech-button.style-one {
+    text-align: left;
+    margin-top: -9px;
+    margin-bottom: 37px;
+}
+
+/*service*/
+.inner-style .single-service-box {
+    padding: 0px 59px 32px;
+}
+
+.inner-style.section-title.center h1 {
+    font-size: 34px;
+    line-height: 30px;
+}
+
+/*service-details*/
+h4.services-details-title {
+    font-size: 30px;
+}
+
+p.services-details-desc {
+    font-size: 16px;
+    margin-top: 24px;
+    text-align: justify;
+}
+
+.service-details-text-content p {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.widget-sidber {
+    margin-top: 38px;
+}
+
+/*project-details*/
+.project-details-content h4 {
+    font-size: 28px;
+}
+
+.project-details-right {
+    margin-bottom: 37px;
+}
+
+.project-details-content h4 {
+    font-size: 32px;
+}
+
+.project-details-right {
+    margin-bottom: 37px;
+}
+
+/*Pricing*/
+.inner-style .tab-button {
+    float: left;
+    margin-top: -23px;
+    margin-bottom: 26px;
+}
+
+.inner-style .pricing-head {
+    padding: 28px 26px 14px;
+}
+
+.inner-style .pricing-body {
+    padding: 27px 22px  34px;
+}
+
+.inner-style .single-pricing-box {
+    margin-bottom: 20px;
+}
+
+.inner-style .pricing-textar-text p:before {
+    background-image: none;
+}
+
+.inner-style .pricing-textar-text p:after {
+    background-image: none;
+}
+
+/*faqs*/
+.inner-style.faqs-area .section-title.left p {
+    margin: 25px 44px 0 0;
+}
+
+.inner-style .faqs-thumb {
+    margin: 0 0 15px;
+}
+
+.inner-style .faqs-icon-content p {
+    width: 100%;
+}
+
+.inner-style .faqs-icon-box {
+    margin: 33px 0 42px;
+}
+
+.inner-style .faq-answer {
+    padding: 21px 21px 25px;
+}
+
+
+/*careers Pages*/
+.inner-style.careers-area .row.title {
+    margin-bottom: 44px;
+}
+
+.inner-style .careers-desc p {
+    width: 90%;
+    float: left;
+    margin: 13px 0 0;
+}
+
+.inner-style.careers-area .row.add-border {
+    padding-top: 43px;
+    padding-bottom: 42px;
+}
+
+.inner-style .job-desc p {
+    margin: 13px 0 28px;
+    width: 92%;
+}
+
+.inner-style .job-apply-button {
+    text-align: left;
+}
+
+.inner-style .job-desc p {
+    margin: 13px 0 28px;
+    width: 66%;
+}
+
+.inner-style .job-requirements-content p {
+    text-align: justify;
+}
+
+.inner-style .single-feature-box {
+    padding: 56px 72px 33px;
+}
+
+/*blog-grid*/
+.blog-grid-area .single-blog-box {
+    padding: 20px 5px 31px;
+}
+
+.blog-grid-area .blog-category a {
+    left: 5px;
+}
+
+.blog-grid-area .blog-button i {
+    top: 229px;
+    right: 15px;
+}
+
+.blog-grid-area .blog-content {
+    padding: 25px 23px 3px;
+}
+
+.blog-grid-area .blog-title a {
+    font-size: 20px;
+    line-height: 26px;
+}
+@-webkit-keyframes MOVE-BG {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(340px);
+    transform: translateX(340px);
+  }
+}
+
+/*Blog Details*/
+
+.blog-details-content {
+    padding: 27px 16px 20px;
+}
+
+.blog-details-area .meta-blog i {
+    padding-right: 4px;
+}
+
+.blog-details-area .meta-blog span {
+    margin-right: 9px;
+}
+
+h4.blog-details-title {
+    font-size: 22px;
+}
+
+p.blog-details-desc {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.blog-details-author-talk {
+
+    padding: 41px 18px 40px;
+}
+
+.blog-details-author-title p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.blog-details-thumb.two {
+    margin-bottom: 17px;
+}
+
+.blog-details-social-icon {
+    text-align: left;
+    padding-top: 21px;
+}
+
+.blog-details-category span a {
+    padding: 6px 12px;
+}
+
+.blog-details-comment {
+    padding: 29px 22px 25px;
+}
+
+.blog-details-comment-thumb {
+    float: inherit;
+    margin-bottom: 19px;
+}
+
+.blog-details-comment-content h2 {
+    margin-right: 7px;
+}
+
+.blog-details-comment.style-two {
+    margin-left: 3px;
+}
+
+.recent-widget-content a {
+    width: 70%;
+}
+
+.google-map iframe {
+    height: 350px;
+}
+
+
+
+
+
+}
+
+
+
+/* Mobile Devices :320px. */
+@media (min-width: 320px) and (max-width: 479px) {
+
+
+/*Home 1 Resopnsive*/
+.top-header-area {
+    display: none;
+}
+
+.header-area {
+    display: none;
+}
+
+.sticky {
+    position: absolute !important;
+}
+
+.style-one.hero-area {
+    height: 768px;
+}
+
+.style-one .hero-content h4 {
+    font-size: 18px;
+    margin: 0 0 14px;
+}
+
+.style-one .hero-content h1 {
+    font-size: 24px;
+    line-height: 25px;
+}
+
+.style-one .hero-content p {
+    width: 89%;
+    font-size: 16px;
+}
+
+.style-one .hero-button.style-one a {
+    margin-bottom: 23px;
+}
+
+.style-one.feature-area {
+    padding: 0px 0 0;
+}
+
+.style-one .flip-box {
+    margin-bottom: 173px;
+    width: 100%;
+}
+
+.style-one .flip-box-inner {
+    height: 183%;
+}
+
+.style-one.about-area {
+    padding: 92px 0 115px;
+}
+
+.style-one .about-thumb {
+    left: 0;
+}
+
+.style-one .about-thumb img {
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+.style-one .about-shape {
+    display: none;
+}
+
+.style-one.section-title p {
+    width: 100%;
+}
+
+.style-one .about-icon-box {
+    display: block;
+}
+
+.style-one .about-icon-thumb {
+    width: 85px;
+    margin-bottom: 25px;
+}
+
+.style-one .about-flex-box {
+    display: block;
+}
+
+.style-one .about-author {
+    margin-top: 21px;
+}
+
+.style-one .about-icon-box-content p {
+    width: 81%;
+}
+
+.style-one.section-title h1 {
+    font-size: 18px;
+}
+
+.style-one.service-area .flip-box-front {
+    display: block;
+}
+
+.style-one.service-area .flip-box-inner {
+    height: 355px;
+}
+
+.style-one.service-area .flip-box-back {
+    display: block;
+}
+
+.style-one .single-process-box {
+    padding: 0 37px 0;
+}
+
+.style-one .single-process-box:before {
+    background: transparent;
+}
+
+.style-one .single-process-box:after {
+    background: transparent;
+}
+
+.style-one .single-contact-box {
+    padding: 19px;
+    padding-top: 29px;
+    padding-bottom: 33px;
+    border-radius: 10px;
+}
+
+.col-lg-6.faqs-right {
+    padding-left: 14px;
+}
+
+.style-one .row.add-faqs-bg {
+    padding: 40px 10px 39px;
+}
+
+.faq-singular .faq-question {
+    padding: 16px 1px 15px 8px;
+    font-size: 14px;
+}
+
+.faq-question img {
+    padding-right: 7px;
+}
+
+.faq-answer {
+    padding: 21px 14px 25px;
+}
+
+.faq-singular .faq-question:before {
+    right: 7px;
+}
+
+.style-one .portfolio-title a {
+    font-size: 20px;
+}
+
+.style-one .single-contact-box {
+    margin-bottom: 26px;
+}
+
+.style-one .single-team-box {
+    margin-bottom: 27px;
+}
+
+.style-one .testi-desc p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+    margin-top: 118px;
+}
+
+.style-one.testimonial-area .owl-nav {
+    display: none;
+}
+
+.style-one.testimonial-area .owl-dot {
+    width: 50px;
+    height: 50px;
+    margin: 0 4px;
+}
+
+.style-one .blog-content a {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.style-one .footer-widget-desc p {
+    width: 100%;
+}
+
+.footer-widget-content {
+    margin-bottom: 40px;
+}
+
+.style-one .footer-bottom-area {
+    margin-top: 55px;
+}
+
+.style-one .footer-bottom-content p {
+    font-size: 15px;
+}
+
+.style-one .inner-style.toptech-button a {
+    margin-bottom: 33px;
+}
+
+.style-one .footer-botton-social-icon {
+    text-align: left;
+    margin-top: 16px;
+}
+
+.style-one .footer-newslatter-box input {
+    width: 74%;
+}
+
+/*===============Home two Responsive Css============*/
+.style-two.hero-area {
+    padding-bottom: 1px;
+}
+
+.style-two .hero-right {
+    position: relative;
+    display: none;
+}
+
+.style-two .hero-content h4 {
+    margin: 0 0 0px;
+    line-height: 32px;
+}
+
+.style-two .hero-content h1 {
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.style-two .hero-content p {
+    width: 100%;
+    margin: 24px 0 0;
+    font-size: 16px;
+}
+
+.style-two .hero-button a {
+    margin-bottom: 20px;
+    padding: 11px 32px 11px 37px;
+}
+
+.style-two .single-feature-box {
+    padding: 56px 26px 33px;
+}
+
+.style-two.about-area {
+    padding: 1079px 0 115px;
+    margin-top: -976px;
+}
+
+.style-two .about-left {
+    margin-bottom: 36px;
+}
+
+.style-two .about-shape {
+    right: -36px;
+    bottom: 14px;
+}
+
+.style-two.section-title h1 {
+    font-size: 19px;
+    line-height: 20px;
+}
+
+.style-two.about-area  .section-title p {
+    margin: 19px 0 0;
+    width: 100%;
+}
+
+.style-two .about-icon-box-content h4 {
+    width: 100%;
+    line-height: 32px;
+}
+
+.style-two .about-thumb img {
+    width: 100%;
+}
+
+.style-two .about-conter-box {
+    top: -11px;
+    left: -10px;
+    padding: 0px 20px;
+}
+
+.style-two .about-conter-box:before {
+    left: -19px;
+}
+
+.style-two .single-services-box {
+    padding: 37px 40px 30px 40px;
+}
+
+.style-two .team-socila-icon-box {
+    left: 133px;
+    bottom: -21px;
+}
+
+.style-two.team-area .toptech-button {
+    text-align: left;
+    margin-top: -13px;
+    padding-bottom: 38px;
+}
+
+.style-two .team-shape {
+    display: none;
+}
+
+.style-two .portfolio_menu ul li {
+    margin-right: 3px;
+    padding: 10px 22px;
+    margin-bottom: 8px;
+}
+
+.style-two.portfolio-area .container-fluid {
+    padding: 0 20px;
+}
+
+.style-two .single-portfolio-box {
+    margin-bottom: 92px;
+}
+
+.style-two .portfolio-content {
+    width: 100%;
+    padding: 20px 11px 17px;
+    bottom: -25px;
+}
+
+.style-two .portfolio-title a {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.style-two .portfolio-number h1 {
+    font-size: 44px;
+}
+
+.style-two .portfolio-title a i {
+    display: none;
+}
+
+.style-two.working-proces-area {
+    padding: 190px 0 85px;
+    margin-top: -256px;
+}
+
+.style-two.working-proces-area .section-title h1 {
+    font-size: 34px;
+}
+
+.style-two .working-process-box {
+    padding: 0 0 0;
+}
+
+.style-two .process-thumb:before {
+    left: 25px;
+    top: -13px;
+}
+
+.style-two .working-process-box:before {
+  display: none;
+}
+
+.style-two .working-process-box:after {
+   display: none;
+}
+
+.style-two.contact-info-area {
+    padding: 123px 0 94px;
+}
+
+.style-two .contact-info-box {
+    padding: 29px 19px 27px;
+    margin-bottom: 28px;
+    gap: 18px;
+}
+
+.style-two .contact-info-content p {
+    font-size: 20px;
+}
+
+.style-two.pricing-area {
+    background-position: center;
+}
+
+.style-two.pricing-area .faqs-container {
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.style-two .faq-singular.active .faq-question {
+    padding: 17px 8px 17px 10px;
+}
+
+.style-two .faq-singular .faq-question {
+    font-size: 16px;
+}
+
+.style-two .faq-answer {
+    padding: 27px 0 25px 0;
+}
+
+.style-two .pricing-right {
+    padding-left: 0;
+    padding-right: 0px;
+}
+
+.style-two .single-pricing-box {
+    padding: 1px 16px 40px;
+}
+
+.style-two .pricing-content {
+    display: block;
+}
+
+.style-two .pricing-icon i {
+    margin-bottom: 23px;
+}
+
+.style-one.home-two .blog-content a {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.style-two.brand-area {
+    padding: 76px 0 61px;
+}
+.style-two.section-title h4 {
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+/*===============Home Three Responsive Css============*/
+.style-three .hero-right {
+    display: none;
+}
+
+.style-three.hero-area {
+    background-position: center left;
+    height: 719px;
+}
+
+.style-three .hero-content h1 {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.style-three .hero-content p {
+    width: 100%;
+    font-size: 16px;
+}
+
+.style-three .hero-button a {
+    margin-bottom: 26px;
+}
+
+.style-three .single-feature-box {
+    padding: 37px 11px 18px;
+}
+
+.style-three .about-left {
+    left: 0;
+    margin-bottom: 35px;
+}
+
+.style-three .about-thumb  img {
+    width: 100%;
+}
+
+.style-three .abour-award-box {
+    top: -12px;
+    right: -20px;
+}
+
+.style-three .about-shape {
+    bottom: -4px;
+    left: 36px;
+}
+
+.style-three .about-video-box {
+    top: 40%;
+    left: 38%;
+}
+
+.style-three.about-area .style-two.section-title p {
+    width: 100%;
+    font-size: 15px;
+}
+
+.style-three .about-phone {
+    display: none;
+}
+
+.style-three .about-shape-two {
+    bottom: 11px;
+    left: 78%;
+}
+
+.style-three .single-service-box {
+    padding: 51px 28px 41px;
+}
+
+.style-three .service-content h4 {
+    font-size: 22px;
+    margin: 18px 0 0;
+}
+
+.inner-style.section-title.left h1 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.style-three.choose-us-area .inner-style.section-title.left p.section-desc {
+    width: 99%;
+}
+
+.style-three.contact-area-info .contact-thumb {
+    display: none;
+}
+
+.style-three.contact-area-info .contact-content h1 {
+    font-size: 26px;
+}
+
+.style-three.contact-area-info .contact-shape {
+    display: none;
+}
+
+.style-three.contact-area-info .contact-content p {
+    width: 100%;
+}
+
+.style-three .single-pricing-box {
+    margin-top: 50px;
+    padding: 41px 17px 42px;
+}
+
+.style-three.portfolio-area .container-fluid {
+    padding: 0 16px 0;
+}
+
+.style-three .single-portfolio-box {
+    margin: 0 2px 81px;
+}
+
+.style-three .portfolio-content {
+    padding: 30px 18px 30px;
+    width: 100%;
+}
+
+.style-three .portfolio-content a {
+    font-size: 20px;
+}
+
+.style-three .testi-content {
+    padding: 40px 18px 70px;
+}
+
+.style-three .testi-desc p {
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.style-three .single-subscribe-box {
+    left: 0;
+    padding-top: 35px;
+}
+
+.style-three.subscribe-area .section-title.left h1 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.style-three .single-subscribe-box input {
+    width: 100%;
+}
+
+.style-three .single-subscribe-box button {
+    right: 0;
+    top: 16px;
+}
+
+.style-three .single-process-box {
+    padding: 0 11px 30px;
+}
+
+.style-three.process-area .row.add-bg {
+    padding: 96px 0 50px;
+    margin-top: -237px;
+}
+
+.style-three .add-white-bg {
+    padding: 39px 6px 38px;
+}
+
+.style-three .contact-contetn h4 {
+    font-size: 25px;
+    margin: 0 0 28px;
+}
+
+.style-three .single-contact-box {
+    margin-right: 0;
+}
+
+.style-three .info-content h4 {
+    font-size: 20px;
+}
+
+.style-three .single-input-box textarea {
+    margin-top: 21px;
+}
+
+.style-three .massage-sent-button button {
+    margin-bottom: 39px;
+}
+
+.style-three .single-contact-info-box {
+    padding: 60px 18px 49px;
+}
+
+.style-three .contact-info-box {
+    display: block;
+    text-align: center;
+}
+
+.style-three .contact-info-icon i {
+    margin-bottom: 10px;
+}
+
+
+/*===============Inner Pages All Responsive Css============*/
+.breadcumb-area {
+    padding: 150px 0 153px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.breadcumb-content h4 {
+    font-size: 33px;
+    color: #fff;
+}
+
+.inner-style-one.images-area {
+    padding: 100px 0 141px;
+}
+
+.inner-style-one .images-thumb {
+    display: none;
+}
+
+.inner-style-one.about-area {
+    padding: 567px 0 121px;
+    margin-top: -477px;
+}
+
+.inner-style-one .about-thumb img {
+    width: 100%;
+}
+
+.inner-style-one .about-left {
+    left: 0;
+    margin-bottom: 25px;
+}
+
+.inner-style-one .abour-right {
+    padding-left: 0;
+}
+
+.inner-style.section-title.left p.section-desc {
+    width: 96%;
+}
+
+.inner-style-one .abour-award-box {
+    padding: 25px 18px 22px;
+    width: 87%;
+    right: -20px;
+    top: -21px;
+}
+
+.inner-style-one .about-conuter-box {
+    display: none;
+}
+
+.inner-style-one .about-shape {
+    bottom: -8px;
+    left: -4px;
+}
+
+
+/*about Two Responsive*/
+.inner-style-two .about-left {
+    left: 0;
+    margin-bottom: 45px;
+}
+
+.inner-style-two .about-thumb img {
+    width: 100%;
+}
+
+.inner-style-two.about-area .inner-style.section-title.left p.section-desc {
+    width: 95%;
+}
+
+.inner-style-two .about-single-box {
+    width: 80%;
+    margin-bottom: 29px;
+}
+
+.inner-style-two .about-video-box {
+    width: 195px;
+    height: 195px;
+    line-height: 191px;
+    bottom: -7px;
+    right: -11px;
+}
+
+/*team Inner Pages*/
+
+.style-one.inner.team-area .toptech-button.style-one {
+    text-align: left;
+    margin-top: -9px;
+    margin-bottom: 37px;
+}
+
+/*service*/
+.inner-style .single-service-box {
+    padding: 0px 59px 32px;
+}
+
+.inner-style.section-title.center h1 {
+    font-size: 23px;
+    line-height: 20px;
+}
+
+.inner-style.service-area .section-title.center {
+    margin-bottom: 72px;
+}
+
+/*service-details*/
+h4.services-details-title {
+    font-size: 19px;
+}
+
+p.services-details-desc {
+    font-size: 15px;
+    margin-top: 24px;
+}
+
+.services-details-text {
+    display: block;
+    padding: 32px 32px;
+}
+
+.service-details-text-content p {
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 17px;
+}
+
+.service-details-icon-box {
+    display: block;
+}
+
+.service-details-box-content h4 {
+    margin: 14px 0 11px;
+}
+
+.widget-sidber {
+    margin-top: 38px;
+    padding: 32px 13px 29px;
+}
+
+.widget-sidber-contact-box {
+    padding: 48px 16px 48px;
+}
+
+.widget-sidber-contact-btn  a {
+    padding: 16px 55px 15px;
+    margin-top: 40px;
+}
+
+/*project Inner*/
+.inner-style .project-content {
+    width: 100%;
+}
+
+.inner-style .project-content a {
+    font-size: 22px;
+}
+
+/*project-details*/
+.project-details-content h4 {
+    font-size: 18px;
+}
+
+.project-details-content h3 {
+    font-size: 22px;
+}
+
+.project-details-right {
+    margin-bottom: 37px;
+}
+
+a.project-details-text {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/*Pricing*/
+.inner-style .tab-button {
+    float: left;
+    margin-top: -23px;
+    margin-bottom: 26px;
+}
+
+.inner-style li.nav-item {
+    margin-bottom: 15px;
+}
+
+.inner-style .pricing-head {
+    padding: 28px 26px 14px;
+}
+
+.inner-style .pricing-body {
+    padding: 27px 10px  34px;
+}
+
+.inner-style .single-pricing-box {
+    margin-bottom: 20px;
+}
+
+.inner-style .pricing-textar-text {
+    display: none;
+}
+
+/*faqs*/
+.inner-style.faqs-area .section-title.left p {
+    margin: 25px 0 0 0;
+}
+
+.inner-style .faqs-thumb {
+    margin: 0 0 15px;
+}
+
+.inner-style .faqs-icon-thumb {
+    margin-bottom: 19px;
+}
+
+.inner-style .faqs-icon-content p {
+    width: 100%;
+}
+
+.inner-style .faqs-icon-box {
+    margin: 33px 0 42px;
+    display: block;
+}
+
+.inner-style .faq-answer {
+    padding: 21px 10px 25px;
+}
+
+.inner-style .faq-singular .faq-question {
+    padding: 16px 1px 15px 12px;
+    font-size: 15px;
+}
+
+.inner-style .faq-question img {
+    display: none;
+}
+
+/*careers Pages*/
+.inner-style.careers-area .row.title {
+    margin-bottom: 44px;
+}
+
+.inner-style .careers-desc p {
+    width: 100%;
+    float: left;
+    margin: 13px 0 0;
+}
+
+.inner-style.careers-area .row.add-border {
+    padding-top: 43px;
+    padding-bottom: 42px;
+}
+
+.inner-style .job-desc p {
+    margin: 13px 0 28px;
+    width: 92%;
+}
+
+.inner-style .job-apply-button {
+    text-align: left;
+}
+
+.inner-style .job-desc p {
+    margin: 13px 0 28px;
+    width: 100%;
+}
+
+.inner-style .job-requirements-content p {
+    text-align: justify;
+}
+
+.inner-style .single-feature-box {
+    padding: 56px 20px 33px;
+}
+
+.inner-style .feature-content h4 {
+    font-size: 20px;
+}
+
+
+/*blog-grid*/
+.blog-grid-area .single-blog-box {
+    padding: 20px 5px 31px;
+}
+
+.blog-grid-area .blog-category a {
+    left: 5px;
+}
+
+.blog-grid-area .blog-button i {
+    top: 130px;
+    right: 15px;
+}
+
+.blog-grid-area .blog-content {
+    padding: 25px 9px 3px;
+}
+
+.blog-grid-area .blog-title a {
+    font-size: 20px;
+    line-height: 26px;
+}
+@-webkit-keyframes MOVE-BG {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+}
+
+/*Blog Details*/
+
+.blog-details-content {
+    padding: 27px 16px 20px;
+}
+
+.blog-details-area .meta-blog i {
+    padding-right: 9px;
+}
+
+.blog-details-area .meta-blog span {
+    margin-right: 9px;
+}
+
+h4.blog-details-title {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+p.blog-details-desc {
+    font-size: 16px;
+}
+
+.blog-details-author-talk {
+    padding: 41px 18px 40px;
+    display: block;
+}
+
+.blog-details-quote {
+    padding-bottom: 22px;
+}
+
+.blog-details-author-title p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+h3.blog-details-title {
+    font-size: 20px;
+}
+
+.blog-details-list-item ul li i {
+    margin-right: 6px;
+}
+
+.blog-details-list-item ul li {
+    font-size: 16px;
+}
+
+.blog-details-thumb.two {
+    margin-bottom: 17px;
+}
+
+h3.blog-details-title.two {
+    font-size: 22px;
+}
+
+.blog-details-socila-box {
+    padding: 19px 17px 18px;
+}
+
+.blog-details-social-icon {
+    text-align: left;
+    padding-top: 21px;
+}
+
+.blog-details-category span a {
+    padding: 6px 19px;
+    margin-bottom: 7px;
+}
+
+.single-comment-area {
+    padding: 49px 7px 56px;
+}
+
+.blog-details-comment-content span {
+    display: inline-flex;
+}
+
+.blog-details-comment {
+    padding: 29px 22px 25px;
+}
+
+.blog-details-comment-thumb {
+    float: inherit;
+    margin-bottom: 19px;
+}
+
+.blog-details-comment-content h2 {
+    margin-right: 7px;
+}
+
+.blog-details-comment.style-two {
+    margin-left: 3px;
+}
+
+.recent-widget-content a {
+    width: 100%;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.google-map iframe {
+    height: 295px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*xl device min width*/
+@media screen and (min-width:992px) {
+    .pl-lg-50 {
+        padding-left: 50px;
+    }
+}
+
+/*xl device min width*/
+@media screen and (min-width:1200px) {
+    .video-icon {
+        left: 75%;
+    }
+}

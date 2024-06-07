@@ -1,13 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-import UseEffect from './UseEffect';
+import Headers from './Header';
+import Products from './Products';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>React</h1>
-      <UseEffect/>
+      
+      <Products/>
+    
+     
     </div>
+
+  
+
+  
+   
   );
 }
 

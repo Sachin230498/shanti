@@ -1,0 +1,65 @@
+
+
+/*---=====================================================
+   <!--Toptech All Animation Here-->
+=========================================================---*/
+
+
+/*bounce-left-right-animation*/
+
+@keyframes bounceleft{
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+    }
+
+    50% {
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+    }
+}
+
+/*bounce-top-bottom-animation*/
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+    }
+}
+
+
+@keyframes dance {
+  0% {
+    -webkit-transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
+@keyframes rotateme {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
