@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="h1"></h1>
+    <input id="query" type="text"  />
+    <button id="myBtn" onclick="fun1()">click</button>
+  </body>
+  <script>
+    let input = document.getElementById("query");
+     // Execute a function when the user presses a key on the keyboard
+input.addEventListener("input", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  console.log("event",event.target);
+//   if (event.key === "Enter") {
+//     // Cancel the default action, if needed
+//     event.preventDefault();
+//     // Trigger the button element with a click
+//     document.getElementById("myBtn").click();
+//   }
+});  
+
+
+function fun1(){
+    alert("Please enter")
+}
+
+
+
+
+
+
+
+    
+  
+  </script>
+</html>
