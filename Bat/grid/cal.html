@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cal{
+            width: 400px;
+            padding: 50px 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+           margin: auto;
+           margin-top: 100px;
+           border-radius: 10px;
+        }
+
+        #display{
+            border-radius: 10px;
+             width: 90%;
+             height: 70px;
+             margin: auto;
+             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; 
+                    }
+
+        #keypad{
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,80px);
+            gap: 10px;
+
+        }
+
+        #keypad>div{
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bolder;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+      
+        .bl{
+            color: white;
+            background-color: black;
+        }
+        #red{
+            color: white;
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="cal">
+        <div id="display"></div>
+        <div id="keypad">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div class="bl">+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div class="bl">-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="bl">*</div>
+            <div id="red">C</div>
+            <div>0</div>
+            <div class="bl">=</div>
+            <div class="bl">/</div>
+        </div>
+    </div>
+</body>
+</html>

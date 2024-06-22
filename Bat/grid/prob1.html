@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid{
+            width: 100%;
+           
+            border: 5px solid gray;
+            display: grid;
+            grid-template-columns: 100px 200px 50px 100px;
+            grid-template-rows: 100px 200px 200px;   
+            gap: 20px;
+            /* row-gap: 10px; */
+        }
+
+    #grid>div{
+        /* width: 20%; */
+        /* height: 100%; */
+        border: 5px solid black;
+    }
+
+    #grid>div:nth-child(1){
+        background-color: aqua;
+    }
+    #grid>div:nth-child(2){
+        background-color: rgb(0, 255, 42);
+    }
+    #grid>div:nth-child(3){
+        background-color: rgb(255, 98, 0);
+    }
+    #grid>div:nth-child(4){
+        background-color: rgb(76, 17, 226);
+    }
+    #grid>div:nth-child(5){
+        background-color: rgb(255, 0, 162);
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="grid">
+         <div>box-1</div>
+         <div>box-2</div>
+         <div>box-3</div>
+         <div>box-4</div>
+         <div>box-5</div>
+    
+    </div>
+</body>
+</html>
