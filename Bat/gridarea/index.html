@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid{
+            width: 500px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,100px);
+            gap: 10px;
+            grid-template-areas: 
+            "A A B"
+            "C C B"
+            "D E E";
+        }
+        #grid>div{
+            border: 2px solid red;
+        }
+
+        #grid>div:nth-child(1){
+            background-color: red;
+            grid-area: A;
+        }
+        #grid>div:nth-child(2){
+            background-color: green;
+            grid-area: B;
+        }
+        #grid>div:nth-child(3){
+            background-color: blue;
+            grid-area: C;
+        }
+        #grid>div:nth-child(4){
+            background-color: yellow;
+            grid-area: D;
+        }
+        #grid>div:nth-child(5){
+            background-color: pink;
+            grid-area: E;
+        }
+        #grid>div:nth-child(6){
+            background-color: orange;
+            grid-area: F;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div>box-1</div>
+        <div>box-2</div>
+        <div>box-3</div>
+        <div>box-4</div>
+        <div>box-5</div>
+  
+    </div>
+</body>
+</html>
