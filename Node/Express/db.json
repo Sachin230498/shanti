@@ -1,8 +1,1 @@
-{
-  "students": [{ "id": "1", "name": "Venu1", "city": "Karnatak1" }],
-  "teachers": [
-    { "name": "Vipin", "city": "Bhopal" },
-    { "name": "Rajul", "city": "CWA" },
-    { "name": "Venu", "city": "Karnatak" }
-  ]
-}
+{"students":[{"id":"1","name":"Venu1","city":"Karnatak1"},{"id":"2","name":"Sej","city":"Guna","age":"20"}],"teachers":[{"name":"Vipin","city":"Bhopal"}]}

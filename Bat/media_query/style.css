@@ -1,0 +1,44 @@
+#grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+#grid>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#grid>div>img{
+    width: 100%;
+}
+
+
+/* media */
+
+/* Laptop */
+@media all and (min-width:768px) and (max-width:1024px){
+    #grid{
+        grid-template-columns: repeat(3,1fr);  
+    }
+}
+
+/* Tablet */
+@media all and (min-width:481px) and (max-width:767px){
+    #grid{
+        grid-template-columns: repeat(2,1fr);  
+    }
+    h1{
+        background-color: aqua;
+    }
+}
+
+/* mobile */
+@media all and (min-width:320px) and (max-width:480px){
+    #grid{
+        grid-template-columns: repeat(1,1fr);  
+    }
+    h1{
+        text-align: center;
+    }
+
+}

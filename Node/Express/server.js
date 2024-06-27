@@ -1,12 +1,15 @@
 //import the imp module
 const express = require('express');
 const fs = require('fs');
+const cors = require('cors');
+
 
 
 //initialize the express application
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 
 //define the routes
@@ -20,15 +23,20 @@ app.get("/welcome", (req, res) => {
   // res.write("Welcome to the Express server!");
   // res.end()
 
-  res.send("<h1>Welcome to the server </h1>");
+  res.status(200).send("<h1>Welcome to the server </h1>");
 });
 
 
 app.post("/post", (req, res) => {
-
-    console.log(req.body);
-  res.send({"message": "Post method", "req": req.body})
- })
+  try {
+    let data = req.body;
+    console.log(req.body,"sds");
+  res.status(201).send({message:"Data Received", data});
+  } catch (error) {
+    res.status(500).send({message: "Error occurred", error});
+  }
+ 
+})
 
 
 app.get("/data", (req, res) => {
@@ -47,11 +55,11 @@ app.get("/teachers", (req, res) => {
   const data = fs.readFileSync("./db.json", "utf-8");
   const Parse_data = JSON.parse(data);
   console.log(Parse_data.teachers);
-  res.send(Parse_data.teachers);
+  res.send(Parse_data.teachers)
 });
 
 
-app.post("/addStudent", (req, res) => { 
+app.post("/addStudent/", (req, res) => { 
     //step 1
     const data = fs.readFileSync("./db.json", "utf-8"); 
     //parse the data
@@ -89,6 +97,8 @@ app.put("/updateStudent/:id", (req, res) => {
     const Parse_data = JSON.parse(data);
      
   const updateStudent = Parse_data.students.findIndex(students => students.id === req.params.id);
+
+  
   if (updateStudent === -1) {
     res.status(404).send("Student not found");
     return;
@@ -144,3 +154,4 @@ const PORT = 8081;
 app.listen(PORT, () => {
     console.log(`server starting on http://localhost:${PORT}`);
 });
+
