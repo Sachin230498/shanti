@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+   <script>
+
+     let container = document.getElementById('container');
+      
+     let name_arr = ["Akshay","Chetan", "Priyanshu","Tanishak","Pawan", "Sagar","Chhestha"]
+    
+     let color = [ "red", "green", "purple", "yellow", "orange", "silver", "skyblue", "pink"]
+    
+      
+     
+    for (let index = 0; index < name_arr.length; index++) {
+    //    console.log(index)
+         
+             let h1 = document.createElement('h1');
+             h1.innerText = "hello"+ " " +name_arr[index];
+             h1.style.color = color[index];
+          container.append(h1)
+    }
+    
+
+   </script>
+</html>
