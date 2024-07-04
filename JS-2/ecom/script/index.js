@@ -349,20 +349,5 @@ function cartfun(data) {
 }
 
 
-// let arr = [1,23,456,5]
-
-//  let a = arr.map(function(ab,index){
-// //    console.log(el,index)
-// return ab*2
-// })
-
-// console.log(a)
 
 
-
-// let b = arr.forEach(function (ab, index) {
-//   //    console.log(el,index)
-//   return ab * 2;
-// });
-
-// console.log(b)
