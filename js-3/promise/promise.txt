@@ -1,0 +1,8 @@
+Pending
+Fullfilled
+Reject
+
+Promise will take time
+
+how to mimic the time => settimeout
+

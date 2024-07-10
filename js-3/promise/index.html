@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Promise</h1>
+    <input type="number" name="" id="num1">
+    <!-- <input type="number" name="" id="num2"> -->
+    <img id="img"
+      src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
+      alt=""
+    />
+    <!-- <img src="https://gifsec.com/wp-content/uploads/2022/09/yes-gif-1.gif" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSriCoXMcxLx7muBMyZ_u5pJWJoHnNbrKS329KICmt5ac2jC7IgFlMWesNTmGh4PrBwoGs&usqp=CAU" alt=""> -->
+  </body>
+  <!-- <script src="./index.js"></script> -->
+  <script>
+  let img = document.getElementById("img");
+  let num1 = document.getElementById("num1");
+ let num2 = 55
+//   let data = false;
+
+    function pro() {
+      let promise = new Promise(function (resolve, reject) {
+    //   data = true
+        if (num1.value == num2) {
+          resolve("Promise resolved");
+        } else {
+          reject("Promise rejected");
+        }
+      });
+
+      promise.then(function (res) {
+        img.src = "https://gifsec.com/wp-content/uploads/2022/09/yes-gif-1.gif"
+        console.log("resolved", res);
+      }).catch(function (err) {
+        img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSriCoXMcxLx7muBMyZ_u5pJWJoHnNbrKS329KICmt5ac2jC7IgFlMWesNTmGh4PrBwoGs&usqp=CAU"
+        console.log("error", err);
+      });
+    }
+    setTimeout(pro, 3000);
+
+  </script>
+</html>
