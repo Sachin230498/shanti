@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        #main div{
+            padding: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        img{
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>fetch</h1>
+
+    <input type="text" placeholder="Serach Product" id="search">
+
+
+    <select name="" id="filter">
+        <option value="">SELECT</option>
+        <option value="LTH">LOW TO HIGH</option>
+        <option value="HTL"> HIGH TO LOW</option>
+    </select>
+
+    <div id="main">
+       
+    </div>
+</body>
+
+<script src="./index.js"></script>
+</html>

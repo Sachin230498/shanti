@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./index.html">Home</a>
+    <input id="img" type="text" placeholder="Enter URL">
+    <button onclick="sub()">Submit</button>
+</body>
+<script>
+
+let img = document.getElementById("img");
+let arr = [];
+    function sub(){
+        // console.log("hello")
+        let url = img.value;
+        arr.push(url);
+        localStorage.setItem("url", JSON.stringify(arr));
+        // console.log(url)
+    }
+</script>
+</html>

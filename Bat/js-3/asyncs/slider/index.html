@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="./store.html">Store</a>
+
+    <div id="slider"></div>
+
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+  </body>
+
+  <script>
+    let url_arr = JSON.parse(localStorage.getItem("url"));
+    console.log(url_arr);
+
+    let slider = document.getElementById("slider");
+
+
+    let id ;
+
+function start() {
+   let index = 0;
+    function count() {
+        if(index == url_arr.length){
+            index = 0;  // Reset index when it reaches the end of the array
+        }
+     slider.innerHTML = "";
+      let img = document.createElement("img");
+      img.src = url_arr[index];
+      index++;
+      slider.appendChild(img);
+    }
+
+      id = setInterval(count, 1000); // Change image every 3 seconds
+}
+
+
+function stop() {
+   clearInterval(id)
+}
+    
+  </script>
+</html>
