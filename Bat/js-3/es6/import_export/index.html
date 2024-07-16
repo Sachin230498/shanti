@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nav.css">
+</head>
+<body>
+   <div id="navbar">
+
+   </div>
+
+   <div id="main">
+
+   </div>
+</body>
+
+<script type="module" >
+
+      import nav from "./navbar.js";
+    import {getData,display} from "./fetch_data.js";
+
+    let a = await getData();
+    // console.log(a)
+
+display(a);
+    
+    let navbar = document.getElementById("navbar");
+    navbar.innerHTML = nav;
+
+    
+
+
+</script>
+</html>

@@ -1,0 +1,13 @@
+  #nav{
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: space-around;
+        }
+        #nav a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+        #nav a:hover{
+            background-color: #ddd;
+        }
