@@ -31,6 +31,7 @@ function login_form(e) {
         if(el.email == login_obj.email){
             if(el.pass == login_obj.password){
                 flag = true;
+                localStorage.setItem("loginData", JSON.stringify(el))
                 return;
             }else{
                 alert('Invalid Password!')
