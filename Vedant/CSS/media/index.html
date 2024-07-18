@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        
+
+
+        /* @media Screen Type(All) and min-width() and max-width(){   } 
+           mobile Screen (small screen) 320px to 480px  
+           tablet Screen (medium screen) 481px to 768px
+           medium screen (tablet) 768px to 1024px
+           large screen (desktop) 1025px to above
+        */
+          
+        /* Large screen */
+        @media all and (min-width:1024px) and (max-width:1300px){
+            body{
+               background-color: red;
+            }
+
+            h1{
+                color: yellow;
+                text-align: center;
+            }
+
+        }
+
+          /*1st Medium screen */
+        @media all and (min-width:481px) and (max-width:768px){
+            body{
+               background-color: rgb(225, 255, 0);
+            }
+
+            h1{
+                font-size: 50px;
+                color: rgb(255, 25, 0);
+                text-align: center;
+            }
+
+        }
+
+          /*2st Medium screen */
+        @media all and (min-width:769px) and (max-width:1023px){
+            body{
+               background-color: blue;
+            }
+
+            h1{
+                color: purple;
+                text-align: center;
+                font-style: italic;
+            }
+
+        }
+
+          /* small screen */
+        @media all and (min-width:320px) and (max-width:480px){
+            body{
+               background-color: rgb(255, 0, 174);
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+
+            h1{
+               
+                color: yellow;
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+
+</body>
+</html>

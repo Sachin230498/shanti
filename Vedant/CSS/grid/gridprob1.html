@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area{
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas: 
+            "A A B B"
+            "C D D D"
+            "E E E E";
+        }
+
+        #area>div{
+            border-radius: 15px;
+            font-size: 30px;
+            font-weight: bold;
+            display: grid;
+            color: white;
+            justify-content: center;
+            align-items: center;
+           background-color: rgb(82, 74, 74);
+        }
+
+        #area>div:nth-child(1){
+            grid-area: A;
+        }
+        #area>div:nth-child(2){
+            grid-area: B;
+        }
+        #area>div:nth-child(3){
+            grid-area: C;
+        }
+        #area>div:nth-child(4){
+            grid-area: D;
+        }
+        #area>div:nth-child(5){
+            grid-area: E;
+        }
+        #area>div:nth-child(6){
+            grid-area: F;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="area">
+        <div>box-1</div>
+        <div>box-2</div>
+        <div>box-3</div>
+        <div>box-4</div>
+        <div>box-5</div>
+   
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Banner Section CSS */
+      #banner {
+        width: 95%;
+        display: flex;
+        background-color: rgb(45, 185, 240);
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        margin: auto;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+
+      .tag{
+        color: white;
+      }
+
+      #banner button {
+        padding: 5 10px;
+        border-radius: 10px;
+        border: 0;
+      }
+
+      #banner img {
+        width: 400px;
+      }
+
+    
+
+      /* Banner section CSS End */
+
+
+      /* Service section CSS */
+      #services {
+        
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 15px;
+        margin-bottom: 50px;
+       
+      }
+
+      .doc{
+        
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+       .img{
+       
+          background-color: aqua;
+          text-align: center;
+       }
+
+       .img img{
+        width: 220px;
+       }
+
+       .text{
+        margin-left: 25px;
+        padding-bottom: 15px;
+       }
+
+       .text p {
+        color: gray;
+       }
+      /* Service section css end */
+
+
+
+      /* Work section css */
+      .head{
+        text-align: center;
+      }
+
+      #work{
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 25px;
+
+      }
+
+      #work div{
+       
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      #work h1,h3{
+        padding: 0 15px;
+      }
+
+      #work img{
+       width: 100%;
+      }
+
+
+    
+      @media all and (min-width: 480px) and (max-width: 768px) {
+         /* Banner Section media query for medium screen */
+        #banner {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        #banner img {
+          margin-top: 10px;
+          width: 300px;
+        }
+
+       /* Banner Section media query for medium screen */
+         #services {
+        grid-template-columns: repeat(3,1fr);   
+      }
+        .img img{
+        width: 180px;
+       }
+
+       /* Work Section media  medium screen */
+          #work{
+      
+        grid-template-columns: repeat(2,1fr);
+        
+
+      }
+      }
+
+
+
+      @media all and (min-width: 320px) and (max-width: 479px) {
+        /* Banner Section media query for small screen */
+        #banner {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        #banner img {
+          margin-top: 10px;
+          width: 300px;
+        }
+
+         /* service Section media query for small screen */
+         #services {
+           
+            justify-content: center;
+            align-items: center;
+        grid-template-columns: repeat(2,1fr);
+      }
+        .img img{
+        width: 100px;
+       }
+
+       /* Work section media query for small screen */
+          #work{
+      
+        grid-template-columns: repeat(1,1fr);
+        
+
+      }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Banner Section -->
+    <div id="banner">
+      <div id="heading">
+        <h1 class="tag">You are in safe hands</h1>
+        <p class="tag">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <button>Konw more</button>
+      </div>
+
+      <img
+        src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png"
+        alt=""
+      />
+    </div>
+
+    <!-- Service Section -->
+
+    <div id="services">
+
+
+      <div class="doc">
+        <div class="img">
+               <img  src=" https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="doctor"/>
+        </div>
+
+        <div class="text">
+             <h1>
+          Instant video <br />
+          consultant
+           </h1>
+          <p>Connect within 60 second</p>
+        </div>
+      
+          
+      </div>
+
+
+      <div class="doc">
+        <div class="img">
+               <img  src=" https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="doctor"/>
+        </div>
+
+        <div class="text">
+             <h1>
+          Instant video <br />
+          consultant
+           </h1>
+          <p>Connect within 60 second</p>
+        </div>
+      
+          
+      </div>
+
+      
+      <div class="doc">
+        <div class="img">
+               <img  src=" https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="doctor"/>
+        </div>
+
+        <div class="text">
+             <h1>
+          Instant video <br />
+          consultant
+           </h1>
+          <p>Connect within 60 second</p>
+        </div>
+      
+          
+      </div>
+
+      
+      <div class="doc">
+        <div class="img">
+               <img  src=" https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="doctor"/>
+        </div>
+
+        <div class="text">
+             <h1>
+          Instant video <br />
+          consultant
+           </h1>
+          <p>Connect within 60 second</p>
+        </div>
+      
+          
+      </div>
+
+      
+      <div class="doc">
+        <div class="img">
+               <img  src=" https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="doctor"/>
+        </div>
+
+        <div class="text">
+             <h1>
+          Instant video <br />
+          consultant
+           </h1>
+          <p>Connect within 60 second</p>
+        </div>
+      
+          
+      </div>
+
+      
+      <div class="doc">
+        <div class="img">
+               <img  src=" https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="doctor"/>
+        </div>
+
+        <div class="text">
+             <h1>
+          Instant video <br />
+          consultant
+           </h1>
+          <p>Connect within 60 second</p>
+        </div>
+      
+          
+      </div>
+    
+    </div>
+
+  <h1 class="head">Book an appointment for checkup</h1>
+  <h3 class="head" >Welcome you all</h3>
+
+    <!-- Work Section -->
+     <div id="work">
+          <div>
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h1>Dentiest</h1>
+            <h3>Teenting trouble</h3>
+          </div>
+          <div>
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h1>Dentiest</h1>
+            <h3>Teenting trouble</h3>
+          </div>
+          <div>
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h1>Dentiest</h1>
+            <h3>Teenting trouble</h3>
+          </div>
+          <div>
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h1>Dentiest</h1>
+            <h3>Teenting trouble</h3>
+          </div>
+          <div>
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h1>Dentiest</h1>
+            <h3>Teenting trouble</h3>
+          </div>
+          <div>
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h1>Dentiest</h1>
+            <h3>Teenting trouble</h3>
+          </div>
+          <div>
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h1>Dentiest</h1>
+            <h3>Teenting trouble</h3>
+          </div>
+          <div>
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h1>Dentiest</h1>
+            <h3>Teenting trouble</h3>
+          </div>
+
+     </div>
+  </body>
+</html>

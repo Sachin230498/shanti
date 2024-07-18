@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #flex{
+            width: 100%;
+            height: 300px;
+            border: 5px solid ;
+            display: flex;
+            font-size: 30px;
+            font-weight: bold;
+            justify-content: space-evenly;
+        }
+
+        #flex>div{
+           width: 300px;
+           height: 100%;
+           border: 2px solid red;
+        }
+
+       
+        #flex>div:nth-child(1){
+             /* flex-shrink: 5; */
+             flex-basis: 400px;
+        }
+
+        #flex>div:nth-child(2){
+           /* flex-shrink: 3; */
+        }
+        #flex>div:nth-child(3){
+            flex-basis: 500px;
+           
+
+        }
+        #flex>div:nth-child(4){
+         flex-shrink: 10;
+         flex-basis: 350px;
+        }
+
+
+        
+    </style>
+  </head>
+  <body>
+    <div id="flex">
+      <div>box-1</div>
+      <div>box-2</div>
+      <div>box-3</div>
+      <div>box-4</div> 
+    </div>
+  </body>
+</html>
