@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://cdn.pixabay.com/photo/2023/05/02/14/15/british-shorthair-7965411_640.jpg" alt="">
+   <br> <button onclick="likefun()">Like👍</button>
+    <h1></h1>
+
+</body>
+<script>
+  let img = document.querySelector('img');  
+
+  let h1 = document.querySelector('h1'); 
+  
+  let val = localStorage.getItem('val') || 0 ; 
+//   if(localStorage.getItem('val')==null){
+//     val = 0;
+//   }else{
+//     val = localStorage.getItem('val');
+//   }
+
+  h1.innerText = val;
+  function likefun(){
+    // alert('Like')
+     val++;
+     localStorage.setItem('val', val);
+     h1.innerText = val;
+  }
+
+
+//   let a = localStorage.getItem('adsfsdf');
+//   console.log(a)
+
+</script>
+</html>

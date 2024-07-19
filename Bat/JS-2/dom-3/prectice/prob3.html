@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #main{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .innerdiv{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="main"></div>
+  </body>
+  <script>
+   let main = document.getElementById("main");
+
+    let data = [
+      { name: 1, email: "Artemas", mobile: "Saleway" },
+      { name: 2, email: "Chrisy", mobile: "Aksell" },
+      { name: 3, email: "Galvin", mobile: "Ebunoluwa" },
+      { name: 4, email: "Hunt", mobile: "Parkyn" },
+      { name: 5, email: "Rikki", mobile: "Lettson" },
+      { name: 6, email: "Sharai", mobile: "Dimberline" },
+      { name: 7, email: "Karoly", mobile: "Brounfield" },
+      { name: 8, email: "Harlen", mobile: "Guyet" },
+      { name: 9, email: "Kesley", mobile: "Corzon" },
+      { name: 10, email: "Delinda", mobile: "Reddecliffe" },
+    ];
+
+    for(let i = 0; i <data.length; i++){
+        let div = document.createElement("div");
+        div.setAttribute("class", "innerdiv");
+
+        let name = document.createElement("h1");
+        name.innerText = data[i].name;
+        let email = document.createElement("h3");
+        email.innerText = data[i].email;
+        let mob = document.createElement("p");
+        mob.innerText = data[i].mobile;
+
+        // img.src = 
+         
+        div.append(name,email,mob)
+        main.append(div)
+    }
+
+
+  </script>
+</html>

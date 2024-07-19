@@ -85,10 +85,10 @@ getData();
 
 
 
-function display(abc){
+const display = (abc) =>{
   main.innerHTML = ""
     //  console.log("aasdad", abc)
-      abc.map(function(el,index){
+      abc.map((el,index)=>{
               // console.log(el)
          let div = document.createElement("div");
 
@@ -114,9 +114,7 @@ function display(abc){
 
 fil.addEventListener("change",Pricefil )
 
-function Pricefil(){
-  // console.log("fsf")
-  // console.log(actual_data)
+const Pricefil =()=>{
 
   if(fil.value==="LTH"){
    actual_data.sort(function(a,b){

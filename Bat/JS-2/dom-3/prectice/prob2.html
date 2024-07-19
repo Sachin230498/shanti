@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+
+    </div>
+  </body>
+  <script>
+   let main = document.getElementById("main");
+
+    let arr_obj = [{ name: "akshay", color: "red" },
+                { name: "punnet", color: "yellow" },
+                { name: "sagar", color: "pink" },
+                { name: "ankit", color: "purple" },
+                { name: "pawan", color: "orange" },
+                { name: "chetan", color: "blue" },
+                { name: "shreya", color: "green" },
+               ];
+
+    for(let i = 0; i < arr_obj.length; i++){
+        let h1 = document.createElement("h1");
+        h1.innerText = arr_obj[i].name;
+
+        h1.style.color = arr_obj[i].color;
+
+        main.append(h1)
+    }  
+    
+  </script>
+</html>
