@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 90%;
+            margin: auto;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        #inner{
+            border: 2px solid black;
+            background-color: aqua;
+        }
+
+        #inner img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+</body>
+<script>
+    // let name = ["aman", "naman", "raja", "tejas", "vedant"]
+
+    // let marks = [80,50,45,92,76]
+  let main = document.getElementById("main");
+
+    let data = [
+        {name: "aman", marks: 80, img: "https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg"},
+        {name: "naman", marks: 50, img: "https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg"},
+        {name: "raja", marks: 45, img: "https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg"},
+        {name: "tejas", marks: 92,  img: "https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg"},
+        {name: "vedant", marks: 76,  img: "https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg"}
+    ]
+
+    for(let i = 0; i < data.length; i++){
+        let div = document.createElement("div")
+        div.setAttribute("id", "inner")
+ 
+        let nam = document.createElement("h1")
+        let marks = document.createElement("h3")
+        let img = document.createElement("img")
+
+        nam.innerText = data[i].name
+        marks.innerText = data[i].marks
+        img.src = data[i].img
+
+
+        div.append(img, nam,marks)
+       main.append(div)
+
+    }
+
+</script>
+</html>
