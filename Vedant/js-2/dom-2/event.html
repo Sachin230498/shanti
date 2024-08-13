@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <div>
+    <button>Click</button>
+    </div>
+
+
+    <h1>kick me</h1>
+</body>
+<script>
+    let btn = document.querySelector("button");
+    let h1 = document.querySelector("h1");
+
+    // console.log(btn)
+
+    btn.addEventListener("click", click)
+
+    function click(event){
+        console.log(event.target.parentNode)
+        alert("Button Clicked")
+      
+    }
+
+    // h1.addEventListener("click", function (){
+    //       alert("h1 Button Click")
+    // })
+
+
+
+
+
+
+
+</script>
+</html>

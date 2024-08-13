@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <br>
+    <input id="n" type="text" placeholder="Enter yout name" value="">
+    <input id="p" type="text" placeholder="Enter yout password">
+    <button onclick="data()">Click</button>
+
+    <br>
+    <hr>
+    <br>
+    <label for="">Name</label>
+    <h1 id="name">Name</h1>
+    <br>
+    <label for="">password</label>
+    <h1 id="pass">password</h1>
+</body>
+<script>
+    let n = document.getElementById("n")
+    let p = document.getElementById("p")
+
+    let name = document.getElementById("name")
+    let pass = document.getElementById("pass")
+
+    // console.log(n.value)
+
+    function data(){
+        
+        // console.log(n.value)
+        // console.log(p.value)
+
+       name.innerText = n.value;
+       pass.innerText = p.value;
+
+    }
+
+</script>
+</html>

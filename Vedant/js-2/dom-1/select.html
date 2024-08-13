@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select  id="gender">
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+    <h1 id="head"></h1>
+
+    <button onclick="getData()">Click and get value</button>
+</body>
+<script>
+    let gender = document.getElementById("gender");
+//     console.log(gender.value)
+let name = document.getElementById("head");
+
+function getData() {
+    // console.log(gender.value)
+    name.innerText = "Your Gender is : " + gender.value;
+    // alert("Your Gender is : " + gender.value);
+}
+
+ </script>
+</html>

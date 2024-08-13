@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main"></div>
+  </body>
+
+  <script>
+    let main = document.getElementById("main");
+
+   
+   let name = ["aman", "raja", "tejas", "naman", "vedant", "virat", "dhoni", "sachin", "Boomrah"]
+
+   let color  = ["yellow", "green", "orange", "pink", "maroon", "red", "blue", "purple", "brown"]
+
+    // appendappendchild
+
+    for (let i = 0; i < name.length; i++) {
+
+        let div = document.createElement("div");
+    
+
+      let nam = document.createElement("h1");
+      nam.innerText = name[i];
+
+      let p = document.createElement("p");
+      p.innerText = "I am para";
+      p.style.backgroundColor = color[i];
+
+      div.append(nam, p);
+        main.append(div);
+    }
+  </script>
+</html>
