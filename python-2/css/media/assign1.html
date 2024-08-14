@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #nav{
+            width: 95%;
+            padding: 5px 20px;
+            background-color: yellow;
+            margin: auto;
+            margin-bottom: 20px;
+          }
+
+          #inner{
+            
+       
+            width: 97%;
+            height: 500px;
+            padding: 5px 0px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+          }
+
+          #red{
+            width: 48%;
+            height: 100%;
+            background-color: red;
+          }
+
+          #grn{
+            width: 45%;
+            height: 100%;
+            background-color: greenyellow;
+          }
+
+
+          @media all and (min-width:320px) and (max-width:500px){
+
+            #inner{
+                display: block;
+            }
+
+            #red{
+                width: 100%;
+                height: 50%;
+            }
+
+            #grn{
+                width: 100%;
+                height: 50%;
+                margin-top: 20px;
+            }
+          }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h1>Navigation</h1>
+    </div>
+
+    <div id="inner">
+
+        <div id="red"></div>
+        <div id="grn"></div>
+
+    </div>
+</body>
+</html>

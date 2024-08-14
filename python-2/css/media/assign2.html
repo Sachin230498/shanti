@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #nav{
+            width: 95%;
+            padding: 5px 20px;
+            background-color: yellow;
+            margin: auto;
+            margin-bottom: 20px;
+          }
+
+          #inner{
+            
+       
+            width: 97%;
+            height: 500px;
+            padding: 5px 0px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+          }
+
+          #red{
+            width: 60%;
+            height: 100%;
+            background-color: red;
+          }
+
+          #grn{
+            width: 35%;
+            height: 100%;
+           display: grid;
+           gap: 20px;
+           
+          }
+         #grn>div{
+            background-color: greenyellow;
+         }
+
+
+          @media all and (min-width:480px) and (max-width:768px){
+          #inner{
+            display: block;
+          }
+
+          #red{
+            width: 100%;
+          }
+
+          #grn{
+            margin-top: 20px;
+            width: 100%;
+            height: 200px;
+            grid-template-columns: repeat(3,1fr);
+         
+          }
+          
+          }
+
+            @media all and (min-width:320px) and (max-width:479px){
+          #inner{
+            display: block;
+          }
+
+          #red{
+            width: 100%;
+            height: 50%;
+          }
+
+          #grn{
+            margin-top: 20px;
+            width: 100%;
+         
+            grid-template-columns: repeat(1,1fr);
+         
+          }
+          
+          }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h1>Navigation</h1>
+    </div>
+
+    <div id="inner">
+
+        <div id="red"></div>
+        <div id="grn">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+    </div>
+</body>
+</html>

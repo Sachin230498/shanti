@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flex{
+            width: 90%;
+            height: 450px;
+            border: 5px solid;
+            display: flex;
+
+            /* flex direction */
+            /* flex-direction: row;  default */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            flex-direction: column-reverse;
+        }
+
+        #flex>div{
+            font-size: 30px;
+            font-weight: bold;
+            border: 5px solid red;
+            height: 100%;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div id="flex">
+        <div>box-1</div>
+        <div>box-2</div>
+        <div>box-3</div>
+    </div>
+</body>
+</html>

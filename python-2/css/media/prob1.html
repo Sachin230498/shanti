@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid{
+            width: 95%;     
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+          padding: 20px;
+          margin: auto;
+
+        }
+
+        #grid>div{
+            text-align: center;
+           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 20px;
+        }
+
+        #grid>div>img{
+            border-radius: 20px 20px 0 0;
+            width: 100%;
+        }
+
+
+        /* Media for medium large screen */
+
+        @media all and (min-width:768px) and (max-width:1000px){
+            #grid{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+
+          /* Media for medium screen */
+
+        @media all and (min-width:480px) and (max-width:767px){
+            #grid{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+           /* Media for small screen */
+
+        @media all and (min-width:320px) and (max-width:479px){
+            #grid{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+
+
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg" alt="">
+            <h1>Bird</h1>
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg" alt="">
+            <h1>Bird</h1>
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg" alt="">
+            <h1>Bird</h1>
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg" alt="">
+            <h1>Bird</h1>
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg" alt="">
+            <h1>Bird</h1>
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg" alt="">
+            <h1>Bird</h1>
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg" alt="">
+            <h1>Bird</h1>
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg" alt="">
+            <h1>Bird</h1>
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg" alt="">
+            <h1>Bird</h1>
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg" alt="">
+            <h1>Bird</h1>
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg" alt="">
+            <h1>Bird</h1>
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_640.jpg" alt="">
+            <h1>Bird</h1>
+        </div>
+
+    </div>
+</body>
+</html>
