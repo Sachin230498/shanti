@@ -6,10 +6,10 @@ auth  = Blueprint('auth', __name__)
 
 @auth.route('/signup')
 def signup():
-    return "this is signed up page"
+    return render_template('signup.html')
 
 
 
 @auth.route('/login')
 def login():
-    return "this is login up page"
+    return render_template('login.html')
