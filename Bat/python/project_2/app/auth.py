@@ -1,15 +1,18 @@
-from flask import Blueprint,render_template
+from flask import Blueprint, render_template, url_for
 
-auth  = Blueprint('auth', __name__)
+auth = Blueprint('auth', __name__)
 
-# Blueprint is way that organize your file in flask project
 
 @auth.route('/signup')
 def signup():
-    return render_template('signup.html')
-
+    return "<h1>Hello</h1>"
 
 
 @auth.route('/login')
 def login():
     return render_template('login.html')
+
+
+@auth.route('/logout')
+def logout():
+    return "Use this to log out."
