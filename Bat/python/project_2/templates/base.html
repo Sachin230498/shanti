@@ -3,13 +3,14 @@
   <head>
     {% block head %}
    
-    <title>Push-Ups Logger</title>
+    <title>Main website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="{{ url_for('static', filename='images/muscle.ico') }}"
     />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
       rel="stylesheet"
@@ -50,7 +51,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="{{ url_for('main.index') }}"
-        >Push-Ups Logger</a
+        >main Page</a
       >
       <button
         class="navbar-toggler"
@@ -71,7 +72,8 @@
               href="{{ url_for('main.index') }}"
               class="btn btn-outline-secondary"
               role="button"
-              >All Workouts</a
+              >All main page</a
+          
             >
           </li>
           <li class="nav-item">
@@ -80,7 +82,7 @@
               class="btn btn-outline-secondary"
               role="button"
               style="margin-left: 4px;"
-              >Account</a
+              >Profile</a
             >
           </li>
         </ul>

@@ -1,15 +1,20 @@
 {% extends "base.html" %} {% block head %} {{ super() }}
-{% extends "main.html" %} {% block head %} {{ super() }}
+
 <link
   rel="stylesheet"
   href="{{ url_for('static', filename='extended_beauty.css') }}"
 />
 {% endblock %} {% block content %}
+<style>
+     h1{
+      color:red
+     }
+</style>
 
-<h1>Hello!</h1>
+<h1 >Hello!</h1>
 <center>
   <img
-    src="{{ url_for('static', filename='images/pushup.png') }}"
+    src="https://cdn.pixabay.com/photo/2024/03/07/16/44/stork-8618904_1280.jpg"
     alt="pushup guy"
     height="200px"
   />
