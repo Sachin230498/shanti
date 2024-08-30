@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{ 
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        /* priority
+          SICTU
+          S=>inline=>1000
+          I=>id=>  100
+          C=>class=>10
+          T=>tag=>1
+          u=>univeral=>0
+        */
+
+        *{
+            color: brown;
+        }
+
+        p{
+            color: red;
+        }
+
+        .graph{
+            color: blueviolet;
+        }
+
+        #para{
+            color: aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p id="para" class="graph" style="color: orangered;">I am para</p>
+</body>
+</html>

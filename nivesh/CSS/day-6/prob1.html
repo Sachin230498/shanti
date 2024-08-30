@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid{
+            width: 100%;
+          
+            border: 5px solid red;
+            font-size: 30px;
+            font-weight: 800;
+            /* display: flex */
+            display: grid;
+
+
+            /* parents */
+         grid-template-columns: 200px 200px ;
+            grid-template-rows: 200px 200px 200px 200px  200px;
+             row-gap: 10px;
+             column-gap: 20px;
+
+        }
+
+        #grid>div{
+            /* width: 200px;
+            height: 200px; */
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom-1</title>
+  </head>
+  <body>
+    <h1 id="head">DOM-1</h1>
+    <!-- <img src="https://cdn.pixabay.com/photo/2021/11/15/11/00/barber-shop-6797761_1280.jpg" alt="">
+    <img src="https://cdn.pixabay.com/photo/2021/11/15/11/00/barber-shop-6797761_1280.jpg" alt=""> -->
+
+    <button onclick="hello()">Like</button>
+
+    <div id="main">
+      <h1>Hello Nivesh</h1>
+      <h2>Hello Abhi</h2>
+    </div>
+  </body>
+
+  <script>
+    // let a = 5;
+    // console.log(a)
+
+    // console.log(document.images)
+
+    // Dom => Dom is a tachnique where you can access html el via js
+    // Event=>Event is an action that is triggered by user
+    // onclick , onsubmit , onmouse , onchange
+
+    // function
+
+    let head = document.getElementById("head");
+    // console.log(head.innerText)
+    // head.innerText = "dom-2"
+
+    let m = document.getElementById("main");
+    // console.log(m.innerHTML)
+
+    function hello() {
+      // console.log("hello")
+      alert("hello ");
+       head.innerText = "dom-2"
+    }
+  </script>
+</html>

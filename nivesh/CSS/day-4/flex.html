@@ -1,0 +1,69 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flex{
+            display: flex;
+            border: 5px solid red;
+            width: 100%;
+            height: 550px;
+            margin: auto;
+            padding: 10 0px;
+            font-size: 30px;
+            font-weight: bold;
+
+            /* flex direction */
+            /* flex-direction: row; default */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+
+            /* justify content */
+
+            /* justify-content: flex-start; start left  */
+            justify-content: center;
+            /* justify-content: end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+
+            /* align-items:  */
+            /* align-items: stretch;  */
+            /* align-items: flex-start; */
+            align-items: center;
+            /* align-items: flex-end; */
+            
+
+
+
+        }
+
+        #flex>div{
+            width: 20%;
+            height: 300px;
+            border: 2px solid green;
+            display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="flex">
+        <div>box-1</div>
+        <div>box-2</div>
+        <div>box-3</div>
+        <div>box-4</div>
+     
+    </div>
+
+
+
+</body>
+</html>

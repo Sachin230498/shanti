@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            width: 95%;
+            margin: auto;
+            height: 50px;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        #nav>div>a{
+            color: black;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        #nav>div{
+            width: 500px;
+        
+            display: flex;
+            justify-content: space-around;
+        }
+
+         #nav>div>a:nth-child(1){
+          color: red;
+         }
+         #nav>div>a:nth-child(2){
+          color: blue;
+         }
+
+         #inner{
+            width: 95%;
+            padding: 0 30px;
+            height: 600px;
+            border: 5px solid black;
+            display: flex;
+            justify-content: space-evenly;
+         }
+
+         #red{
+            width: 48%;
+            height: 100%;
+            border: 2px solid red;
+         }
+           #blue{
+            width: 48%;
+            height: 100%;
+            border: 2px solid rgb(127, 10, 244);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+         }
+
+         #blue>div{
+            margin-top: 20px;
+            width: 45%;
+            height: 250px;
+            border: 5px solid green;
+         }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="nav">
+        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_plus-055f80.svg" alt="">
+
+        <div>
+            <a href="">Home</a>
+            <a href="">Home</a>
+            <a href="">Home</a>
+            <a href="">Home</a>
+            <a href="">Home</a>
+        </div>
+    </div>
+
+<br>
+    <!-- inner section -->
+
+    <div id="inner">
+
+  <div id="red">RED</div>
+
+  <div id="blue">
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #flex {
+        width: 100%;
+        height: 500px;
+        border: 5px solid red;
+        display: flex;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      #flex > div {
+        width: 250px;
+        height: 100%;
+        border: 5px solid rgb(5, 2, 2);
+      }
+
+      #flex > div:nth-child(1) {
+        flex-shrink: 2;
+
+      }
+
+
+
+      #flex > div:nth-child(2) {
+   
+    flex-shrink: 5;
+      }
+
+      #flex > div:nth-child(3) {
+    
+       
+      }
+      
+      #flex > div:nth-child(4) {
+   
+  
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flex">
+      <div>box-1</div>
+      <div>box-2</div>
+      <div>box-3</div>
+      <div>box-4</div>
+    </div>
+  </body>
+</html>

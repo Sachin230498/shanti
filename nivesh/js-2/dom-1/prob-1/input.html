@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #main{
+            width: 300px;
+            text-align: center;
+            padding: 50px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="name">Name</h1>
+    <h1 id="pass">Password</h1>
+    <div id="main">
+
+        <label for="">Enter Name</label>
+        <input  id="username" type="text" placeholder="Enter your name">
+
+        <br><br>
+
+          <label for="">Enter password</label>
+        <input id="password" type="text" placeholder="Enter your password">
+
+       <br><br>
+
+       <button onclick="getData()">Sign in</button>
+    </div>
+</body>
+<script>
+
+    let username = document.getElementById("username");
+    let password = document.getElementById("password");
+
+    let x = document.getElementById("name")
+    let y = document.getElementById("pass")
+    // console.log(username.value)
+
+
+    function getData(){
+
+        let a = username.value;
+        let b = password.value;
+     
+        // console.log(a,b)
+
+        if(a =="" && b ==""){
+           alert("please enter ")
+        }else{
+
+        x.innerText = a;
+        y.innerText = b;
+
+        // console.log(x)
+
+        }
+
+    }
+
+
+    
+
+</script>
+</html>
