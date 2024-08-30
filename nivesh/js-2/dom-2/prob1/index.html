@@ -6,13 +6,55 @@
 </head>
 <body>
     <div id="main">
-        <h1>I am heading -1</h1>
-        <h2>I am heading -2</h2>
+        <h1 id="h1" class="head">I am heading -1</h1>
+        <h2 class="head">I am heading -2</h2>
+        <h2 class="head">I am heading -2</h2>
+        <h2 class="head">I am heading -2</h2>
     </div>
+
+
+    <p class="para">I am para</p>
+    <p class="para">I am para</p>
+    <p class="para">I am para</p>
 </body>
 <script>
-    let main = document.getElementById("main")
+    let main = document.getElementById("h1")
+    main.style.color = "red";
+
     // console.log(main.innerHTML)
+
+
+
+// let head = document.getElementsByTagName("h2")
+//  console.log(head)
+
+// for(let i =0; i<head.length;i++){
+
+//  head[i].style.backgroundColor = "blue" 
+
+// }
+
+//  let arr = [1,2,3,4,5]
+
+//  for(let i = 0; i<arr.length;i++){
+//     console.log(arr[i])
+//  }
+
+// arr[0] =5
+// console.log(arr[0])
+
+
+let p = document.getElementsByTagName("p")
+// console.log(p)
+
+// let para = document.querySelector(".para")
+// console.log(para)
+
+let para = document.querySelectorAll("p")
+console.log(para)
+
+
+
 
 
     

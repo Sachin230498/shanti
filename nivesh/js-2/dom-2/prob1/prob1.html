@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+          
+    </div>
+</body>
+
+<script>
+    let main = document.getElementById("main")
+
+
+    
+     let img = document.createElement("img")
+     img.src = "https://cdn.pixabay.com/photo/2023/10/10/15/37/motorcycle-8306765_1280.jpg"
+
+    // console.log(h1)
+    // main.appendChild(h1,img)
+    // main.append(h1,img)
+   
+    // let name = ["nivesh", "abhisek" , "sumit" , "vikash" , "rani" , "sachin"]
+    // let color = ["pink", "red" , "green" , "blue" , "voilet" , "purple"]
+
+
+    // for(let i = 0; i<name.length;i++){
+    //       let h1 = document.createElement("h1");
+    //       h1.innerText = name[i]
+    //       h1.style.color = color[i]
+
+    //       main.append(h1)
+    // }
+
+
+  let name = [ 
+    {
+        name: "nivesh",
+        color : "blue"
+    },
+    {
+        name: "viskah",
+        color : "red"
+    },
+    {
+        name: "abhisek",
+        color : "green"
+    },
+    {
+        name: "sumit",
+        color : "pink"
+    },
+    {
+        name: "rani",
+        color : "skyblue"
+    },
+    {
+        name: "sachin",
+        color : "darkbrown"
+    }
+]
+
+
+ for(let i = 0; i<name.length;i++){
+          let h1 = document.createElement("h1");
+         h1.innerText = name[i].name
+          h1.style.color = name[i].color
+console.log(name[i])
+          main.append(h1)
+    }
+
+
+
+
+
+</script>
+
+     
+
+</html>
