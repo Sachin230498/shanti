@@ -1,6 +1,13 @@
 let form = document.querySelector("form");
 let tbody = document.querySelector("tbody");
-let arr_data = [];
+let arr_data = JSON.parse(localStorage.getItem("arr_data")) || [];
+// if(JSON.parse(localStorage.getItem("arr_data")) != null){
+//     arr_data = JSON.parse(localStorage.getItem("arr_data"));
+// }else{
+//     arr_data= []
+// }
+
+display(arr_data)
 
 form.addEventListener("submit", getData)
 
@@ -25,6 +32,7 @@ function getData(){
     }
 
     arr_data.push(data_obj)
+    localStorage.setItem("arr_data", JSON.stringify(arr_data))
 // console.log(arr_data);
 display(arr_data)
 }
