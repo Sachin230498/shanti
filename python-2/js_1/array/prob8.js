@@ -11,4 +11,4 @@ arr.forEach(function(el){
     
 })
 
-console.log(sum)
+// console.log(sum)
