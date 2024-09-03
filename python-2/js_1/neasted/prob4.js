@@ -7,14 +7,15 @@
 */
 
 
-for (let i = 5; i >= 1; i--) {
-  //   console.log("farm no", i);
-  let bag = "";
-  for (let j = 1; j <= i; j++) {
-    bag = bag + j;
-  }
-  console.log(bag);
-}
+// for (let i = 5; i >= 1; i--) {
+//   //   console.log("farm no", i);
+//   let bag = "";
+//   for (let j = 1; j <= i; j++) {
+//     bag = bag + j;
+//   }
+//   console.log(bag);
+// }
+
 
 
 
