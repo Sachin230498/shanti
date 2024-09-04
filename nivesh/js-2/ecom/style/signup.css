@@ -1,0 +1,8 @@
+form{
+    border: 2px solid red;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    margin-top: 50px;
+}
