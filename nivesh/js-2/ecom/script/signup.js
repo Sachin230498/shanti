@@ -24,5 +24,5 @@ function getData(){
 // localStorage.clear()
 
 
-console.log(window.location.href)
+// console.log(window.location.href)
  
