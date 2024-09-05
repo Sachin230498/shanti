@@ -8,6 +8,5 @@ def initialize_db(app):
    
     client = MongoClient("mongodb://localhost:27017/")  # Local MongoDB
    
-
     db = client["bookstore"]  
     book_collection = db["books"] 
