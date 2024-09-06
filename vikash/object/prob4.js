@@ -13,9 +13,9 @@ let arr_obj = [
     },
 ]
 
-// let a= arr_obj[0];
-// let b= arr_obj[1];
-// let c= arr_obj[2];
+let a= arr_obj[0];
+let b= arr_obj[1];
+let c= arr_obj[2];
 
 // console.log(a,b,c)
 

@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <input type="text" placeholder="enter name" >
+    <button>Click</button>
+</body>
+<script>
+    let btn = document.querySelector("button");
+    let input = document.querySelector("input");
+    let h1 = document.querySelector("h1");
+
+    btn.addEventListener("click", addfun)
+
+    function addfun(){
+        // alert("hello")
+        h1.innerText = input.value;
+    }
+
+</script>
+</html>
