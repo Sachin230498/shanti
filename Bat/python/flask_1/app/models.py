@@ -1,33 +1,15 @@
-from flask_pymongo import PyMongo
-from flask_login import UserMixin
+from pymongo import MongoClient
 
-mongo = PyMongo()
-
-# Collection
-books_collection = mongo.db.books
-user_collection = mongo.db.user
-
+client = None
+books_collection = None
+users_collection = None
 
 def initialize_db(app):
-    app.config["MONGO_URI"] = "mongodb://localhost:27017/BOOK_TEST"
-    mongo.init_app(app)
+    global client, books_collection, users_collection
+    # Replace with your MongoDB URI
+    client = MongoClient("mongodb://localhost:27017/")  # Local MongoDB
+    # client = MongoClient("<your MongoDB Atlas connection string>")  # MongoDB Atlas
 
-    # Ensure the "books" collection exists
-    db = mongo.db
-    db.create_collection("books")
-
-# user class
-class User(UserMixin):
-    def __init__(self,email):
-        self.email = email
-
-    def get_it(self):
-        return self.email
-
-# user loader callback
-@login_manager.user_loader
-def load_user(email):
-    user = user_collection.find_one({"email":email})
-    if user:
-        return User(email=user["email"])
-    return None
+    db = client["bookstore"]  # Database name
+    books_collection = db["books"]  # Collection for books
+    users_collection = db["users"]  # Collection for users
