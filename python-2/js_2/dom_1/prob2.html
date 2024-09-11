@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="input" type="text" placeholder="enter your name">
+
+    <button onclick="getData()">Click</button>
+
+    <h1 id="h1"></h1> 
+
+    <h2 id="name"></h2>
+    
+</body>
+<script>
+    let input = document.getElementById("input")
+    let head = document.getElementById("h1")
+    head.innerText = "hello"
+
+    let name = document.getElementById("name")
+
+    // console.log(input.value)
+
+    function getData(){
+        // console.log(input.value)
+     name.innerText = input.value
+    }
+</script>
+
+</html>

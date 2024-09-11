@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="n"></h1>
+    <h1 id="p"></h1>
+
+    <div>
+        <input id="name" type="text" placeholder="Enter your name">
+        <br>
+        <br>
+        <input id="password" type="password" placeholder="Enter your password">
+        <br>
+        <br>
+        <button onclick="subfun()">Submit</button>
+    </div>
+</body>
+<script>
+    let n = document.getElementById("n")
+    let p = document.getElementById("p")
+    let name = document.getElementById("name")
+    let pass = document.getElementById("password")
+
+    function subfun(){
+      n.innerText = name.value;
+      p.innerText= pass.value;
+    }
+
+</script>
+</html>
