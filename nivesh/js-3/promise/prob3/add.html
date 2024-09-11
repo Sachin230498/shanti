@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./index.html">Home</a>
+    <a href="./add.html">Add</a>
+
+    
+    <input id="img" type="text" placeholder="enter your url">
+    <button onclick="add()">Click</button>
+</body>
+<script>
+    let img = document.getElementById("img")
+   let arr = JSON.parse(localStorage.getItem("data")) || [];
+
+function add(){
+     let x = img.value;
+    //  console.log(x)
+      arr.push(x)
+    localStorage.setItem("data", JSON.stringify(arr))
+   img.value = ""
+}
+</script>
+</html>

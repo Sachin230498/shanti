@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main>img{
+            width: 200px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+        <a href="./index.html">Home</a>
+    <a href="./add.html">Add</a>
+    <h1>Crousal</h1>
+    <div id="main"> </div>
+    <button onclick="stop()" >Stop</button>
+    <button onclick="play()" >play</button>
+</body>
+<script>
+    let main = document.getElementById("main")
+   let data = JSON.parse(localStorage.getItem("data")) 
+// console.log(data)
+
+
+let index = 0
+
+function display(){
+main.innerHTML = ""
+let img = document.createElement("img")
+img.src = data[index]
+main.append(img)
+index++
+
+if(data.length == index){
+    index = 0
+}
+
+}
+
+// display()
+
+let id ;
+
+
+function play(){
+  id = setInterval(display,1000)
+}
+    
+function stop(){
+    clearInterval(id)
+}
+ 
+play()
+
+</script>
+</html>

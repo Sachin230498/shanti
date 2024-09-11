@@ -19,7 +19,7 @@ let promise =  new Promise(function(res,rej){
 })
 // console.log(promise)
 
-// .then .catch
+// .then .catch  32F9-7076
 
 promise.then(function(a){
     console.log("resolve", a)
