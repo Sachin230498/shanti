@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>I am heading</h1>
+
+    <div>
+      <button>Click</button>
+    </div>
+  </body>
+  <script>
+    let btn = document.querySelector("button");
+
+    btn.addEventListener("click", like);
+
+    function like(event) {
+      console.log(event);
+    }
+  </script>
+</html>

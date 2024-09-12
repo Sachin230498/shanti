@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main"></div>
+</body>
+<script>
+    let main = document.getElementById("main")
+    let arr = ["rahul","priya","aakash", "ayman", "rakshi","yash"]
+
+    let color = ["red","blue","green","purple","yellow","pink"]
+  
+
+   
+    // console.log(head)
+   
+    for(let i=0;i<arr.length;i++){
+        let head = document.createElement("h1")
+         head.innerText = arr[i]
+         head.style.color = color[i]
+        // console.log(arr[i])
+         main.append(head)
+    }
+
+</script>
+</html>

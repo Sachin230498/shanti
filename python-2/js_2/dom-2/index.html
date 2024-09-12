@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head" class="heading">I am heading</h1>
+    <h2 class="heading">I am heading 21</h2>
+    <h2 class="heading">I am heading 22</h2>
+    <h2 class="heading">I am heading 23</h2>
+    <p class="heading">I am para</p>
+</body>
+<script>
+    let h1 = document.getElementById("head")
+    h1.style.color = "blue"
+    // console.log(h1)
+
+    let h2 = document.getElementsByTagName("h2")
+    //  h2[2].style.color= "red"
+    //  h2[0].style.backgroundColor = "yellow"
+    // console.log(h2[2])
+    for(let i=0;i<h2.length;i++){
+         h2[i].style.color= "red"
+
+    }
+
+    let heading = document.getElementsByClassName("heading");
+    //  console.log(heading)
+    heading[heading.length-2].style.color = "purple"
+
+</script>
+</html>
+
+
