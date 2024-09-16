@@ -37,11 +37,8 @@ function display(data){
     name.innerText = "city Name" + " " +  data.name
     let temp = document.createElement("h2");
     temp.innerText = "Temprature"+ " "+  data.main.temp
-
     // let map = document.createElement("iframe")
-
     map.src=`https://www.google.com/maps/embed/v1/place?q=${data.name}&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8`
-
     main.append(name,temp, map)
 }
 
