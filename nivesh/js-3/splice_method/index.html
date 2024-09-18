@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter name">
+    <button onclick="saveData()">Click</button>
+    <div id="main"></div>
+</body>
+<script>
+    let main  =document.getElementById("main");
+    let input = document.querySelector("input")
+
+    
+
+    let arr = JSON.parse(localStorage.getItem("arr")) || [] ;
+    display(arr)
+
+    function saveData(){
+         arr.push(input.value)
+        //  console.log(arr)
+        localStorage.setItem("arr", JSON.stringify(arr))
+        display(arr)
+    }
+
+    function display(data){
+        main.innerHTML = ""
+        data.forEach(function(el,index){
+           let div = document.createElement("div")
+           div.setAttribute("id", "inner_div")
+           let nam = document.createElement("h1")
+           nam.innerText = el
+
+
+           let del = document.createElement("button")
+           del.addEventListener("click", function(){
+            delfun(index)
+           })
+            del.innerText = "delete"
+
+
+           let upd = document.createElement("button")
+           upd.addEventListener("click", function(){
+            updfun(el,index)
+           })
+           upd.innerText = "edit"
+
+
+           div.append(nam,upd,del);
+           main.appendChild(div);
+        })
+    }
+
+    function delfun(index){
+        //  console.log(data)
+        
+        arr.splice(index,1)
+        localStorage.setItem("arr", JSON.stringify(arr))
+        display(arr)
+    }
+
+    function updfun(name,index){
+
+        let inner_div= document.getElementById("inner_div")
+       inner_div.innerHTML = "";
+    
+  
+     let input = document.createElement("input") 
+     input.value = name;
+     let update = document.createElement("button") 
+     update.innerText = "update"
+     update.addEventListener("click", function(){
+        arr[index]= input.value;
+        // console.log(arr)
+        localStorage.setItem("arr", JSON.stringify(arr))
+        display(arr)
+     })
+
+         inner_div.append(input,update)
+    
+         
+
+     
+        // arr.splice(index,1,"abc")
+        // localStorage.setItem("arr", JSON.stringify(arr))
+        // display(arr)
+    }
+
+
+    // let arr1 = [2,4,7,8,9]
+
+    // //splice(index,no of el you want to delete,no of el you want to add )
+    // let a = arr1.splice(0,2,"abc",45,7,8,9,13,456)
+    // // console.log(a)
+    // console.log(a)
+</script>
+</html>
