@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            border: 2px solid;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(2,200px);
+            gap: 30px;
+
+            /* fraction 100  25 25 25 25 
+             1fr */
+        }
+
+        #main>div{
+            border: 5px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+    </div>
+</body>
+</html>
