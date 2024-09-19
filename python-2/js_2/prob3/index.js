@@ -171,9 +171,7 @@ function display(){
         let logo = document.createElement("img")
         logo.setAttribute("class","logo")
         logo.src = el.companyLogo
-
         div.append(img,name,des,logo)
-
         main.append(div)
     })
 }
