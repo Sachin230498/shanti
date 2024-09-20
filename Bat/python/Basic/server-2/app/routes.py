@@ -26,10 +26,26 @@ def get_user(user_id):
 # Create a new user
 @app.route('/users', methods=['POST'])
 def create_user():
-    new_user = request.get_json()
-    user_id = users_collection.insert_one(new_user).inserted_id
-    user = users_collection.find_one({"_id": user_id})
-    return jsonify(serialize_user(user)), 201
+    data = request.get_json()
+    
+    # Validate that both name and email are provided
+    if not data.get('name') or not data.get('email'):
+        return jsonify({'message': 'Name and Email are required'}), 400
+
+    # Check if a user with the same email already exists
+    existing_user =  users_collection.find_one({'email': data['email']})
+    if existing_user:
+        return jsonify({'message': 'Email already exists'}), 409  # 409 Conflict
+
+    # Insert the new user into the database
+    user_id =  users_collection.insert_one(data).inserted_id
+    new_user =  users_collection.find_one({'_id': user_id})
+    
+    return jsonify({
+        '_id': str(new_user['_id']),
+        'name': new_user['name'],
+        'email': new_user['email']
+    }), 201
 
 # Update an existing user by ID
 @app.route('/users/<user_id>', methods=['PUT'])
