@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+
+
+        /* Mobile (small screen)  320px to 480px
+        tablet  (midium screen)             481px to 768px
+        laptop large screen  769px to above*/
+
+        
+     /* medium screen */
+        @media all and (min-width:480px) and (max-width:768px) {
+             body{
+            background-color: red;
+           
+        }
+        h1{
+            text-align: center;
+            color: yellow;
+        }    
+        }
+
+        /* small screen */
+         @media all and (min-width:320px) and (max-width:479px) {
+             body{
+            background-color: green;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }    
+        }
+        /* mid large screen */
+         @media all and (min-width:769px) and (max-width:1200px) {
+             body{
+            background-color: rgb(205, 17, 226);
+        }    
+
+        h1{
+            color: white;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>I am heading</h1>
+</body>
+</html>
