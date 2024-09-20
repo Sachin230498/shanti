@@ -1,15 +1,37 @@
-from flask_login import current_user, login_user, logout_user
+import jwt
+from datetime import datetime, timedelta
+from flask import request, jsonify
 from .models import User
-from . import bcrypt
+from functools import wraps
+from . import app
 
-# Login Function
-def login_user_function(data):
-    user = User.get_user_by_email(data['email'])
-    if user and bcrypt.check_password_hash(user.password, data['password']):
-        login_user(user)
-        return True
-    return False
+# Generate JWT Token
+def generate_token(user):
+    token = jwt.encode({
+        'user_id': user.id,
+        'exp': datetime.utcnow() + timedelta(hours=24)  # Token valid for 24 hours
+    }, app.config['SECRET_KEY'], algorithm='HS256')
+    return token
 
-# Logout Function
-def logout_current_user():
-    logout_user()
+def token_required(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        token = None
+        if 'Authorization' in request.headers:
+            token = request.headers['Authorization'].split(" ")[1]  # Extract token
+        
+        if not token:
+            return jsonify({'message': 'Token is missing!'}), 401
+
+        try:
+            data = jwt.decode(token, app.config['SECRET_KEY'], algorithms=['HS256'])
+            current_user = User.get_user_by_id(data['user_id'])
+            if not current_user:
+                return jsonify({'message': 'User not found!'}), 401
+        except jwt.ExpiredSignatureError:
+            return jsonify({'message': 'Token has expired!'}), 401
+        except jwt.InvalidTokenError:
+            return jsonify({'message': 'Invalid token!'}), 401
+
+        return f(current_user, *args, **kwargs)
+    return decorated
