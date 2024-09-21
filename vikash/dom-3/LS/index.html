@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <button onclick="count()">count</button>
+</body>
+<script>
+
+// local storage
+
+// localStorage.setItem(key, value)
+// localStorage.getItem(key)
+// localStorage.removeItem(key)
+// localStorage.clear()
+
+// localStorage.setItem("abc", "alphbet")
+
+// let a = localStorage.getItem("abc")
+// console.log(a)
+
+// let num = 123;
+// localStorage.setItem("num", JSON.stringify( num))
+
+// let n = JSON.parse( localStorage.getItem("num"))
+// console.log(typeof n)
+
+// // JSON.stringify
+// // JSON.parse
+
+// let arr = [1,2,3,5,6,{},[]]
+// console.log(arr)
+// localStorage.setItem("arr", JSON.stringify(arr))
+
+// let arr1 =JSON.parse( localStorage.getItem("arr"))
+// console.log(arr1)
+
+  
+
+    let h1 = document.querySelector("h1")
+    let val =JSON.parse(localStorage.getItem("val")) || 0
+
+    h1.innerText = val
+
+    function count(){
+         val++;
+          localStorage.setItem("val",JSON.stringify( val))
+         h1.innerText = val
+    }
+</script>
+</html>

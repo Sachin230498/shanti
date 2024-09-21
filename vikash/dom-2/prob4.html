@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+
+     
+    </div>
+</body>
+
+<script>
+    let main = document.getElementById("main")
+    // let nam = document.createElement("a")
+    // nam.innerText = "click-2"
+    // nam.href = "sdsdf"
+
+    // // console.log(nam)
+    // main.append(nam)
+
+
+// let name = ["Vikash", "aditi", "nivesh", "rani", "abhisek"]
+// let num = [20,10,30,50,70]
+
+let data = [
+    {
+        name:"vikash",
+        num:50
+    },
+    {
+        name:"aditi",
+        num:10
+    },
+    {
+        name:"nivesh",
+        num:25
+    },
+    {
+        name:"rani",
+        num:12
+    },
+    {
+        name:"abhisek",
+        num:5
+    },
+    {
+        name:"sumit",
+        num:55
+    },
+    
+]
+
+
+
+// console.log(data[2])
+
+
+    for(let i = 0;i<data.length;i++){
+        let div = document.createElement("div")
+         let h1 = document.createElement("h1");
+         h1.innerText = data[i].name
+         let p = document.createElement("p")
+        p.innerText = data[i].num
+         div.append(h1,p)
+         main.append(div)
+    }
+
+</script>
+
+</html>

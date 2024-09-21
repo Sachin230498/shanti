@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-app</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- Dont make any changes here -->
+    <h1>Doctor App</h1>
+
+    <div>
+      <!-- ***** We are using form here  ****  -->
+      <form>
+        <label>Name</label><br />
+        <input id="name" type="text" placeholder="Enter Name"  required/><br />
+        <label>Doctor Id</label><br />
+        <input  required id="doc_id" type="text" placeholder="Enter doctor id" /><br />
+       <select  id="spl">
+        <option value="">Speciallization</option>
+        <option value="derma">Dermotologist</option>
+        <option value="ent">Ent</option>
+        <option value="dentist">Dentist</option>
+        <option value="gyno">gyno</option>
+        <option value="pshy">pshyctrist</option>
+       </select>
+        <br />
+        <label for="">Experience</label><br>
+        <input  required id="exp" type="number" placeholder="experinece in year"><br>
+        <label for="">Mobile</label>
+        <input  required id="mobile" type="number" placeholder="enter mobile no">
+        <br>
+        <input type="submit" />
+      </form>
+
+
+      
+      <table>
+        <!-- Dont change order of columns -->
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Doctor Id</th>
+            <th>Specialization</th>
+            <th>EXP</th>
+            <th>Mobile</th>
+           <th>Role</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Append your output to tbody -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<script src="./index.js"></script>

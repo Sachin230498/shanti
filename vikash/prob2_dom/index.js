@@ -630,13 +630,10 @@ function display(){
 
 
 div.append( img,h1,h2,p )
-
 main.append(div)
-
-
-
 
  })
 }
 display()
 
+// https://jsonplaceholder.typicode.com/

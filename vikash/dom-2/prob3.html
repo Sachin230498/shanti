@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="csk" id="dhoni">I am Dhoni from Chennai</p>
+    <p class="mi">I am Sachin from Mumbai</p>
+    <p class="rcb">I am Kohli from Banglore</p>
+    <p class="mi">I am Rohit from Mumbai</p>
+    <p class="rcb" id="abd">I am ABD from Banglore</p>
+    <p class="csk">I am Raina from Chennai</p>
+  </body>
+  <script>
+    var chennai = document.getElementsByClassName("csk");
+    // console.log(chennai);
+    var banglore = document.getElementsByClassName("rcb");
+    // console.log(banglore);
+
+    let team = document.getElementsByTagName("p")
+    // team[].style.color = "blue"
+    // console.log(team[2])
+
+    let x = document.querySelector("p")
+    x.style.color = "red"
+    x.style.backgroundColor = "yellow"
+
+    let y = document.querySelector(".rcb")
+    // console.log(y)
+
+    let a = document.querySelectorAll("p")
+    // console.log(a)
+
+    for(let i = 0;i<team.length;i++){
+        // console.log(team[i])
+        team[i].style.backgroundColor = "aqua"
+    }
+
+  </script>
+</html>

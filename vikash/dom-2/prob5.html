@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+
+    </div>
+    
+  
+</body>
+<script>
+    let main = document.getElementById("main");
+
+    let btn = document.createElement("button");
+    btn.innerText = "click";
+
+    main.append(btn)
+
+
+    // addEventListener(event, function)
+
+    btn.addEventListener("click", abc)
+
+
+    function abc(event){
+        console.log(event.target.parentNode)
+        // alert("hello")
+    }
+
+</script>
+</html>
