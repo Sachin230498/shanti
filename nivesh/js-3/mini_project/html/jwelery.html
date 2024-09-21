@@ -4,18 +4,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <link rel="stylesheet" href="../style/navbar.css">
+<link rel="stylesheet" href="../style/home.css">
 </head>
 <body>
     
 
 
     <div id="main"></div>
+    <div id="container"></div>
 </body>
 <script type="module" >
    
 let main = document.getElementById("main")
 import navbar from "../script/navbar.js"
+import {Display,getData} from "../script/fetch.js"
+
+let api = "https://fakestoreapi.com/products/category/jewelery";
 //    console.log(navbar())
+
+let data = await getData(api)
+Display(data)
+
 
 main.innerHTML = navbar()
 
