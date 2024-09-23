@@ -36,6 +36,21 @@ def get_products(current_user):
     return jsonify(products_list), 200
 # bearer
 
+
+@main.route('/products/<product_id>', methods=['GET'])
+@token_required
+def get_product(current_user, product_id):
+    # Find the product by its ID
+    product = Product.get_product_by_id(product_id)
+    
+    if not product:
+        return jsonify({'message': 'Product not found!'}), 404
+
+    # Convert ObjectId to string for JSON serialization
+    product['_id'] = str(product['_id'])
+
+    return jsonify(product), 200
+
 # Create Product (Protected Route with JWT)
 @main.route('/products', methods=['POST'])
 @token_required
