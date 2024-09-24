@@ -1,6 +1,12 @@
 let form = document.querySelector("form")
 let tbody = document.querySelector("tbody")
-  let arr = [];
+  let arr = JSON.parse(localStorage.getItem("arr")) || [] 
+  // if(JSON.parse(localStorage.getItem("arr")) == null ){
+  //   arr = [];
+  // }else{
+  // arr = JSON.parse(localStorage.getItem("arr")); 
+  // }
+  display(arr)
 // console.log(form)
 form.addEventListener("submit", getData)
 
@@ -21,6 +27,7 @@ function getData(){
 
   // console.log(data_obj)4
   arr.push(data_obj)
+  localStorage.setItem("arr", JSON.stringify(arr))
   display(arr)
 
 }
@@ -65,3 +72,13 @@ tbody.innerHTML = "";
 // arr1.forEach(function(el,index,array){
 //   console.log(array)
 // })
+
+
+
+// localStorage.setItem("data", )
+
+
+let btn = document.querySelector("button")
+btn.addEventListener("click", getfun)
+
+function
