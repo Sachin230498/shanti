@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #banner{
+            width: 98%;
+         
+            background-color: blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            padding: 0 18px;
+            border-radius: 15px;
+        }
+
+        #banner>div{
+            color: white;
+        }
+
+        #banner>div>button{
+            width: 100px;
+            height: 30px;
+            border: 0;
+            color: black;
+            border-radius: 20px;
+        }
+
+        #banner>img{
+            width: 450px;
+        }
+
+
+        @media all and (min-width:320px) and (max-width:480px){
+            #banner{
+                font-size: 13px;
+                flex-direction: column;
+            }
+
+            
+        #banner>img{
+            width: 250px;
+        }
+
+
+        }
+        @media all and (min-width:481px) and (max-width:768px){
+            #banner{
+             
+                font-size: 16px;
+                flex-direction: column;
+            }
+
+            
+        #banner>img{
+            width: 400px;
+        }
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <div>
+            <h1>You are in safe hands</h1>
+            <p>Lorem ipsum dolor sit amet consectetur </p>
+            <button>Know more</button>
+        </div>
+
+        <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png" alt="">
+    </div>
+</body>
+</html>
