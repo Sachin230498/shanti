@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* decendent selector */
+      /* #main p{
+        color: rgb(255, 25, 0);
+      } */
+
+
+
+      /* child  > */
+      /* #main>div>p{
+        color: red;
+      } */
+
+
+
+      /* general sibling  ~ */
+
+      /* #main~p{
+        color: brown;
+      } */
+
+
+      /* Adjecent sibing + */
+
+      #main + h1 {
+        background-color: aqua;
+      }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p>I am para -1</p>
+        <p>I am para -3</p>
+        <p>I am para -2</p>
+
+        <div>
+            <p>I am para 5</p>
+        </div>
+    </div>
+
+    <h1>I am heading 1</h1>
+    <p>I am para 4</p>
+
+    <div>
+        <p>I am para 5</p>
+    </div>
+</body>
+</html>
