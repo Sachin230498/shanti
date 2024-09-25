@@ -2,7 +2,15 @@ let form = document.querySelector("form");
 let tbody = document.querySelector("tbody"); 
 
 form.addEventListener("submit", getData);
-let arr = [];
+let arr = JSON.parse(localStorage.getItem("data")) || [];
+// if (JSON.parse(localStorage.getItem("data"))== null){
+//   arr = []
+// }else{
+//   arr = JSON.parse(localStorage.getItem("data")); 
+// }
+  //null
+  display(arr);
+
 
 function getData(){
 
@@ -18,6 +26,7 @@ let obj = {
 }
 
 arr.push(obj)
+localStorage.setItem("data", JSON.stringify(arr))
 display(arr)
 
 }
