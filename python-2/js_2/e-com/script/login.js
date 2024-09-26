@@ -24,17 +24,26 @@ function getData(){
 
     for(let i =0;i<signup_arr.length;i++){
         // console.log(signup_arr[i])
-        if(obj.email == signup_arr[i].email && obj.password == signup_arr[i].password){
+        if(obj.email == signup_arr[i].email){
+            if(obj.password == signup_arr[i].password){
+                localStorage.setItem("login_user", JSON.stringify(signup_arr[i]))
+               flag = true;
+            }else{
+                flag = "wrong"
+            }
             // alert("login")
-            flag = true
+           
         }
     }
 
 
     if(flag == true){
         alert("login")
+        window.location.href = "../html/index.html";
+    }else if(flag == "wrong"){
+    alert("wrong password")
     }else{
-        alert("login failed")
+            alert("login failed");
     }
 
 

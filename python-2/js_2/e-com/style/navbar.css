@@ -1,0 +1,27 @@
+ #navbar{
+    width: 96%;
+    height: 50px;
+    display: flex;
+    margin: auto;
+    padding: 0px 20px ;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 30px;
+   }
+
+   #logo{
+    width: 150px;
+    padding: 10px;
+   }
+
+   #mini_nav{
+    width: 400px;
+    height: 50px;
+    /* background-color: yellow; */
+    
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
