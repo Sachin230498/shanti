@@ -1,0 +1,84 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid_area{
+            width: 500px;
+            height: 300px;
+            /* border: 5px solid; */
+         
+            margin: auto;
+            margin-top: 150px;
+        
+            display: grid;
+            font-size: 35px;
+            font-weight: bold;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 15px;
+           
+            grid-template-areas: 
+            "A A B B"
+            "C D D D"
+            "E E E E";
+        }
+
+        #grid_area>div{
+           background-color: gray;
+           border-radius: 15px;
+           padding: 20px;
+        }
+
+        #grid_area>div:nth-child(1){
+            grid-area: A;
+      
+        }
+        #grid_area>div:nth-child(2){
+            grid-area: B;
+       
+        }
+        #grid_area>div:nth-child(3){
+            grid-area: C;
+     
+        }
+        #grid_area>div:nth-child(4){
+            grid-area: D;
+            
+        }
+        #grid_area>div:nth-child(5){
+            grid-area: E;
+          
+        }
+        #grid_area>div:nth-child(6){
+            grid-area: F;
+       
+        }
+        #grid_area>div:nth-child(7){
+            grid-area: G;
+        }
+        #grid_area>div:nth-child(8){
+            grid-area: H;
+        }
+        #grid_area>div:nth-child(9){
+            grid-area: I;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid_area">
+
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <!-- <div>6</div> -->
+        <!-- <div>7</div>
+        <div>8</div>
+        <div>9</div> -->
+
+    </div>
+</body>
+</html>
