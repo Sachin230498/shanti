@@ -7,12 +7,12 @@ function Child_1(props){
 
          {/* {  props.abc = "abcd" } */}
 
-           {/* <h1>Namaste {props.abc} </h1>
-           <h1>Age {props.age}</h1>
-           */}
+           <h1>Namaste {props.abc} </h1>
+           {/* <h1>Age {props.age}</h1> */}
+          
 
 
-           <Child_2   a  = {props.abc}/>
+           {/* <Child_2   a  = {props.abc}/> */}
           
 
 

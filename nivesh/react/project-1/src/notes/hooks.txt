@@ -8,8 +8,8 @@ useState: Adds state to functional components.
 const [count, setCount] = useState(0);
 Here, count is the state variable, and setCount is the function to update it.
 
-useEffect: Allows you to perform side effects (e.g., data fetching, subscriptions) in functional components. It runs after the component renders or when specified values change.
 
+useEffect: Allows you to perform side effects (e.g., data fetching, subscriptions) in functional components. It runs after the component renders or when specified values change.
 
 useEffect(() => {
    console.log('Component rendered or updated');
