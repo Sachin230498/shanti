@@ -1,6 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Child_1 from "./props/Child_1";
+import Counter from "./component/useState/Counter";
+import RocketLaunch from "./component/useState/RocketLaunch";
+import WaterTracker from "./component/useState/WaterTracker";
+import Example from "./component/useEffect/Example.jsx";
 // import Navbar from "./component/Navbar";
 // import Count from "./component/Count";
 
@@ -9,17 +13,19 @@ import Child_1 from "./props/Child_1";
 
 function App() {
 
-  let name = "Nivesh"
-  let age = 25;
-  let address = "Rewa"
+  // let name = "Nivesh"
+  // let age = 25;
+  // let address = "Rewa"
 
   return (
     <div className="App">
-   {/* <Count/> */}
+   {/* <Child_1 abc = {name}   /> */}
+   <Counter/>
 
-   <Child_1 abc = {name}   />
-   {/* <Child_1 age = {age} /> */}
-   {/* <Child_1 adr = {address} /> */}
+   <WaterTracker/>
+
+
+
     </div>
   );
 }

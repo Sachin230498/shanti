@@ -33,24 +33,26 @@ if(loginData != null){
 
 function display(data){
    main.innerHTML = null
-   for(let i = 0;i<data.length;i++){
-      //  console.log(data[i])
-      let div = document.createElement("div")
-      let name = document.createElement("h1")
-      name.innerText = data[i].name;
-      let price = document.createElement("h2")
-      price.innerText=data[i].price;
-      let img = document.createElement("img")
-      img.src = data[i].img
+   // for(let i = 0;i<data.length;i++){
+   data.forEach(function(el){
+     //  console.log(data[i])
+     let div = document.createElement("div");
+     let name = document.createElement("h1");
+     name.innerText = el.name;
+     let price = document.createElement("h2");
+     price.innerText = el.price;
+     let img = document.createElement("img");
+     img.src = el.img;
 
+     div.append(img, name, price);
 
-      div.append(img,name,price)
-
-      main.append(div)
+     main.append(div);
+   })
+     
 
  
    }
-}
+
 
 
 function Price_filter(){

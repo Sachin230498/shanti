@@ -1,0 +1,21 @@
+What is State in React?
+In React, state refers to an object that stores dynamic data specific to a component and controls how that component behaves. When the state changes, React re-renders the component, displaying the updated data. It allows components to respond to user inputs, server requests, and other interactions.
+
+State is local to the component, meaning it can only be used within that component. It’s mutable (can change) and affects how the component is rendered.
+
+Handling State Using the useState Hook
+In functional components, state is managed using the useState hook, which is a function that allows you to add state to these components. The useState hook returns two values:
+
+The current state value.
+A function to update the state value.
+
+
+
+Syntax of useState
+
+const [state, setState] = useState(initialValue);
+state: The current value of the state.
+setState: A function that updates the state.
+initialValue: The starting value for the state.
+
+

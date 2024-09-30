@@ -1,0 +1,22 @@
+What is useEffect in React?
+In React, the useEffect hook allows you to perform side effects in functional components. Side effects can include data fetching, subscriptions, or manually changing the DOM. useEffect runs after every render by default and helps handle tasks that go beyond rendering.
+
+The useEffect hook replaces lifecycle methods such as componentDidMount, componentDidUpdate, and componentWillUnmount from class-based components.
+
+Syntax of useEffect
+
+useEffect(() => {
+  // Side effect logic here
+  return () => {
+    // Cleanup logic here (optional)
+  };
+}, [dependencies]);
+
+
+Parameters of useEffect
+Callback Function: Contains the code you want to execute after rendering.
+Dependencies Array: Optional. If included, the effect will only run when the values in this array change.
+Key Points:
+No dependencies (empty array []): Runs only once after the initial render.
+With dependencies: Runs when any value in the dependency array changes.
+Cleanup function: Optionally return a function to clean up resources (e.g., cancel subscriptions or event listeners) when the component unmounts.
