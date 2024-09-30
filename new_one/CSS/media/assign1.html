@@ -1,0 +1,297 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #banner {
+        width: 100%;
+        /* height: 40%; */
+        background-color: blue;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #banner > div {
+        /* border: 2px solid; */
+        width: 400px;
+        margin-left: 50px;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      #banner > img {
+        width: 420px;
+      }
+
+      #service {
+        margin-top: 20px;
+        width: 100%;
+        /* border: 2px solid; */
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(6, 1fr);
+        text-align: center;
+        line-height: 0.5;
+        margin-bottom: 20px;
+      }
+
+      .inner {
+        /* border: 5px solid red; */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      .inner > div {
+        background-color: aqua;
+      }
+      .inner > div > img {
+        width: 80%;
+      }
+
+      #work {
+        width: 100%;
+       
+        /* border: 2px solid; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+      }
+
+      #work>div{
+        padding: 10px;
+         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #work img{
+        width: 100%;
+      }
+
+      @media all and (min-width: 480px) and (max-width: 768px) {
+        #banner {
+          flex-direction: column;
+        }
+        #banner > div {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        #service {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        #work {
+            grid-template-columns: repeat(2,1fr);
+        }
+
+      }
+
+
+
+      @media all and (min-width: 320px) and (max-width: 479px) {
+        #banner {
+          width: 100%;
+          flex-direction: column;
+          font-size: 15px;
+        }
+
+        #banner > div {
+          width: 90%;
+        }
+
+        #banner > img {
+          width: 320px;
+        }
+
+        #banner > div {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        #service {
+          font-size: 15px;
+          line-height: 1;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+            #work {
+            grid-template-columns: repeat(1,1fr);
+        }
+      }
+
+
+       @media all and (min-width: 100px) and (max-width: 319px) {
+
+        body{
+            display: none;
+        }
+
+       }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <div>
+        <h1>You are in safe hands</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button style="border: 0; border-radius: 20px; padding: 5px">
+          Know More
+        </button>
+      </div>
+
+      <img
+        src="//www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png
+"
+        alt=""
+      />
+    </div>
+
+    <div id="service">
+      <div class="inner">
+        <div>
+          <img
+            src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+            alt=""
+          />
+        </div>
+
+        <h1>Instant Video</h1>
+        <p>I am para</p>
+      </div>
+
+      <div class="inner">
+        <div>
+          <img
+            src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+            alt=""
+          />
+        </div>
+
+        <h1>Instant Video</h1>
+        <p>I am para</p>
+      </div>
+
+      <div class="inner">
+        <div>
+          <img
+            src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+            alt=""
+          />
+        </div>
+
+        <h1>Instant Video</h1>
+        <p>I am para</p>
+      </div>
+
+      <div class="inner">
+        <div>
+          <img
+            src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+            alt=""
+          />
+        </div>
+
+        <h1>Instant Video</h1>
+        <p>I am para</p>
+      </div>
+
+      <div class="inner">
+        <div>
+          <img
+            src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+            alt=""
+          />
+        </div>
+
+        <h1>Instant Video</h1>
+        <p>I am para</p>
+      </div>
+
+      <div class="inner">
+        <div>
+          <img
+            src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+            alt=""
+          />
+        </div>
+
+        <h1>Instant Video</h1>
+        <p>I am para</p>
+      </div>
+    </div>
+
+    <div id="work">
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg
+"
+          alt=""
+        />
+        <h1>Dentist</h1>
+        <h3>teetning trouble</h3>
+      </div>
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg
+"
+          alt=""
+        />
+        <h1>Dentist</h1>
+        <h3>teetning trouble</h3>
+      </div>
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg
+"
+          alt=""
+        />
+        <h1>Dentist</h1>
+        <h3>teetning trouble</h3>
+      </div>
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg
+"
+          alt=""
+        />
+        <h1>Dentist</h1>
+        <h3>teetning trouble</h3>
+      </div>
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg
+"
+          alt=""
+        />
+        <h1>Dentist</h1>
+        <h3>teetning trouble</h3>
+      </div>
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg
+"
+          alt=""
+        />
+        <h1>Dentist</h1>
+        <h3>teetning trouble</h3>
+      </div>
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg
+"
+          alt=""
+        />
+        <h1>Dentist</h1>
+        <h3>teetning trouble</h3>
+      </div>
+      <div>
+        <img
+          src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg
+"
+          alt=""
+        />
+        <h1>Dentist</h1>
+        <h3>teetning trouble</h3>
+      </div>
+    </div>
+  </body>
+</html>
