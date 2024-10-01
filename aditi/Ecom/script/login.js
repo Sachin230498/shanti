@@ -2,7 +2,7 @@ let form = document.querySelector("form");
 
 form.addEventListener("submit", getData);
 
-let signup_arr = JSON.parse(localStorage.getItem("signup_data"))
+let signup_arr = JSON.parse(localStorage.getItem("signup_data"));
 
 function getData(event) {
   event.preventDefault();
@@ -14,30 +14,29 @@ function getData(event) {
     password: form.password.value,
   };
 
-  let data = false
+  let data = false;
 
-  signup_arr.forEach((el)=>{
-        //  console.log(el)
-        if(el.email == login_obj.email && el.password == login_obj.password){
-            // alert("login successful")
-            data = true;
+  signup_arr.forEach((el) => {
+    //  console.log(el)
+    if (el.email == login_obj.email) {
+      if (el.password == login_obj.password) {
+        data = true;
+        localStorage.setItem("login_user",JSON.stringify(el))
+      } else {
+        data = "wrong";
+      }
+    }
+  });
 
-        }
-  })
+  if (data == true) {
+    alert("login successful");
+    window.location.href = "../Html/index.html";
 
-  if(data == true){
-     alert("login successful");
-  }else{
-    alert("login failed")
+  } else if (data == "wrong") {
+    alert("wrong Passwrod");
+  } else {
+    alert("wrong credential");
   }
 
-
-
-// console.log(login_obj)
-
-
-
-
-
-
+  // console.log(login_obj)
 }

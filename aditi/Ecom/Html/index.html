@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="../style/navbar.css">
+   <style>
+    #main{display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+
+    #main img{
+        width: 100%;
+        height: 250px;
+    }
+
+    #main>div{
+        padding: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+   </style>
+     
+</head>
+<body>
+
+    <div id="navbar">
+      <a href="./index.html"> <h1>Home Page</h1></a>
+
+      <ul id="nav" type="none">
+          <li><a href="./singup.html">Singup</a></li>
+          <li><a href="./login.html">Login</a></li>
+      </ul>
+    </div>
+   
+    
+    <div id="main"></div>
+</body>
+<script src="../script/home.js"></script>
+<script src="../script/data.js"></script>
+</html>
