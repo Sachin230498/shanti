@@ -88,27 +88,34 @@ let div = document.getElementById("div")
 
 // console.log(nav.innerHTML)
 
+ 
+
 
 function cartfun(data){
-    let flag = false
-let carta = document.getElementById("carta")
-// console.log(carta)
+   let flag = false;
+// console.log(data)
     cart_data.forEach(function(el){
-    //   console.log("ls", el)
-    //   console.log("btn" , data)
-    if(data.id == el.id){
-        // alert("product is already added")
-        //  carta.innerText = "Already Added"
-        //  div.append(carta)
-        //  console.log(d)
+          
+      if(data.id===el.id){
+        //    alert("product is already added"); 
         flag = true
-        // console.log(carta)
-
-    }
+        // console.log(data.id)
+        // console.log(el.id)
+      }
+    
     })
 
-    if(flag == true){
-        carta.disabled = true
+
+
+    if(flag==true){
+          alert("product is already added") 
+        //  console.log("hello")
+    }
+    else{
+          alert("product is added"); 
+         cart_data.push(data);
+         localStorage.setItem("cart", JSON.stringify(cart_data));
+        console.log("cart")
     }
 
     // console.log(flag)
