@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Json-Server</h1>
+
+    <input id="name" type="text" placeholder="enter your name" />
+    <input id="class" type="text" placeholder="enter your class" />
+    <input id="subject" type="text" placeholder="enter your subject" />
+    <button onclick="postData()">submit</button>
+
+    <br /><br />
+
+    <input id="delId" type="text" placeholder="enter you id" />
+    <button onclick="Delfun()">Delete</button>
+  </body>
+  <script>
+    let api = "http://localhost:3000/posts";
+    let nam = document.getElementById("name");
+    let clas = document.getElementById("class");
+    let subject = document.getElementById("subject");
+    let delete_ID = document.getElementById("delId");
+    async function getData() {
+      let res = await fetch(api);
+
+      let data = await res.json();
+
+      console.log(data);
+    }
+
+    getData();
+
+    async function postData() {
+      let res = await fetch(api, {
+        method: "POST",
+        body: JSON.stringify({
+          name: nam.value,
+          class: clas.value,
+          subject: subject.value,
+        }),
+        headers: new Headers({
+          "Content-Type": "application/json",
+        }),
+      });
+    }
+
+    async function Delfun() {
+      let res = await fetch(`${api}/${delete_ID.value}`, {
+        method: "DELETE",
+      });
+    }
+
+
+    
+  </script>
+</html>
