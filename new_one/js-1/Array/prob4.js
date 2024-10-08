@@ -62,16 +62,46 @@
 
 //splice(index, no of element you want to delete, elements you want to add)
 
-let arr = [12, 3, 6, 8, 15, 55];
+// let arr = [12, 3, 6, 8, 15, 55];
 
 
-arr.splice(2,2, "abc", 65,78)
+// arr.splice(2,2, "abc", 65,78)
+
+// let a = arr.slice(1, 3)
+
+// console.log(a)
 
 
 
 // let x =  arr.splice(3,4)
 
 //  console.log(arr)
+
+let arr = [12, 3, 6, 8, 15, 55, 736, 355, 123];
+let num = [8,7,2,6,5,3,1]
+let str = ["apple", "mango","cat", "banana"]
+
+// str.sort()
+// num.sort()
+
+
+// let a =  arr.sort(function(a,b){
+//     return b-a
+// })
+
+// console.log(a)
+
+
+
+
+// console.log(num)
+// console.log(arr)
+
+
+
+
+
+
 
 
 
