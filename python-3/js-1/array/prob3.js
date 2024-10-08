@@ -14,7 +14,7 @@ let data = [1,4];
 
 data.push(12,3,5,8)
 
-// console.log(data)
+// console.log(data)  
 
 // data.pop()
 // data.pop()
@@ -35,5 +35,11 @@ data.shift()
 
 data.unshift(78,98)
 
-console.log(data)
+
+// console.log(data)
+
+
+
+
+
 
