@@ -1,5 +1,7 @@
 let cart_arr = JSON.parse(localStorage.getItem("cart")) ;
+let count = 1;
 display(cart_arr)
+
 
 function display(data) {
     main.innerHTML = "";
@@ -15,15 +17,29 @@ function display(data) {
     let img = document.createElement("img");
     img.src = el.image;
 
-    let cart = document.createElement("button");
-    cart.addEventListener("click",function(){ 
+    let remove = document.createElement("button");
+    remove.addEventListener("click",function(){ 
          removefun(index)
     }
     )
 
-    cart.innerText = "Remove Item";
 
-    div.append(img, title, price, cart);
+    let qu_div = document.createElement("div") 
+    qu_div.setAttribute("id", "qunatity_div")
+    let plus = document.createElement("button")
+    plus.innerText = "+"
+    let quantity = document.createElement("h3")
+    quantity.innerText = count;
+    let minus = document.createElement("button")
+    minus.innerText = "-";
+
+    qu_div.append(plus,quantity,minus)
+
+
+
+    remove.innerText = "Remove Item";
+
+    div.append(img, title, price, remove, qu_div);
 
     main.append(div);
   });
