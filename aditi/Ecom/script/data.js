@@ -269,3 +269,10 @@ let data = [
 
 
 localStorage.setItem("product", JSON.stringify(data))
+
+
+
+
+
+
+
