@@ -1,0 +1,55 @@
+<!-- static
+ relative
+ absolute
+ fixed
+ sticky
+  -->
+
+
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #main{
+            width: 500px;
+            height: 500px;
+            border: 5px solid red;
+         }
+
+         #head{
+            width: 150px;
+            border: 5px solid black;
+            /* position: static;  */
+            /* position: relative;
+            left: 0px;
+            top: 100px; */
+
+            position: absolute;
+            left: 200px;
+            
+         }
+         #head-2{
+            width: 150px;
+            border: 5px solid rgb(26, 51, 162);
+            /* position: static;  */
+          
+         }
+
+
+    </style>
+  </head>
+  <body>
+    
+    <div id="main">
+        <h1 id="head">Static</h1>
+        <h1 id="head-2">Relative</h1>
+    </div>
+  </body>
+  </html>

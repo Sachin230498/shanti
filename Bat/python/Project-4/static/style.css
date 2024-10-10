@@ -1,0 +1,15 @@
+/* Add your custom styles here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+}

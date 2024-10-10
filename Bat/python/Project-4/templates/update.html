@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Update Item{% endblock %}
+
+{% block content %}
+<h2>Update Item</h2>
+<form method="POST" action="{{ url_for('crud.update_item', item_id=item['_id']) }}">
+    <div class="mb-3">
+        <input type="text" name="title" class="form-control" value="{{ item['title'] }}" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+{% endblock %}

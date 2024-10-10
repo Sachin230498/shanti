@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+
+    </div>
+</body>
+<script>
+    let main = document.getElementById("main");
+    let api = "http://localhost:3000/posts"
+
+
+        getData()
+
+        
+      async function getData() {
+         let res = await fetch(api)
+         let data = await res.json()
+         console.log(data)
+        //  return data
+        display(data)
+    }
+
+
+    function display(data){
+      data.forEach((el)=>{
+          let div = document.createElement("div")
+          let name = document.createElement("h1")
+          name.innerText = el.first_name + " " + el.last_name
+          let img = document.createElement("img")
+          img.src = el.Avatar
+          let email = document.createElement("h2")
+          email.innerText = el.email
+          let gender = document.createElement("h3")
+          gender.innerText = el.gender
+
+          div.append(img,name,email,gender)
+         
+          main.appendChild(div)
+         // Add event listener to each div to open the modal when clicked
+      })
+    }
+
+
+
+</script>
+</html>

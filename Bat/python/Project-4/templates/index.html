@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Items</h2>
+<a href="{{ url_for('crud.create_item') }}" class="btn btn-success mb-3">Add New Item</a>
+<ul class="list-group">
+    {% for item in items %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            {{ item['title'] }}
+            <div>
+                <a href="{{ url_for('crud.update_item', item_id=item['_id']) }}" class="btn btn-warning btn-sm">Edit</a>
+                <a href="{{ url_for('crud.delete_item', item_id=item['_id']) }}" class="btn btn-danger btn-sm">Delete</a>
+            </div>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
