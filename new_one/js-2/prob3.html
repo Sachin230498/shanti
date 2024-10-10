@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input id="email" type="email" placeholder="Enter you email">
+    <br>
+    <input id="password" type="password" placeholder="Enter you password">
+    <br>
+    <select  id="gender">
+        <option value="Select Gender">Select Gender</option>
+        <option value="male">M</option>
+        <option value="female">F</option>
+    </select>
+    <br>
+   <button onclick="getData()" >submit</button>
+</body>
+<script>
+    let nam = document.getElementById("name")
+    let email = document.getElementById("email")
+    let password = document.getElementById("password")
+    let gender = document.getElementById("gender")
+
+ 
+
+
+    let save_email = "rebon@gmail.com"
+    let pass = "12345"
+
+    function getData(){
+
+           console.log(gender.value)
+    
+        if(save_email == email.value){
+         if(password.value == pass){
+            alert("login")
+         }else{
+            alert("wrong password")
+         }
+        }else{
+            alert("login failed")
+        }
+
+        
+    }
+</script>
+</html>

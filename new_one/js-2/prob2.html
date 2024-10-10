@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="iname"></h1>
+    <h1 id="iemail"></h1>
+    <h1 id="ipass"></h1>
+
+    <br>
+    <input id="name" type="text" placeholder="Enter you name">
+    <br>
+    <input id="email" type="email" placeholder="Enter you email">
+    <br>
+    <input id="password" type="password" placeholder="Enter you password">
+    <br>
+   <button onclick="getData()" >submit</button>
+</body>
+<script>
+    let nam = document.getElementById("name")
+    let email = document.getElementById("email")
+    let password = document.getElementById("password")
+
+    let iname = document.getElementById("iname")
+    let iemail = document.getElementById("iemail")
+    let ipass = document.getElementById("ipass")
+    // console.log(nam.value)
+
+    function getData(){
+
+        console.log(nam.value)
+        console.log(email.value)
+        console.log(password.value)
+
+        iname.innerText = nam.value;
+        iemail.innerText= email.value;
+        ipass.innerText = password.value;
+        
+    }
+</script>
+</html>
