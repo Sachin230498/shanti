@@ -1,24 +1,9 @@
 {
   "Data": [
     {
-      "name": "abcd",
-      "age": "56",
-      "id": "1a75"
-    },
-    {
-      "name": "xyz",
-      "age": "789",
-      "id": "2cc8"
-    },
-    {
-      "id": "e88b",
-      "name": "Meena",
-      "age": "25"
-    },
-    {
-      "id": "2cd2",
-      "name": "nivesh",
-      "age": "26"
+      "id": "a25c",
+      "name": "abc",
+      "age": "12"
     }
   ]
 }
