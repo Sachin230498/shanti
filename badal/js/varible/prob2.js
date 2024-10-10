@@ -40,3 +40,5 @@ let x =  e==c   // "10"==10
 let y = e===c
 // === check the value and also check the data type
 console.log(y)
+
+

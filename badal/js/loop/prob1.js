@@ -26,7 +26,7 @@ let a = 5;
 // Post increment or post decrement
 
 let x = 6;
-// x++;  
+// x++;  +
 // console.log(x)
 
 x--;
