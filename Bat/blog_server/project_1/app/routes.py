@@ -14,41 +14,27 @@ def signup():
     # hashed_password = bcrypt.generate_password_hash(data['password']).decode('utf-8')
     # user = User(data["email"],hashed_password)
     User.create_user(data)
-
     # user.save()
     return jsonify({"message": "User created successfully"}), 201
-    # return jsonify(data)
+   
 
-# @main.route('/login', methods=['POST'])
-# def login():
-#     data = request.get_json()
-#     user = User.get_user_by_email(data['email'])
-#     # if user and bcrypt.check_password_hash(user.password, data['password']):
-#     #     access_token = generate_token(user)
-#     #     return jsonify({"access_token": access_token}), 200
-#     # return jsonify({"error": "Invalid email or password"}), 401
-#     return jsonify(User)
-
+# Login API (Returns Token)
 @main.route('/login', methods=['POST'])
 def login():
-    try:
-        data = request.json
-        print(data)  # Debugging line
-        user = User.get_user_by_email(data['email'])
-        if user and bcrypt.check_password_hash(user['password'], data['password']):
-            token = generate_token(user)
-            return jsonify({'token': token}), 200
-        return jsonify({"error": "Invalid credentials"}), 401
-    except Exception as e:
-        print(f"Error during login: {e}")
-        return jsonify({"error": "Something went wrong"}), 500
-l
+    data = request.json
+    user = User.get_user_by_email(data['email'])
+    if user and bcrypt.check_password_hash(user.password, data['password']):
+        token = generate_token(user)
+        return jsonify({'token': token}), 200
+    return jsonify({"error": "Invalid credentials"}), 401
+
 
 @main.route('/blogs', methods=['GET'])
 @token_required
 def get_blogs(current_user):
     blogs = Blog.get_all_blogs()
-    blogs_list = [{**blog, "id": str(blog["_id"])} for blog in blogs]
+    # Convert ObjectId to string for JSON serialization
+    blogs_list = [{**blog, "_id": str(blog["_id"])} for blog in blogs]
     return jsonify(blogs_list), 200
 
 @main.route('/blogs/<blog_id>', methods=['GET'])
@@ -56,7 +42,8 @@ def get_blogs(current_user):
 def get_blog(current_user, blog_id):
     blog = Blog.get_blog_by_id(blog_id)
     if not blog:
-        return jsonify({"message": "Blog not found"}), 404
+        return jsonify({"message": "Blog not found!"}), 404
+    # Convert ObjectId to string for JSON serialization
     blog['_id'] = str(blog['_id'])
     return jsonify(blog), 200
 
