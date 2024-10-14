@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #main{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="main"></div>
+
+  
+  </body>
+  <script>
+    let main = document.getElementById("main");
+
+    // let head = document.createElement("h1")
+    // head.innerText = "hello"
+    // // console.log(head)
+
+    // let para = document.createElement("p")
+    // para.innerText = "i am para"
+
+    // main.append(para, head)
+
+    // main.appendChild(head,para)
+
+    // let name = ["Nivesh", "Vikash", "Aditi", "Payal", "Vaibhav", "Rani", "Sumit", "Abhisek"];
+    // let color = ["blue", "red", "voilet", "skyblue", "aqua", "pink", "purple", "orange"]
+
+    let data = [
+      {
+        name: "Nivesh",
+        color: "red",
+        marks: 65,
+        img: "https://cdn.pixabay.com/photo/2022/08/22/16/53/honey-bee-7404063_640.jpg",
+      },
+      {
+        name: "Vikash",
+        color: "blue",
+        marks: 75,
+        img: "https://cdn.pixabay.com/photo/2022/08/22/16/53/honey-bee-7404063_640.jpg",
+      },
+      {
+        name: "Abhisek",
+        color: "aqua",
+        marks: 85,
+        img: "https://cdn.pixabay.com/photo/2022/08/22/16/53/honey-bee-7404063_640.jpg",
+      },
+      {
+        name: "sumit",
+        color: "green",
+        marks: 80,
+        img: "https://cdn.pixabay.com/photo/2022/08/22/16/53/honey-bee-7404063_640.jpg",
+      },
+    ];
+
+    for (let i = 0; i < data.length; i++) {
+      //   console.log(data[i])
+
+      let div = document.createElement("div")
+
+      let name = document.createElement("h1");
+      name.innerText = data[i].name;
+      name.style.color = data[i].color;
+
+      let marks = document.createElement("h3");
+      marks.innerText = data[i].marks;
+
+      let img = document.createElement("img")
+      img.src = data[i].img
+
+
+      div.append(img, name, marks);
+
+      main.append(div)
+    }
+  </script>
+</html>

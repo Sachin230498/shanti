@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">I am heading</h1>
+    <h2 class="para" >I am heading 2</h2>
+    <p class="para">I am para</p>
+
+</body>
+<script>
+    let head = document.getElementById("head")
+    // console.log(head)
+
+    let para = document.getElementsByClassName("para")
+    // console.log(para[0].innerText)
+
+
+    // Style in js
+
+    head.style.color = "red";
+    head.style.backgroundColor = "aqua"
+
+    // para[0].style.color = "blue";
+    // para[1].style.color = "blue";
+
+    for(let i = 0;i<para.length;i++){
+         para[i].style.color = "blue";
+    }
+
+    
+
+
+
+</script>
+</html>
