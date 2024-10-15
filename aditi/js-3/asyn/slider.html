@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <a href="./slider.html">Home Page</a>
+    <a href="./store.html">Store Page</a>
+
+    <br><br>
+    <br>
+
+    <h1>Slider</h1>
+    <br>
+    <div id="main"></div>
+    
+</body>
+<script>
+    
+    let data = JSON.parse(localStorage.getItem("data")) || [] ;
+    let main = document.getElementById("main");
+    // console.log(data)
+
+
+    // display()
+
+
+    let index = 0;
+
+    function display(){
+      main.innerHTML = null;
+if(index == data.length){
+    index = 0
+}
+        // for(let i =0;i<=data.length;i++){
+        let img = document.createElement("img");
+        img.src = data[index]
+        index++
+    
+        main.append(img)
+        // }
+    }
+
+    setInterval(display,2000)
+
+</script>
+</html>

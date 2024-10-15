@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prototype Inheritence</h1>
+</body>
+<script>
+    let data = {
+        compnay:"Shanti",
+        salary: 40000,
+        disgnation:"developer",
+       
+    }
+
+    //     let aditi = {
+    //     compnay:"Shanti",
+    //     salary: 40000,
+    //     disgnation:"developer",
+    //     name:"aditi"
+    // }
+
+
+    // object.create methode
+
+    let nivesh = Object.create(data)
+    let aditi = Object.create(data)
+    let vikash = Object.create(data)
+
+    nivesh.name = "Nivesh"
+    aditi.name = "Aditi"
+    vikash.name = "Vikash"
+
+    console.log(nivesh);
+    console.log(aditi);
+    console.log(vikash);
+
+
+    
+
+
+
+
+
+
+    
+</script>
+</html>
