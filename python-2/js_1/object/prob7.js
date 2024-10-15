@@ -13,7 +13,8 @@ for(let i=0;i<names.length;i++){
      unique[names[i]]++
     )  
 }
- console.log(unique)
+
+console.log(unique)
 
 // i = 0   if(unique["suraj"]==undefined)   suraj = 1
 // i = 1   if(unique["ramu"]== undefined)   ramu = 1
