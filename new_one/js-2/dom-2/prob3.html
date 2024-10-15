@@ -4,17 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #main{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 20px;
-        }
+      #main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      #main img{
+        width: 100%;
+      }
     </style>
   </head>
   <body>
     <div id="main"></div>
-
-  
+    
   </body>
   <script>
     let main = document.getElementById("main");
@@ -25,7 +28,6 @@
 
     // let para = document.createElement("p")
     // para.innerText = "i am para"
-
     // main.append(para, head)
 
     // main.appendChild(head,para)
@@ -63,7 +65,7 @@
     for (let i = 0; i < data.length; i++) {
       //   console.log(data[i])
 
-      let div = document.createElement("div")
+      let div = document.createElement("div");
 
       let name = document.createElement("h1");
       name.innerText = data[i].name;
@@ -72,13 +74,12 @@
       let marks = document.createElement("h3");
       marks.innerText = data[i].marks;
 
-      let img = document.createElement("img")
-      img.src = data[i].img
-
+      let img = document.createElement("img");
+      img.src = data[i].img;
 
       div.append(img, name, marks);
 
-      main.append(div)
+      main.append(div);
     }
   </script>
 </html>

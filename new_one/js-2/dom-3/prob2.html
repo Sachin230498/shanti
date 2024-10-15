@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Name <span id="n" ></span></h1>
+    <h2>Email <span id="e"></span></h2>
+    <br><br>
+
+    <form>
+    <input id="name" type="text"  placeholder="enter name" value="">
+    <input id="email" type="email" placeholder="enter email">
+    <input type="submit">
+    </form>
+
+    <div id="main"></div>
+</body>
+<script>
+    let form = document.querySelector("form");
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let n = document.getElementById("n")
+    let e = document.getElementById("e")
+
+    let main = document.getElementById("main")
+
+    form.addEventListener("submit", getData)
+
+
+    function getData(){
+        event.preventDefault()
+        // console.log("Hello")
+        // console.log(name.value)
+        // console.log(email.value)
+
+        n.innerText = name.value;
+        e.innerText = email.value
+
+        let h1 = document.createElement("h1")
+        h1.setAttribute("id", "head")
+        h1.innerText= "hello"
+
+        main.append(h1)
+    }
+</script>
+</html>
