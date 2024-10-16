@@ -1,13 +1,19 @@
 let cart_arr = JSON.parse(localStorage.getItem("cart")) ;
+let total = document.getElementById("total");
+// total.innerText= 
 let count = 1;
+
+
 display(cart_arr)
 
 
 function display(data) {
     main.innerHTML = "";
+    let total_value = 0;
   data.map((el,index) => {
     // console.log(el);
-
+   total_value = total_value + el.price;
+   total.innerText= total_value
     let div = document.createElement("div");
 
     let title = document.createElement("h1");

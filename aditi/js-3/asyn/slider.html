@@ -3,6 +3,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #main img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
 </head>
 <body>
         <a href="./slider.html">Home Page</a>
@@ -14,6 +20,9 @@
     <h1>Slider</h1>
     <br>
     <div id="main"></div>
+
+    <button onclick="play()">Play</button>
+    <button onclick="pause()">Pause</button>
     
 </body>
 <script>
@@ -24,7 +33,7 @@
 
 
     // display()
-
+ let id ;
 
     let index = 0;
 
@@ -42,7 +51,18 @@ if(index == data.length){
         // }
     }
 
-    setInterval(display,2000)
+
+    function play(){
+     id =  setInterval(display,2000)
+    }
+
+
+
+
+    function pause(){
+        clearInterval(id)
+    }
+
 
 </script>
 </html>
