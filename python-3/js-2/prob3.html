@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="n" type="text" placeholder="enter your name">
+    <br>
+    <input id="p" type="text" placeholder="enter your passwrod">
+    <br>
+    <select id="gender" > 
+        <option >Gender</option>
+        <option >Male</option>
+        <option >Female</option>
+    </select>
+    <br>
+    <button onclick="GetData()">submit</button>
+
+    <br><br><br>
+
+    <h1>Name :- <span id="name"></span></h1>
+    <h1>passwrod :- <span id="pass"></span></h1>
+    <h1>gender :- <span id="gen"></span></h1>
+</body>
+<script>
+
+let name = document.getElementById("n")
+let pass = document.getElementById("p")
+let gen = document.getElementById("gender")
+
+
+
+let h1name = document.getElementById("name")
+let h1pass = document.getElementById("pass")
+let h1gen = document.getElementById("gen")
+
+
+    function GetData(){
+        // console.log("hello")
+        console.log(name.value)
+        console.log(pass.value)
+        console.log(gen.value)
+
+        h1name.innerText = name.value;
+        h1pass.innerText = pass.value;
+        h1gen.innerText = gen.value;
+    }
+</script>
+</html>

@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="head">Hello</h1>
+
+    <h2 id="n"></h2>
+
+    <input id="name" type="text" placeholder="Enter your name" />
+
+    <button onclick="change()">Click</button>
+  </body>
+  <script>
+    let h1 = document.getElementById("head");
+    let name = document.getElementById("name");
+    let n = document.getElementById("n")
+    // console.log(name.value);
+    // console.log(h1.innerText)
+
+    function change() {
+      // console.log("hello")
+      h1.innerText = "good morning";
+    //   console.log(name.value);
+      n.innerText = name.value
+    }
+  </script>
+</html>
