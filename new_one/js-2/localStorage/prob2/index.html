@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+
+    <h2 id="head"></h2>
+    <button onclick="countfun()">Count</button>
+</body>
+<script>
+let count =  localStorage.getItem("count") || 0
+
+// if( localStorage.getItem("count") == null){
+//     count = 0;
+// }else{
+//     count = localStorage.getItem("count") 
+// }
+
+
+
+let head = document.getElementById("head");
+head.innerText  = count
+
+function countfun(){
+    // console.log("hew")
+count++;
+localStorage.setItem("count", count)
+     head.innerText = count;
+
+}
+
+
+
+// let a = localStorage.getItem("abc")
+// console.log(a)
+
+
+</script>
+</html>
