@@ -1,0 +1,14 @@
+     nav{
+            width: 100%;
+            display: flex;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            justify-content: space-between;
+            font-size: 20px;
+        }
+
+        #list{
+            width: 400px;
+            display: flex;
+            justify-content: space-around;
+            
+        }

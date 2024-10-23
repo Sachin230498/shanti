@@ -3,8 +3,9 @@ let tbody = document.querySelector("tbody")
 
 form.addEventListener("submit", getData);
 
-let arr = [];
+let arr = JSON.parse(localStorage.getItem("arr")) || [];
 
+display(arr)
 
 
 
@@ -25,6 +26,7 @@ function getData() {
 
   arr.push(data_obj);
   // console.log(arr)
+  localStorage.setItem("arr", JSON.stringify(arr))
   display(arr)
 }
 
@@ -50,6 +52,9 @@ function display(data){
 
 
     let c3 = document.createElement("td")
+    c3.addEventListener("click", function(){
+      delfun(index)
+    })
     c3.innerText = "Delete"
     c3.style.backgroundColor = "red"
 
@@ -61,3 +66,20 @@ function display(data){
 
   })
 }
+
+
+function delfun(index){
+  // console.log(event.target.parentNode)
+  // event.target.parentNode.remove()
+// console.log(index)
+  arr.splice(index,1)
+localStorage.setItem("arr", JSON.stringify(arr));
+//  console.log(arr);
+display(arr)
+
+}
+
+
+
+
+
