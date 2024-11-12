@@ -35,5 +35,5 @@ function getData() {
     alert("login failed");
   }
 
-  console.log(flag);
+  // console.log(flag);
 }
