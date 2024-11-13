@@ -1,23 +1,18 @@
 let main = document.getElementById("main");
-let product_data = JSON.parse(localStorage.getItem("data"));
-// console.log(product_data)
-display(product_data);
-
-let cart_arr = JSON.parse(localStorage.getItem("cart_data")) || [];
 
 let login_data = JSON.parse(localStorage.getItem("login_data"));
+let cart_arr = JSON.parse(localStorage.getItem("cart_data")) || [];
 let navbar = document.getElementById("list");
-// console.log(login_data)
+let tp = 0;
+cart_display(cart_arr);
 
 if (login_data !== null) {
   navbar.innerHTML = null;
-
   let name = document.createElement("h3");
   name.innerText = login_data;
 
-  let cart = document.createElement("a");
-  cart.innerText = "cart";
-  cart.addEventListener("click", CartPage);
+  let total = document.createElement("h3");
+  total.innerText = "Total" + " - " + tp;
 
   let logout = document.createElement("button");
   logout.innerText = "Logout";
@@ -28,11 +23,16 @@ if (login_data !== null) {
   });
   //   console.log(name)
 
-  navbar.append(name, cart, logout);
+  navbar.append(name, total, logout);
 }
 
-function display(data) {
+
+
+function cart_display(data) {
+    main.innerHTML = "";
   data.map(function (el, index) {
+    tp = tp + Math.floor( el.price)
+    // console.log(tp)
     //   console.log(el)
     let div = document.createElement("div");
 
@@ -43,37 +43,27 @@ function display(data) {
     let img = document.createElement("img");
     img.src = el.image;
 
-    let cart = document.createElement("button");
-    cart.innerText = "Add to Cart";
-    cart.addEventListener("click", function () {
-      AddCart(el);
+    let Checkout = document.createElement("button");
+    Checkout.innerText = "Checkout";
+  
+
+    let remove = document.createElement("button");
+    remove.innerText = "Remove";
+    remove.addEventListener("click", function () {
+      remfun(index);
     });
 
-    div.append(img, title, price, cart);
+    div.append(img, title, price, Checkout, remove);
 
     main.append(div);
   });
 }
 
-function CartPage() {
-  window.location.href = "../html/cart.html";
-}
 
-function AddCart(data) {
-  // console.log("hello")
-  // console.log(data)
-  let flag = false;
-  cart_arr.map(function (el) {
-    if (data.id === el.id) {
-      flag = true;
-    }
-  });
-
-  if (flag == true) {
-    alert("product is already added");
-  } else {
-    alert("product is added");
-    cart_arr.push(data);
+function remfun(index){
+    console.log(index)
+    cart_arr.splice(index, 1)
     localStorage.setItem("cart_data", JSON.stringify(cart_arr));
-  }
+    cart_display(cart_arr)
+
 }
