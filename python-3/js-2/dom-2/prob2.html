@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="conatiner">
+
+
+    </div>
+</body>
+<script>
+    let conatiner = document.getElementById("conatiner")
+    let arr = ["badal", "reet", "karan", "sumit", "abhisek", "nivesh", "sachin" ,"aditi"]
+    let color = ["red", "purple", "green", "orange","yellow", "blue", "pink", "brown"]
+
+
+    let data = [
+        {
+            name:"badal",
+            color:"purple"
+        },
+      
+        {
+            name:"sumit",
+            color:"red"
+        },
+      
+        {
+            name:"abhi",
+            color:"blue"
+        },
+      
+        {
+            name:"nivesh",
+            color:"green"
+        },
+      
+    ]
+
+    // for(let i =0; i<arr.length;i++){
+    //     // console.log(arr[i])
+    //      let name = document.createElement("h1")
+    //  name.innerText = arr[i]
+    // name.style.color = color[i]
+    // conatiner.append(name)
+    // }
+
+    // let name = document.createElement("h1")
+    // name.innerText = arr[0]
+
+    for(let i = 0;i<data.length;i++){
+        // console.log(data[i].name)
+        
+    let name = document.createElement("h1")
+    name.innerText = data[i].name;
+    name.style.color = data[i].color
+
+    
+    conatiner.append(name)
+    }
+
+</script>
+</html>
+

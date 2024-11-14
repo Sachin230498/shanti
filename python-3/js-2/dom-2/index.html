@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="head" class="h1">I am heading -1</h1>
+    <h2 class="para">I am heading -2</h2>
+    <h3  class="h1">I am heading -3</h3>
+    <h1 class="para">I am heading -4</h1>
+    <p class="para">I am para</p>
+    <button>Click</button>
+  </body>
+  <script>
+    let head = document.getElementById("head");
+    // head.style.color = "red";
+    head.style.backgroundColor = "yellow";
+
+    // console.log(head)
+
+    // class
+
+    let heading = document.getElementsByClassName("h1");
+//  console.log(heading)
+
+//  heading[0].style.color = "blue";
+//  heading[1].style.color = "blue";
+
+    // for(let i =0;i<heading.length;i++){
+    //     heading[i].style.color = "blue"
+    // }
+
+    //tag
+
+    let h2 = document.getElementsByTagName("h1")
+    // console.log(h2)
+
+
+    // quary selector
+
+    let head1 =document.querySelector(".h1")
+    // console.log(head1)
+
+
+    // quaryselectorAll
+
+    let head2 = document.querySelectorAll(".para")
+    // console.log(head2)
+
+
+    
+
+
+
+
+
+  </script>
+</html>

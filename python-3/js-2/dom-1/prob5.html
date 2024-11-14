@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+    <h1 id="head"></h1>
+    <button onclick="counterplus()">increment</button>
+    <button onclick="counterminus()">decrement</button>
+    </div>
+
+</body>
+<script>
+    let main = document.getElementById("main")
+    let head = document.getElementById("head")
+    // console.log(head.innerHTML)
+
+    let val = 0
+    head.innerText = val;
+
+
+    function counterplus(){
+        // console.log("click")
+        val++;
+        head.innerText = val;
+        console.log(val);
+    }
+
+
+    function counterminus(){
+        val--;
+        head.innerText = val;
+    }
+
+    // console.log(main.innerText)
+
+    // innerText vs innerHtml
+</script>
+</html>

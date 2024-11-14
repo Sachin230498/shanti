@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #main{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        #main>div{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        img{
+            width: 100%;
+            height: 70%;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="main"></div>
+  </body>
+
+  <script>
+    let data = [
+      {
+        id: 1,
+        name: "Leanne Graham",
+        username: "Bret",
+        email: "Sincere@april.biz",
+        image: "https://cdn.pixabay.com/photo/2022/03/15/15/26/child-7070587_640.jpg"
+      },
+      {
+        id: 2,
+        name: "Ervin Howell",
+        username: "Antonette",
+        email: "Shanna@melissa.tv",
+        image: "https://cdn.pixabay.com/photo/2024/02/23/23/58/dog-8593014_640.jpg"
+      },
+      {
+        id: 3,
+        name: "Clementine Bauch",
+        username: "Samantha",
+        email: "Nathan@yesenia.net",
+        image:"https://cdn.pixabay.com/photo/2024/10/31/08/49/bird-9163532_640.jpg"
+      },
+
+      {
+        id: 4,
+        name: "Patricia Lebsack",
+        username: "Karianne",
+        email: "Julianne.OConner@kory.org",
+        image:"https://cdn.pixabay.com/photo/2024/10/03/16/22/vicuna-9094152_640.jpg"
+      },
+      {
+        id: 5,
+        name: "Chelsey Dietrich",
+        username: "Kamren",
+        email: "Lucio_Hettinger@annie.ca",
+        image:"https://cdn.pixabay.com/photo/2024/04/28/07/03/flower-8724919_640.jpg"
+      },
+      {
+        id: 6,
+        name: "Mrs. Dennis Schulist",
+        username: "Leopoldo_Corkery",
+        email: "Karley_Dach@jasper.info",
+        image:"https://cdn.pixabay.com/photo/2024/02/26/19/57/dog-8598827_640.jpg"
+      },
+      {
+        id: 7,
+        name: "Kurtis Weissnat",
+        username: "Elwyn.Skiles",
+        email: "Telly.Hoeger@billy.biz",
+        image:"https://cdn.pixabay.com/photo/2024/09/17/11/19/real-estate-9053405_640.jpg"
+      },
+    ];
+
+
+    let main = document.getElementById("main")
+
+    for(let i =0;i<data.length;i++){
+        // console.log(data[i].name)
+        let div = document.createElement("div")
+
+        let name = document.createElement("h1")
+        name.innerText = data[i].name;
+        let image = document.createElement("img")
+        image.src = data[i].image;
+        let email = document.createElement("h2")
+        email.innerText = data[i].email
+
+        div.append(image,name,email)
+
+        main.append(div)
+    }
+  </script>
+</html>
