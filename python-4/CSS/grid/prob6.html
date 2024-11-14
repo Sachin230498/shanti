@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        #grid{
+            width: 500px;
+            height: 400px;
+            margin: auto;
+            /* border: 5px solid red; */
+            font-size: 30px;
+            font-weight: 900;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            /* gap: 20px; */
+            grid-template-areas: 
+            "F F C"
+            "D E B";
+
+        }
+
+        #grid>div:nth-child(1){
+            grid-area: A;
+            border: 5px solid;
+        }
+        #grid>div:nth-child(2){
+               grid-area: B;
+            border: 5px solid red;
+        }
+        #grid>div:nth-child(3){
+               grid-area: C;
+            border: 5px solid blue;
+        }
+        #grid>div:nth-child(4){
+               grid-area: D;
+            border: 5px solid yellow;
+        }
+        #grid>div:nth-child(5){
+               grid-area: E;
+            border: 5px solid orange;
+        }
+        
+        #grid>div:nth-child(6){
+               grid-area: F;
+            border: 5px solid rgb(0, 166, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="grid">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+</body>
+</html>

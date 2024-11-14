@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* decendent selector space */
+        /* #main h1{
+            background-color: aqua;
+        } */
+
+
+        /* child selector  > */
+        #main>h1{
+            background-color: rgb(0, 38, 255);
+        }
+
+        /* genral sibling  ~ */
+
+        #head~h1{
+            color: rgb(227, 128, 7);
+        }
+
+
+           /* adjcent sibling  + */
+
+        #head+p{
+            color: rgb(55, 7, 227);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 id="head">I am heading</h1>
+         <p>I am para</p>
+        <h1>I am heading 4</h1>
+       
+        <div>
+            <h1>I am heading 2</h1>
+        </div>
+        <h1>I am heading 3</h1>
+        <p>I am para 2</p>
+    </div>
+</body>
+</html>

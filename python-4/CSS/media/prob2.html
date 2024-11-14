@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 20px;
+        }
+
+        #grid>div{
+            /* border: 2px solid; */
+            border-radius: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #grid>div>img{
+            width: 100%;
+        }
+
+            /* medium screen 480px 768px */
+      @media all and (min-width: 480px) and (max-width: 768px) {
+       #grid{
+                grid-template-columns: repeat(2,1fr)       
+        }
+
+      }
+
+
+             /* small screen  */
+      @media all and (min-width: 320px) and (max-width: 479px) {
+       #grid{
+                grid-template-columns: repeat(1,1fr)       
+        }
+
+      }
+
+      
+             /* small screen  */
+      @media all and (min-width: 769px) and (max-width: 1000px) {
+       #grid{
+                grid-template-columns: repeat(3,1fr)       
+        }
+
+      }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="grid">
+
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/11/07/03/12/lizard-9179598_1280.jpg" alt="">
+            <h1>Lizard</h1>
+        </div>
+
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/11/07/03/12/lizard-9179598_1280.jpg" alt="">
+            <h1>Lizard</h1>
+        </div>
+
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/11/07/03/12/lizard-9179598_1280.jpg" alt="">
+            <h1>Lizard</h1>
+        </div>
+
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/11/07/03/12/lizard-9179598_1280.jpg" alt="">
+            <h1>Lizard</h1>
+        </div>
+
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/11/07/03/12/lizard-9179598_1280.jpg" alt="">
+            <h1>Lizard</h1>
+        </div>
+
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/11/07/03/12/lizard-9179598_1280.jpg" alt="">
+            <h1>Lizard</h1>
+        </div>
+
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/11/07/03/12/lizard-9179598_1280.jpg" alt="">
+            <h1>Lizard</h1>
+        </div>
+
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/11/07/03/12/lizard-9179598_1280.jpg" alt="">
+            <h1>Lizard</h1>
+        </div>
+
+    </div>
+</body>
+</html>

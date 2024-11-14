@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        #grid{
+            width: 500px;
+            height: 400px;
+            margin: auto;
+            /* border: 5px solid red; */
+            font-size: 30px;
+            font-weight: 900;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            grid-template-areas: 
+            "A B C"
+            "D B C"
+            "E E F";
+        }
+
+        #grid>div:nth-child(1){
+            grid-area: A;
+            background-color: red;
+        }
+        #grid>div:nth-child(2){
+               grid-area: B;
+         background-color: yellow;
+        }
+        #grid>div:nth-child(3){
+               grid-area: C;
+            background-color: purple;
+        }
+        #grid>div:nth-child(4){
+               grid-area: D;
+            background-color: red;
+        }
+        #grid>div:nth-child(5){
+               grid-area: E;
+         background-color: purple;
+        }
+        
+        #grid>div:nth-child(6){
+               grid-area: F;
+          background-color: red;
+        }
+        
+  
+    </style>
+</head>
+<body>
+    <div id="grid">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+   
+    </div>
+</body>
+</html>
