@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Digital Clock</h1>
+
+     <span id="hour"></span>:
+     <span id="mint"></span>:
+     <span id="sec"></span>
+
+  </body>
+  <script>
+ 
+
+
+    // console.log(date.getSeconds())
+
+    function digital() {
+
+        
+    let date = new Date();
+    
+      let hour = document.getElementById("hour");
+      let mint = document.getElementById("mint");
+      let sec = document.getElementById("sec");
+
+      hour.innerText = date.getHours();
+      mint.innerText = date.getMinutes();
+      sec.innerText = date.getSeconds();
+
+     
+        // setTimeout(digital,1000)
+    }
+
+    // digital()
+
+   
+
+
+    // setInterval(digital, 1000);
+// 
+
+  </script>
+</html>

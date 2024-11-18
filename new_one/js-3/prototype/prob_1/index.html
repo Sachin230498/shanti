@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Prototype Inheritence</h1>
+  </body>
+  <script>
+    // 4 lion, cat, tiger, leoperd
+
+    // let cat = {
+    //     type: "cat",
+    //     leg: 4,
+    //     tail:1,
+    //     eye:2,
+    //     speed: "20kmph"
+    // }
+
+    //   let lion = {
+    //     type: "cat",
+    //     leg: 4,
+    //     tail:1,
+    //     eye:2,
+    //     speed: "60kmph"
+    // }
+
+    //   let tiger = {
+    //     type: "cat",
+    //     leg: 4,
+    //     tail:1,
+    //     eye:2,
+    //     speed: "70kmph"
+    // }
+
+    //   let leoperd = {
+    //     type: "cat",
+    //     leg: 4,
+    //     tail:1,
+    //     eye:2,
+    //     speed: "80kmph"
+    // }
+
+    // Prototype Inheritence
+
+    let cat = {
+      type: "cat",
+      leg: 4,
+      tail: 1,
+      eye: 2,
+    };
+
+// Object.create
+
+    let tiger = Object.create(cat)
+
+    // console.log(tiger)
+    tiger.speed = "60kmph"
+
+    tiger.eye = 4
+
+    console.log(tiger)
+
+
+
+
+
+    
+  </script>
+</html>
