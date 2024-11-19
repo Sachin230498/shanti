@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="./index.html">home</a>
+    <a href="./store.html">Store</a>
+
+    <br /><br />
+
+    <h1>Store your image</h1>
+    <br /><br />
+
+    <input id="img" type="text" placeholder="enter your url" />
+    <button onclick="saveData()">Submit</button>
+  </body>
+  <script>
+
+    let arr = JSON.parse(localStorage.getItem("imgData")) || []
+
+    let url = document.getElementById("img");
+
+    function saveData() {
+      // console.log(url.value)
+
+      let data = url.value
+
+      arr.push(data)
+
+      localStorage.setItem("imgData", JSON.stringify(arr));
+
+
+    }
+
+
+    // localStorage.clear()
+
+
+
+  </script>
+</html>
