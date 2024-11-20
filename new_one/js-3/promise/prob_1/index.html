@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Promise</h1>
+  </body>
+  <script>
+    // Promise
+
+    let data = false;
+
+    function display(){
+
+
+    let promise = new Promise(function (res, rej) {
+      // data = true
+      if (data) {
+        res("promise Sucess");
+      } else {
+        rej("promise reject");
+      }
+    });
+
+    promise.then(function(res){
+        console.log(res)
+    })
+    promise.catch(function(rej){
+        console.log(rej)
+    })
+
+
+
+    //  console.log(promise);
+    }
+
+    setTimeout(display,1000)
+
+
+
+
+   
+  </script>
+</html>

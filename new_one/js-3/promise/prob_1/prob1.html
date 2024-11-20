@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="display"></h1>
+    <input id="pass" type="text" placeholder="Enter password">
+    <button onclick="submitfun()" >Submit</button>
+</body>
+
+<script>
+    let real_pass = 1234;
+    let display = document.getElementById("display")
+let password =document.getElementById("pass")
+
+
+function submitfun(){
+    // console.log(password.value)
+
+    setTimeout(function(){
+
+    let promise = new Promise(function(res,rej){
+        if(real_pass == password.value){
+            res("login")
+        }else{
+            rej("failed")
+        }
+    })
+
+    promise.then(function(res){
+        display.innerText = "login"
+    }).catch(function(rej){
+        display.innerText = "login failed"
+    })
+
+    }, 2000)
+}
+
+
+
+</script>
+</html>
