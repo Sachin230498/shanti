@@ -1,0 +1,25 @@
+
+Here's a categorized list of commonly used MongoDB queries along with explanations for their use:
+
+1. Database and Collection Operations
+
+
+  show dbs
+Why? To list all databases in the MongoDB server.
+
+   use <database_name>
+Why? To switch to a specific database.
+
+  show collections
+Why? To list all collections in the current database.
+
+  db.createCollection("<collection_name>")
+Why? To create a new collection.
+
+  db.collection_name.drop()
+Why? To delete an entire collection.
+
+  db.dropDatabase()
+Why? To delete the current database.
+
+
