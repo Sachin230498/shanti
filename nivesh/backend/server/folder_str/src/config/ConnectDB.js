@@ -1,9 +1,10 @@
 import mongoose  from "mongoose";
 
 
-function Connection(){
 
-const ConnectDB = mongoose.connect("mongodb://localhost:27017/mern3");
+function Connection(mongo_url){
+
+const ConnectDB = mongoose.connect(mongo_url);
 
 ConnectDB.then((res) => {
   console.log("connect to db");

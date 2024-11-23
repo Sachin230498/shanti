@@ -3,15 +3,17 @@ import Connection from "./config/ConnectDB.js";
 import User from "./model/user.model.js";
 import router from "./routes/user.routes.js";
 import bodyParser from "body-parser";
+import dotenv from "dotenv";
 
-// Initialize app
+dotenv.config();
+
+
 const app = express();
 
 app.use(bodyParser.json())
 
-Connection();
+Connection(process.env.Mongo_url);
 
-// console.log(router)
 
 app.use("/user", router);
 
