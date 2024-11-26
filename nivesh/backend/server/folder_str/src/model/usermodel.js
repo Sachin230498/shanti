@@ -2,11 +2,11 @@ import mongoose from "mongoose";
 
 
 const User_Schema = new mongoose.Schema({
-    name : {type: String},
-    email : {type: String},
+    username : {type: String,require:true, unique:true},
+    email : {type: String,require:true, unique:true},
     mobile : {type: Number, unique:true},
-    password : {type: String},
-    complete : {type:Boolean, default:false}
+    password : {type: String,require:true,},
+  
 })
 
 
