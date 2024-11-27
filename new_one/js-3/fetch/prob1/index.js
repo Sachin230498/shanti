@@ -43,21 +43,21 @@ getData();
 
 function display(data){
 
-    data.map(function(el){
-        console.log(el)
+    data.map(function({title,image,price}){
+      
 
         let div = document.createElement("div")
         div.setAttribute("class", "inner")
 
         let name = document.createElement("h1")
-        name.innerText = el.title;
+        name.innerText = title;
         let img = document.createElement("img")
-        img.src = el.image;
-        let price = document.createElement("h2")
-        price.innerText = el.price
+        img.src = image;
+        let pric = document.createElement("h2")
+        pric.innerText = price
 
 
-        div.append(img,name, price)
+        div.append(img,name, pric)
 
         container.append(div)
 
