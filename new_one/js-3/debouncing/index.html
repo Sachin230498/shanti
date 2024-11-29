@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Debouncing</h1>
+
+    <input type="text" placeholder="search for content" id="search" oninput="debounce()">
+</body>
+<script>
+
+ let search =document.getElementById("search")
+
+
+
+ function debounce(){
+    setTimeout(searchfun,3000 )
+ }
+
+    function searchfun(){
+        console.log(search.value)
+    }
+</script>
+</html>

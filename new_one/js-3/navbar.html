@@ -26,40 +26,40 @@
       font-weight: bold;
     }
 
-    .nav-links {
+    #nav-links {
       display: flex;
-      flex-direction: column;
+      font-size: 30px;
+      justify-content: space-around;
       list-style: none;
-      padding: 0;
-      margin: 0;
-      position: fixed;
-      top: 0;
-      right: -100%; /* Hidden by default */
-      width: 200px;
+      list-style: none;
+      right: -100%;    
+      width: 600px;
       height: 100%;
-      background-color: #333;
-      padding-top: 60px;
-      transition: right 0.5s ease; /* Smooth sliding */
+   
+      color: white;
+      padding-top: 0px;
+      transition: right 0.5s ease;
     }
 
-    .nav-links.active {
-      right: 0; /* Slide in */
+    #nav-links.active {
+      right: 0; 
     }
 
-    .nav-links li {
+    #nav-links li {
       margin: 10px 0;
       text-align: center;
     }
 
-    .nav-links a {
+    #nav-links a {
       text-decoration: none;
       color: white;
       padding: 10px;
       border-radius: 5px;
+      background-color: aqua;
       transition: background 0.3s;
     }
 
-    .nav-links a:hover {
+    #nav-links a:hover {
       background-color: #555;
     }
 
@@ -83,7 +83,9 @@
         display: flex;
       }
 
-      .nav-links {
+
+      #nav-links {
+        display: none;
         flex-direction: column;
       }
     }
@@ -97,7 +99,7 @@
       <div></div>
       <div></div>
     </div>
-    <ul class="nav-links">
+    <ul id="nav-links">
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Services</a></li>
