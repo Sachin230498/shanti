@@ -15,12 +15,12 @@ const GetData = (req, res) => {
 // Register User
 const register =  async (req, res) => {
     try {
-        const { username, password,email,mobile } = req.body;
+        const { username, password,role } = req.body;
             const salt = await bcrypt.genSalt(10);
             const hashedPass = await bcrypt.hash(String(password), salt);
-        const user = new User_model({ username, password:hashedPass,mobile,email });
+        const user = new User_model({ username, password:hashedPass,role });
         await user.save();
-        res.status(201).json({ message: 'User registered successfully' });
+        res.status(201).json({ message: 'User registered successfully', user });
     } catch (err) {
         res.status(400).json({ error: err.message });
     }
@@ -34,47 +34,67 @@ const login = async (req, res) => {
         if (!user || !(await bcrypt.compare(String(password), user.password))) {
             return res.status(400).json({ message: 'Invalid credentials' });
         }
-        const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET);
-        res.json({ token });
+        const token = jwt.sign({ _id: user._id, role:user.role}, process.env.JWT_SECRET);
+        res.json({ token ,user:user.role});
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
 };
 
 
+// Admin: Get all users
+ const getAllUsers = async (req, res) => {
+  try {
+    const users = await User_model.find({});
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({ message: "Server error", error });
+  }
+};
+
+// Admin: Delete a user
+ const deleteUser = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const user = await User_model.findByIdAndDelete(id);
+    if (!user) return res.status(404).json({ message: "User not found" });
+
+    res.json({ message: "User deleted successfully", user });
+  } catch (error) {
+    res.status(500).json({ message: "Server error", error });
+  }
+};
+
+// Admin: Update a user
+ const updateUser = async (req, res) => {
+  const { id } = req.params;
+  const { username, role } = req.body;
+
+  try {
+    const user = await User_model.findById(id);
+    if (!user) return res.status(404).json({ message: "User not found" });
+
+    user.username = username || user.username;
+    user.role = role || user.role;
+
+    await user.save();
+    res.json({ message: "User updated successfully", user });
+  } catch (error) {
+    res.status(500).json({ message: "Server error", error });
+  }
+};
+
+
+const dashboard = (req, res) => {
+  res.json({ message: `Welcome ${req.user.role} to the dashboard!` });
+};
 
 
 
-export {register,login ,GetData}
+
+
+export {register,login ,GetData,updateUser,deleteUser,getAllUsers,dashboard}
 
 
 
-
-
-// const Data = (req, res) => {
-//   res.send("getting DATA");
-// };
-
-// const PostUser = async (req, res) => {
-//   const { name, email, password, mobile } = req.body;
-
-//     const salt = await bcrypt.genSalt(10);
-//     const hashedPass = await bcrypt.hash(String(password), salt);
-
-//     // console.log(hashedPass)
-
-
-//   const newUser = new User_model({ name, email, password:hashedPass, mobile });
-
-
-
-//   const existingTeacherByMobile = await User_model.findOne({ mobile });
-
-//   if (existingTeacherByMobile) {
-//     return res.status(409).send({ message: "Mobile already exists" });
-//   }
-
-//   await newUser.save();
-
-//   res.send({ massage: "User Created", user: newUser });
-// };

@@ -13,11 +13,12 @@ function authenticateToken(req, res, next) {
 
 
   try {
-    const verified = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = verified;
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = decoded;
+    console.log(req.user)
     next();
-  } catch (err) {
-    res.status(400).send("Invalid Token");
+  } catch (error) {
+    res.status(400).send("Invalid token.");
   }
 }
 
