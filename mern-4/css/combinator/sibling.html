@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* general sibling selector ~ */
+        #main ~ h1{
+           color:  red;
+        }
+
+        /* ajcent sibling selecotr + */
+        #main + p{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>I am heading - 1</h1>
+
+        <span>
+            <h2>I am heading 2</h2>
+            <h1>I am heading 3</h1>
+        </span>
+    </div>
+
+    <h1>I am heading 5</h1>
+
+    <p>I am para </p>
+    <h1>I am heading 4</h1>
+
+
+</body>
+</html>
