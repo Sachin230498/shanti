@@ -7,15 +7,30 @@
   </head>
   <body>
   <div id="navbar"> </div>
+
+  <div id="main"></div>
+
   </body>
-  <script type="module" >
+  <script type="module"  >
 
     let nav = document.getElementById("navbar");
     import navbar from "./navbar.js"
+    import {getData,display} from "./fetch.js"
+
+    let api = "https://fakestoreapi.com/products/category/jewelery";
 
     let a = navbar()
    nav.innerHTML = a
 
+   let products =await getData(api)
+ 
+       display(products)
+
+ 
+
+
   </script>
+
+
    
 </html>
