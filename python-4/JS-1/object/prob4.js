@@ -20,3 +20,9 @@ console.log(details["hobbies"][2])
 // dot notation
 
 console.log(details.hobbies)
+
+
+
+
+
+
