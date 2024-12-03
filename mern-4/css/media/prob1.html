@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(213, 66, 66);
+        }
+
+        /* small screen mobile */
+        @media all and (min-width:320px) and (max-width:480px){
+            body{
+                background-color: yellow;
+            }
+
+            h1{
+                color: red;
+            }
+        }
+        /* medium screen teblet */
+        @media all and (min-width:481px) and (max-width:768px){
+            body{
+                background-color: rgb(0, 136, 255);
+            }
+
+            h1{
+                color: rgb(0, 255, 242);
+                text-align: center;
+            }
+        }
+
+
+     
+        @media all and (min-width:769px) and (max-width:1000px){
+            body{
+                background-color: rgb(255, 0, 174);
+            }
+
+            h1{
+                color: rgb(0, 255, 4);
+                text-align: center;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+</body>
+</html>
+
+
+<!-- small 320 to 480
+     medium 481 to 768px
+     larger 769px to above -->

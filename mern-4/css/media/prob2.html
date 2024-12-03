@@ -4,22 +4,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-          #grid{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 20px;
-            border: 2px solid;
-          }
+      #grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
 
-          #grid div img{
-          
-            width: 100%;
-          }
+      #grid div img {
+        width: 100%;
+      }
 
-          #grid>div{
-            border: 2px solid red;
-          }
+      #grid > div {
+        border: 2px solid red;
+      }
+
+      @media all and (min-width: 320px) and (max-width: 480px) {
+        #grid {
+       
+        grid-template-columns: repeat(1, 1fr);
+       
+      }
+      }
+
+      @media all and (min-width: 481px) and (max-width: 768px) {
+        #grid {
+       
+        grid-template-columns: repeat(2, 1fr);
+       
+      }
+      }
+
+      @media all and (min-width: 769px) and (max-width: 1000px) {
+        #grid {
+       
+        grid-template-columns: repeat(3, 1fr);
+       
+      }
+      }
     </style>
   </head>
   <body>
@@ -60,7 +82,6 @@
         <p>flamingo-9190160_640</p>
       </div>
 
-
       <div>
         <img
           src="https://cdn.pixabay.com/photo/2024/11/11/14/05/flamingo-9190160_640.jpg"
@@ -70,7 +91,6 @@
         <p>flamingo-9190160_640</p>
       </div>
 
-
       <div>
         <img
           src="https://cdn.pixabay.com/photo/2024/11/11/14/05/flamingo-9190160_640.jpg"
@@ -79,9 +99,6 @@
         <h1>flamingo</h1>
         <p>flamingo-9190160_640</p>
       </div>
-      
-  
-  
     </div>
   </body>
 </html>
