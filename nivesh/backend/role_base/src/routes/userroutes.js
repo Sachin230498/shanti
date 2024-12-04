@@ -7,10 +7,14 @@ import {
   deleteUser,
   getAllUsers,
   dashboard,
+  requestPasswordReset,
+  resetPassword
 } from "../controller/UserController.js";
 
 import authenticateToken from "../middleware/authentication.js"
 import { authRole } from "../middleware/authRole.js";
+
+
 
 const Userrouter = express.Router();
 
@@ -19,6 +23,8 @@ const Userrouter = express.Router();
 Userrouter.get("/get", GetData);
 Userrouter.post("/signup", register);
 Userrouter.post("/login", login);
+Userrouter.post("/request-password-reset", requestPasswordReset);
+Userrouter.post("/reset-password/:token", resetPassword);
 
 Userrouter.get("/dashboard", authenticateToken, dashboard);
 
