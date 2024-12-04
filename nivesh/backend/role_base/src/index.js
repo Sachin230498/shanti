@@ -17,14 +17,17 @@ app.use(bodyParser.json())
 
 Connection(process.env.Mongo_url);
 
-app.get("/", auth, (req,res)=>{
-   res.send("started")
+app.get("/", (req,res)=>{
+  var seq = (Math.floor(Math.random() * 10000) + 10000).toString().substring(1);
+  console.log(seq);
+   res.send(seq)
 })
 
-app.post("/",auth, (req,res)=>{
+app.post("/:token",auth, (req,res)=>{
     const data = req.body
-
-    res.send(data)
+    const {token} = req.params 
+   
+    res.send({data,token})
 })
 
 

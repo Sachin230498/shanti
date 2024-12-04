@@ -4,12 +4,18 @@ import User_model from "../model/userModel.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import sendEmail from "../middleware/sendEmail.js";
+import nodemailer from "nodemailer";
 
-const GetData = (req, res) => {
-  res.send("getting it");
-
-  console.log(process.env.JWT_SECRET);
-};
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: "sachinpathe123b@gmail.com",
+    pass: "zwwzkhfkaxmkonzv",
+  },
+  tls: {
+    rejectUnauthorized: false, // Allows self-signed certificates
+  },
+});
 
 // Register User
 const register = async (req, res) => {
@@ -24,29 +30,72 @@ const register = async (req, res) => {
       email,
     });
     await user.save();
+
+    const mailOptions = {
+      from: "",
+      to: email,
+      subject: `Sign Up Successfull`,
+      html: `<h1>${username} Account Sign Up Successfull  </h1>`,
+    };
+
+    transporter.sendMail(mailOptions, (err, info) => {
+      if (err) {
+        console.log("ERROR", err);
+      } else {
+        console.log("EMAIL SEND" + info.response);
+        return res.status(201).send(`user created successfully,${username}`);
+      }
+    });
+
     res.status(201).json({ message: "User registered successfully", user });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
 };
 
-// Login User
+
+
 const login = async (req, res) => {
   try {
     const { username, password } = req.body;
+
+    // Check if user exists
     const user = await User_model.findOne({ username });
     if (!user || !(await bcrypt.compare(String(password), user.password))) {
       return res.status(400).json({ message: "Invalid credentials" });
     }
-    const token = jwt.sign(
-      { _id: user._id, role: user.role },
-      process.env.JWT_SECRET
-    );
-    res.json({ token, user: user.role });
+
+    // Generate a random 6-digit OTP
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+    console.log("Generated OTP: ", otp);
+
+    // Store OTP temporarily in the database
+    user.otp = otp;
+    user.otpExpiry = Date.now() + 10 * 60 * 1000; // OTP valid for 10 minutes
+    await user.save();
+
+    const mailOptions = {
+      from: "your-email@gmail.com",
+      to: user.email,
+      subject: `Your Login OTP`,
+      html: `<p>Hello ${user.username},</p>
+             <p>Your OTP for login is: <strong>${otp}</strong></p>
+             <p>This OTP is valid for 10 minutes.</p>`,
+    };
+
+    transporter.sendMail(mailOptions, (err, info) => {
+      if (err) {
+        console.error("Error sending email: ", err.message);
+        return res.status(500).json({ message: "Error sending OTP email" });
+      }
+      console.log("Email sent: ", info.response);
+      res.status(200).json({ message: "OTP sent to your email" });
+    });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 };
+
 
 // Admin: Get all users
 const getAllUsers = async (req, res) => {
@@ -106,7 +155,7 @@ const requestPasswordReset = async (req, res) => {
       expiresIn: "1h",
     });
 
-    const resetLink = `http://localhost:5000/user/reset-password/${resetToken}`;
+    const resetLink = `http://localhost:8082/user/reset-password/${resetToken}`;
     const htmlContent = `<p>Hello,</p>
       <p>You requested to reset your password. Please click the link below to reset your password:</p>
       <a href="${resetLink}">Reset Password</a>
@@ -126,28 +175,68 @@ const resetPassword = async (req, res) => {
   const { newPassword } = req.body;
 
   try {
-    const decoded = jwt.verify(token, "your_jwt_secret");
-
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    console.log(decoded);
     const user = await User_model.findById(decoded.id);
     if (!user) return res.status(404).json({ message: "User not found" });
 
-    user.password = await bcrypt.hash(newPassword, 10);
+    const salt = await bcrypt.genSalt(10);
+    const hashedPass = await bcrypt.hash(String(newPassword), salt);
+
+    user.password = hashedPass;
     await user.save();
 
     res.json({ message: "Password reset successfully" });
   } catch (error) {
-    res.status(400).json({ message: "Invalid or expired token", error });
+    res
+      .status(400)
+      .json({ message: "Invalid or expired token", error: error.message });
   }
 };
+
+
+const verifyOtp = async (req, res) => {
+  try {
+    const { username, otp } = req.body;
+
+    // Find the user in the database
+    const user = await User_model.findOne({ username });
+    if (!user) {
+      return res.status(400).json({ message: "User not found" });
+    }
+
+    // Check if the OTP matches and is still valid
+    if (!user.otp || user.otp !== otp || user.otpExpiry < Date.now()) {
+      return res.status(400).json({ message: "Invalid or expired OTP" });
+    }
+
+    // OTP is valid, generate a JWT token
+    const token = jwt.sign(
+      { _id: user._id, role: user.role },
+      process.env.JWT_SECRET,
+      { expiresIn: "1h" } // Token expiry
+    );
+
+    // Clear the OTP and expiry from the database
+    user.otp = undefined;
+    user.otpExpiry = undefined;
+    await user.save();
+
+    res.status(200).json({ token, message: "OTP verified successfully" });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 
 export {
   register,
   login,
-  GetData,
   updateUser,
   deleteUser,
   getAllUsers,
   dashboard,
   requestPasswordReset,
   resetPassword,
+  verifyOtp
 };

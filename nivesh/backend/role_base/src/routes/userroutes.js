@@ -2,13 +2,13 @@ import express from "express";
 import {
   register,
   login,
-  GetData,
   updateUser,
   deleteUser,
   getAllUsers,
   dashboard,
   requestPasswordReset,
-  resetPassword
+  resetPassword,
+  verifyOtp
 } from "../controller/UserController.js";
 
 import authenticateToken from "../middleware/authentication.js"
@@ -20,11 +20,13 @@ const Userrouter = express.Router();
 
 // Routes
 
-Userrouter.get("/get", GetData);
+
 Userrouter.post("/signup", register);
 Userrouter.post("/login", login);
 Userrouter.post("/request-password-reset", requestPasswordReset);
 Userrouter.post("/reset-password/:token", resetPassword);
+Userrouter.post("/verify-otp", verifyOtp);
+
 
 Userrouter.get("/dashboard", authenticateToken, dashboard);
 

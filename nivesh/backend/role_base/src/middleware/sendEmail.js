@@ -5,17 +5,23 @@ const sendEmail = async (to, subject, htmlContent) => {
     const transporter = nodemailer.createTransport({
       service: "gmail", // Change to "ethereal" if using Ethereal
       auth: {
-        user: "aditipatel4m2@gmail.com", // Your Gmail address
-        pass: "your-gmail-app-password", // Use App Password
+        user: "sachinpathe123b@gmail.com",
+        pass: "zwwzkhfkaxmkonzv",
+      },
+      tls: {
+        rejectUnauthorized: false, // Allows self-signed certificates
       },
     });
 
     const mailOptions = {
-      from: '"Todo-app" <sachinpathe123b@gmail.com>', // Sender email
+      from: 'Todo-app', // Sender email
       to, // Recipient(s)
       subject, // Subject line
       html: htmlContent, // Email content (HTML format)
     };
+
+
+    console.log(mailOptions)
 
     const info = await transporter.sendMail(mailOptions);
     console.log("Email sent successfully: %s", info.messageId); // Optional for tracking
