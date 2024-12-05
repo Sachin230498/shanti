@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="head">I am heading 2</h2>
+    <button onclick="textchange()">Click</button>
+
+    <br /><br /><br /><br />
+    <input id="input" type="text" placeholder="Enter your name"  />
+    <button onclick="subfun()">submit</button>
+
+    <br><br>
+
+    <select id="gender">
+        <option value="select">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+
+    <button onclick="getGen()" >Select</button>
+  </body>
+  <script>
+    let A = document.getElementById("head");
+
+    // console.log(A)
+
+    //  innerText or textContent
+
+    // console.log(A.textContent)
+
+    function textchange() {
+      A.innerText = "I am heading 3";
+    }
+
+
+    // console.log( A.innerHTML)
+
+
+
+    let input = document.getElementById("input")
+    //  console.log(input.value)
+
+    function subfun(){
+        console.log(input.value)
+         A.innerText  = input.value;
+    }
+
+
+    let gen = document.getElementById("gender")
+    // console.log(gen.value)
+
+    function getGen(){
+        console.log(gen.value)
+    }
+
+
+
+  </script>
+</html>
