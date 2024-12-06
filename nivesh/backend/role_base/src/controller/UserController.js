@@ -53,8 +53,6 @@ const register = async (req, res) => {
   }
 };
 
-
-
 const login = async (req, res) => {
   try {
     const { username, password } = req.body;
@@ -95,7 +93,6 @@ const login = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
-
 
 // Admin: Get all users
 const getAllUsers = async (req, res) => {
@@ -194,7 +191,6 @@ const resetPassword = async (req, res) => {
   }
 };
 
-
 const verifyOtp = async (req, res) => {
   try {
     const { username, otp } = req.body;
@@ -228,7 +224,6 @@ const verifyOtp = async (req, res) => {
   }
 };
 
-
 export {
   register,
   login,
@@ -238,5 +233,5 @@ export {
   dashboard,
   requestPasswordReset,
   resetPassword,
-  verifyOtp
+  verifyOtp,
 };
