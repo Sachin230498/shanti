@@ -1,26 +1,28 @@
-import express from "express"
-import userrouter from "./routes/userRoutes.js";
-import paymentrouter from "./routes/paymentRoutes.js"
-import { ConnectDB } from "./config/connectionDB.js";
+import express from "express";
+import dotenv from "dotenv";
+import cors from "cors";
+import connectDB from "./config/connectionDB.js";
 
-// app intilize
+import userRoutes from "./routes/userRoutes.js";
+import adminRoutes from "./routes/adminRoutes.js";
+import productRoutes from "./routes/productRoutes.js";
+import paymentRoutes from "./routes/paymentRoutes.js";
+
+dotenv.config();
+connectDB();
 
 const app = express();
+app.use(cors());
+app.use(express.json());
 
-app.use(express.json())
+console.log(process.env.RAZORPAY_KEY_SECRET);
+console.log(process.env.RAZORPAY_KEY_ID);
 
-ConnectDB()
+// Routes
+app.use("/api/users", userRoutes);
+app.use("/api/admin", adminRoutes);
+app.use("/api/products", productRoutes);
+app.use("/api/payment", paymentRoutes);
 
-
-app.use("/pay", paymentrouter)
-
-
-
-
-// Start the server
-
-let PORT = 8081;
-
-app.listen(PORT, ()=>{
-    console.log(`Server is running on  http://localhost:${PORT}`)
-})
+const PORT = process.env.PORT || 8081;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
